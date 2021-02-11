@@ -1,9 +1,16 @@
+import Header from './Header'
+import NotifyMe from './NotifyMe'
+import SocialMediaBtns from './SocialMediaBtns'
+import Footer from "./Footer"
+
 const App = () => {
   return (
     <div className="RMW_container">
-      <h1> Coming Soon </h1>
-      <p> Launching website soon! </p>
-      <p> Stay Tuned</p>
+      <img src="https://via.placeholder.com/150" alt="logo" />
+      <Header />
+      <NotifyMe />
+      <SocialMediaBtns />
+      <Footer />
     </div>
   );
 }

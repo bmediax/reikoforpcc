@@ -4,13 +4,14 @@
 // Text Sizes
 $header-size: 3.5rem;
 $para-size: 1.3rem;
+$medium-size: 1.2rem;
 $small-size: 1rem;
 
 // Color Palette
 $blue:       #008DB1;
 $dark-blue:  #1E4B5D;
 $atom-blue:  #272C35;
-$light-blue: #F4F4F6;
+$light-blue: #f4f4f6;
 $med-blue:   #D3DEE9;
 $red:        #EC7765;
 $sand:       #F2E4DA;
@@ -22,6 +23,7 @@ $colors: (
   text3 : $dark-blue,
   base2 : $light-blue,
   text2 : $med-blue,
+  base3 : $light-blue,
 );
 
 // Base Color Dark Mode
@@ -88,6 +90,22 @@ body {
       padding:0;
       margin:0;
     }
+  }
+}
+
+#contact {
+  margin-top:15%;
+
+  h2 {
+    color:getColor(text3);
+    font-weight:500;
+    text-align:center;
+    font-size:$medium-size;
+    background:getColor(base3);
+    padding:12px 0px;
+    max-width:250px;
+    border-radius:30px;
+    margin:auto;
   }
 }
 

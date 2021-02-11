@@ -1,6 +1,5 @@
 import Header from './components/Header'
-import NotifyMe from './components/NotifyMe'
-import SocialMediaBtns from './components/SocialMediaBtns'
+import Contact from './components/Contact'
 import Footer from "./components/Footer"
 import Logo from './assets/logo.png'
 
@@ -10,8 +9,7 @@ const App = () => {
       <div className="RMW_wrapper">
         <img src={Logo} alt="logo" id="logo" />
         <Header />
-        <NotifyMe />
-        <SocialMediaBtns />
+        <Contact />
         <Footer />
       </div>
     </div>

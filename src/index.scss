@@ -105,7 +105,7 @@ body {
   max-width:250px;
   margin:auto;
   border-radius:40px;
-  padding:15px 0px;
+  padding:5px 0px;
 
   h2 {
     flex:3;
@@ -122,8 +122,8 @@ body {
     color:getColor(base);
     background:getColor(text3);
     border-radius:30px;
-    padding:3px 0px;
-    margin-left:15px;
+    padding:4px 0px;
+    margin-left:5px;
     font-size:25px;
   }
   
@@ -132,47 +132,48 @@ body {
     text-align:center;
     color:getColor(text3);
     font-size:30px;
-    margin-right:15px;
+    margin-right:10px;
   }
 }
-  // h2 {
-  //   color:getColor(text3);
-  //   font-weight:500;
-  //   text-align:center;
-  //   font-size:$medium-size;
-  //   background:getColor(base3);
-  //   padding:12px 0px;
-  //   max-width:250px;
-  //   border-radius:40px;
-  //   margin:auto;
-  //   flex:2;
-  //   background:green;
-
-  //   &::before {
-  //     content:"X";
-  //     background:getColor(text3);
-  //     color:getColor(base);
-  //     padding:5px 13px;
-  //     border-radius:30px;
-  //     margin:auto auto auto 10px;
-  //     flex:1;
-  //     background:red;
-  //   }
-
-  //   &::after {
-  //     content:">";
-  //     margin:auto;
-  //     color:getColor(text3);
-  //     font-size:25px;
-  //     flex:1;
-  //     background:blue;
-  //   }
-  // }
 
 footer {
+  background:rgba(255, 255, 255, 0.95);
+  position:fixed;
+  bottom:0;
+  right:0;
+  left:0; 
+
   p {
     text-align:center;
     color:getColor(text2);
     font-size:$small-size;
+  }
+}
+
+#SM-btns {
+  display:flex;
+  max-width:200px;
+  margin: 20px auto 0px auto;
+  justify-content: center;
+  align-items:center;
+
+  span {
+    display:inline-block;
+    height:40px;
+    width:40px;
+    background:#FFF;
+    box-shadow:0px 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius:30px;
+    text-align:center;
+    margin:auto;
+    color:getColor(text2);
+    -webkit-transition:all 0.2s ease-in-out;
+    -moz-transition:all 0.2s ease-in-out;
+    -o-transition:all 0.2s ease-in-out;
+    transition:all 0.2s ease-in-out;
+
+    &:hover {
+      background:$blue;
+    }
   }
 }

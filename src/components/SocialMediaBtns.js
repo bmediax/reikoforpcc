@@ -2,7 +2,7 @@ import React from 'react'
 
 const SocialMediaBtns = () => {
     return (
-        <div>
+        <div id="SM-btns">
             <span>F</span>
             <span>I</span>
             <span>E</span>

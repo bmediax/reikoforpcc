@@ -1,0 +1,98 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap');
+
+// Text Sizes
+$header-size: 3.5rem;
+$para-size: 1.3rem;
+$small-size: 1rem;
+
+// Color Palette
+$blue:       #008DB1;
+$dark-blue:  #1E4B5D;
+$atom-blue:  #272C35;
+$light-blue: #F4F4F6;
+$med-blue:   #D3DEE9;
+$red:        #EC7765;
+$sand:       #F2E4DA;
+
+// Base Color Light Mode
+$colors: (
+  base  : #ffffff,
+  text  : $atom-blue,
+  text3 : $dark-blue,
+  base2 : $light-blue,
+  text2 : $med-blue,
+);
+
+// Base Color Dark Mode
+$colors-dark: (
+  text3 : map-get($colors, base),
+  base : map-get($colors, text),
+  text : map-get($colors, base),
+  base2: map-get($colors, text2),
+  text2: map-get($colors, base2),
+);
+
+:root {
+  @each $name, $color in $colors{
+    --color-#{$name} : #{$color};
+  }
+}
+
+// Dark Mode
+@media(prefers-color-scheme: dark) {
+  :root {
+    @each $name, $color in $colors-dark{
+      --color-#{$name} : #{$color};
+    }
+  }
+}
+
+@function getColor($color-name){
+  @return var(--color-#{$color-name})
+}
+
+body {
+  background: getColor(base);
+  margin:0;
+  font-family:'Poppins', sans-serif;
+}
+
+.RMW_container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  #logo {
+    margin:auto;
+    display:block;
+  }
+
+  header {
+    h1 {
+      color:getColor(text3);
+      text-align:center;
+      text-transform:uppercase;
+      font-size:$header-size;
+      padding:0;
+      margin:0;
+    }
+
+    p {
+      font-size:$para-size;
+      color:getColor(text2);
+      text-align:center;
+      padding:0;
+      margin:0;
+    }
+  }
+}
+
+footer {
+  p {
+    text-align:center;
+    color:getColor(text2);
+    font-size:$small-size;
+  }
+}

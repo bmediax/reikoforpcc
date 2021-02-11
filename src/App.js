@@ -6,11 +6,13 @@ import Footer from "./Footer"
 const App = () => {
   return (
     <div className="RMW_container">
-      <img src="https://via.placeholder.com/150" alt="logo" />
-      <Header />
-      <NotifyMe />
-      <SocialMediaBtns />
-      <Footer />
+      <div className="RMW_wrapper">
+        <img src="https://via.placeholder.com/150" alt="logo" id="logo" />
+        <Header />
+        <NotifyMe />
+        <SocialMediaBtns />
+        <Footer />
+      </div>
     </div>
   );
 }

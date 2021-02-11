@@ -22,6 +22,7 @@ $colors: (
   text  : $atom-blue,
   text3 : $dark-blue,
   base2 : $light-blue,
+  objBG : $dark-blue,
   text2 : $med-blue,
   base3 : $light-blue,
 );
@@ -31,7 +32,8 @@ $colors-dark: (
   text3 : map-get($colors, base),
   base : map-get($colors, text),
   text : map-get($colors, base),
-  base2: map-get($colors, text2),
+  base2: $dark-blue,
+  objBG: $blue,
   text2: map-get($colors, base2),
 );
 
@@ -119,8 +121,8 @@ body {
   span.ex-icon {
     flex:1;
     text-align:center;
-    color:getColor(base);
-    background:getColor(text3);
+    color:getColor(text2);
+    background:getColor(objBG);
     border-radius:30px;
     padding:6px 0px;
     margin-left:5px;

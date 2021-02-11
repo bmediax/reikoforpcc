@@ -112,6 +112,14 @@ body {
   margin:auto;
   border-radius:40px;
   padding:5px 0px;
+  -webkit-transition:all 0.2s ease-in-out;
+  -moz-transition:all 0.2s ease-in-out;
+  -o-transition:all 0.2s ease-in-out;
+  transition:all 0.2s ease-in-out;
+
+  &:hover {
+    background:getColor(text2);
+  }
 
   h2 {
     flex:3;

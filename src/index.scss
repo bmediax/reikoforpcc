@@ -4,7 +4,7 @@
 // Text Sizes
 
 // Desktop
-$header-size: 4.5vmax;
+$header-size: 8vmin;
 $para-size: 1.2rem;
 // $medium-size: 5em;
 $small-size: 1rem;
@@ -195,8 +195,8 @@ footer {
   }
 }
 
-// @media screen and (max-width:800px) {
-//   #notify-me h2 {
-//     font-size:2em;
-//   }
-// }
+@media screen and (max-width:500px) {
+  header h1 {
+    font-size: 10vmin !important;
+  }
+}

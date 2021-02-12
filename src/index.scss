@@ -26,6 +26,7 @@ $colors: (
   base2 : $light-blue,
   objBG : $dark-blue,
   text2 : $med-blue,
+  text-icon: $med-blue,
   icon-color: #FFF,
   base-icon: #FFF,
   base3 : $light-blue,
@@ -36,6 +37,7 @@ $colors-dark: (
   text3 : map-get($colors, base),
   base : map-get($colors, text),
   text : map-get($colors, base),
+  text-icon: $blue,
   base2: $dark-blue,
   objBG: $blue,
   base-icon: $dark-blue,
@@ -179,8 +181,9 @@ body {
     box-shadow:0px 10px 30px rgba(0, 0, 0, 0.1);
     border-radius:30px;
     text-align:center;
+    padding-top:9px;
     margin:auto;
-    color:getColor(text2);
+    color:getColor(text-icon);
     -webkit-transition:all 0.2s ease-in-out;
     -moz-transition:all 0.2s ease-in-out;
     -o-transition:all 0.2s ease-in-out;
@@ -188,6 +191,7 @@ body {
     
     &:hover {
       background:$blue;
+      color:#FFF;
     }
   }
 }

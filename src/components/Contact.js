@@ -6,7 +6,7 @@ const Contact = () => {
         <div id="contact">
             <span id="notify-me">
                 <h2>Notify Me</h2>
-                <span class="arrow-icon"> > </span>
+                <span className="arrow-icon"> > </span>
             </span>
             <SocialMediaBtns />
         </div>

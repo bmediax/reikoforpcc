@@ -28,7 +28,7 @@ $colors: (
   text2 : $med-blue,
   text-icon: $med-blue,
   icon-color: #FFF,
-  base-icon: #FFF,
+  base-icon: rgb(15, 13, 13),
   base3 : $light-blue,
 );
 
@@ -66,6 +66,10 @@ $colors-dark: (
 
 * {
   box-sizing:border-box;
+}
+
+a {
+  text-decoration:none;
 }
 
 body {
@@ -173,7 +177,7 @@ body {
   justify-content: center;
   align-items:center;
   
-  span {
+  a {
     display:inline-block;
     height:40px;
     width:40px;

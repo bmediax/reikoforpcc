@@ -1,12 +1,10 @@
 import React from 'react'
 import { FaFacebookF } from 'react-icons/fa'
-import { IoMdMail } from 'react-icons/io'
 
 const SocialMediaBtns = () => {
     return (
         <div id="SM-btns">
-            <span><IoMdMail /></span>
-            <span><FaFacebookF /></span>
+            <a href="https://www.facebook.com/Williams4PCC"><FaFacebookF /></a>
         </div>
     )
 }

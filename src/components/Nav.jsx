@@ -15,7 +15,7 @@ const Nav = (props) => {
                     <Link className="nav-item" to="/endorsements">Endorsements</Link>
                 </div>
                 <div className="donate-contain">
-                    <a href="https://google.com" class="donate">Donate</a>
+                    <a href="https://google.com" className="donate">Donate</a>
                 </div>
             </div>
         </nav>

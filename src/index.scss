@@ -31,6 +31,7 @@ $colors: (
   icon-color: #FFF,
   base-icon: rgb(15, 13, 13),
   base3 : $light-blue,
+  textWhiteBG: #FFF,
 );
 
 // Base Color Dark Mode
@@ -44,6 +45,7 @@ $colors-dark: (
   base-icon: $dark-blue,
   icon-color:#fff,
   text-orangebg: $atom-blue,
+  textWhiteBG: $dark-blue,
   text2: $blue,
 );
 
@@ -146,15 +148,15 @@ nav {
 }
 
 #slider {
+  padding-top:30px;
   height:350px;
   background:#eee;
 }
 
 .stay-tuned {
   background:getColor(base);
-  max-width:450px;
+  max-width:400px;
   margin:auto;
-  height:50px;
   display:flex;
   align-items:center;
   justify-content:center;
@@ -162,10 +164,32 @@ nav {
   border-radius:15px;
   
   .tuned-title, .tuned-input, .tuned-arrow {
+    padding:10px 0px;
+  }
+  
+  .tuned-title {
     flex:1;
+    background:getColor(text3);
+    color:getColor(textWhiteBG);
+    border-top-left-radius:15px;
+    border-bottom-left-radius:15px;
+  }
+
+  .tuned-item {
+    flex:2;
   }
 
   .tuned-input {
     border:none;
+  }
+
+  .tuned-arrow {
+    background:getColor(base);
+    box-shadow:0px 15px 30px rgba(0, 0, 0, 0.15);
+    color:getColor(text3);
+    border-radius:30px;
+    display:inline-block;
+    width:45px;
+    height:45px;
   }
 }

@@ -4,8 +4,10 @@ const Homepage = () => {
             <div id="slider">
                 <div className="stay-tuned">
                     <span className="tuned-title">Stay Tuned</span>
-                    <input className="tuned-input" type="text"  placeholder="Email Address" />
-                    <span className="tuned-arrow">></span>
+                    <div className="tuned-item">
+                        <input className="tuned-input" type="text"  placeholder="Email Address" />
+                        <span className="tuned-arrow">></span>
+                    </div>
                 </div>
             </div>
         </div>

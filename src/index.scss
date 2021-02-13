@@ -81,6 +81,7 @@ body {
 // Navigation
 nav {
   background:getColor(base);
+  box-shadow:0px 15px 50px rgba(0, 0, 0, 0.08);
 
   .nav-wrapper {
     display:flex;
@@ -95,7 +96,8 @@ nav {
 
     .logo-contain {
       #logo {
-        max-width:70px;
+        max-height:100px;
+        padding:20px 0px;
         display:block;
         margin:auto;
       }

@@ -1,8 +1,18 @@
 import React from 'react'
+
+// Technologies
+import { Helmet } from "react-helmet"
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+
+// Components
 import Logo from './assets/logo.png'
 import Nav from './components/Nav'
-import { Helmet } from "react-helmet"
-import { BrowserRouter as Router } from 'react-router-dom'
+
+// Pages
+import Homepage from './pages/Homepage'
+import MeetRieko from './pages/MeetRieko'
+import Priorities from './pages/Priorities'
+import Endorsements from './pages/Endorsements'
 
 const App = () => {
   return (
@@ -13,9 +23,15 @@ const App = () => {
         <link rel="icon" type="image/png" href={Logo} sizes="16x16" />
       </Helmet>
       <div className="RMW_container">
-        <div className="RMW_wrapper">
           <Nav logo={Logo} />
-        </div>
+          <div className="RMW_wrapper">
+            <Switch>
+              <Route path="/" exact component={Homepage} />
+              <Route path="/meet-rieko" component={MeetRieko} />
+              <Route path="/priorities" component={Priorities} />
+              <Route path="/endorsements" component={Endorsements} />
+            </Switch>
+          </div>
       </div>
     </Router>
   );

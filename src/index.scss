@@ -15,7 +15,7 @@ $dark-blue:  #1E4B5D;
 $atom-blue:  #272C35;
 $light-blue: #f4f4f6;
 $med-blue:   #D3DEE9;
-$red:        #EC7765;
+$orange:        #EC7765;
 $sand:       #F2E4DA;
 
 // Base Color Light Mode
@@ -26,6 +26,7 @@ $colors: (
   base2 : $light-blue,
   objBG : $dark-blue,
   text2 : $med-blue,
+  text-orangebg: #FFF,
   text-icon: $med-blue,
   icon-color: #FFF,
   base-icon: rgb(15, 13, 13),
@@ -42,6 +43,7 @@ $colors-dark: (
   objBG: $blue,
   base-icon: $dark-blue,
   icon-color:#fff,
+  text-orangebg: $atom-blue,
   text2: $blue,
 );
 
@@ -123,9 +125,14 @@ nav {
 
     .donate-contain {
       a.donate {
-        text-decoration:none;
-        color:getColor(text);
         display:block;
+        text-decoration:none;
+        color:getColor(text-orangebg);
+        background:$orange;
+        padding:10px 0;
+        width:150px;
+        margin:auto;
+        border-radius:10px;
         text-align:center;
       }
     }

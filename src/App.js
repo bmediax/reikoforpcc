@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 // Components
 import Logo from './assets/logo.png'
 import Nav from './components/Nav'
+import Footer from './components/Footer'
 
 // Pages
 import Homepage from './pages/Homepage'
@@ -32,6 +33,7 @@ const App = () => {
               <Route path="/endorsements" component={Endorsements} />
             </Switch>
           </div>
+          <Footer logo={Logo} />
       </div>
     </Router>
   );

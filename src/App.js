@@ -11,7 +11,7 @@ import Footer from './components/Footer'
 
 // Pages
 import Homepage from './pages/Homepage'
-import MeetRieko from './pages/MeetRieko'
+import MeetReiko from './pages/MeetReiko'
 import Priorities from './pages/Priorities'
 import Endorsements from './pages/Endorsements'
 
@@ -28,7 +28,7 @@ const App = () => {
           <div className="RMW_wrapper">
             <Switch>
               <Route path="/" exact component={Homepage} />
-              <Route path="/meet-rieko" component={MeetRieko} />
+              <Route path="/meet-rieko" component={MeetReiko} />
               <Route path="/priorities" component={Priorities} />
               <Route path="/endorsements" component={Endorsements} />
             </Switch>

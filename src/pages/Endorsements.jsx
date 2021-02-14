@@ -5,7 +5,7 @@ const Endorsements = () => {
     return (
         <React.Fragment>
             <Helmet>
-                <title> Rieko 4 PCC | Endorsements </title>
+                <title> Reiko 4 PCC | Endorsements </title>
             </Helmet>
             <h1> Endorsements </h1>
         </React.Fragment>

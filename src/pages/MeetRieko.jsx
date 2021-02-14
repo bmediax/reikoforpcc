@@ -1,15 +1,15 @@
 import React from 'react'
 import { Helmet } from "react-helmet"
 
-const MeetRieko = () => {
+const MeetReiko = () => {
     return (
         <React.Fragment>
             <Helmet>
-                <title> Rieko 4 PCC | Meet Rieko </title>
+                <title> Reiko 4 PCC | Meet Reiko </title>
             </Helmet>
-            <h1> Meet Rieko </h1>
+            <h1> Meet Reiko </h1>
         </React.Fragment>
     )
 }
 
-export default MeetRieko
+export default MeetReiko

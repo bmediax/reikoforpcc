@@ -5,7 +5,7 @@ const Priorities = () => {
     return (
         <React.Fragment>
             <Helmet>
-                <title> Rieko 4 PCC | Priorities </title>
+                <title> Reiko 4 PCC | Priorities </title>
             </Helmet>
             <h1> Priorities </h1>
         </React.Fragment>

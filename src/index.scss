@@ -15,7 +15,7 @@ $dark-blue:  #1E4B5D;
 $atom-blue:  #272C35;
 $light-blue: #f4f4f6;
 $med-blue:   #D3DEE9;
-$orange:        #EC7765;
+$orange:     #EC7765;
 $sand:       #F2E4DA;
 
 // Base Color Light Mode
@@ -161,7 +161,7 @@ nav {
   align-items:center;
   justify-content:center;
   text-align:center;
-  border-radius:15px;
+  border-radius:30px;
   
   .tuned-title, .tuned-input, .tuned-arrow {
     padding:10px 0px;
@@ -171,8 +171,8 @@ nav {
     flex:2;
     background:getColor(text3);
     color:getColor(textWhiteBG);
-    border-top-left-radius:15px;
-    border-bottom-left-radius:15px;
+    border-top-left-radius:30px;
+    border-bottom-left-radius:30px;
   }
 
   .tuned-item {
@@ -185,20 +185,35 @@ nav {
     border:none;
     outline:none;
     flex:1;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding:12px 15px;
+    font-family:"Poppins", sans-serif;
+    font-size:.9rem;
+    color:getColor(text2);
   }
 
   .tuned-arrow {
     background:getColor(base);
-    box-shadow:0px 15px 30px rgba(0, 0, 0, 0.15);
+    box-shadow:0px 10px 25px rgba(0, 0, 0, 0.2);
     color:getColor(text3);
     border-radius:30px;
     display:inline-block;
-    padding:0px 25px;
-    // width:45px;
-    // height:45px;
+    width:40px;
+    height:40px;
+    line-height:15px;
     font-weight:bold;
     font-size:22px;
+    border:none;
+    font-family:"Poppins", sans-serif;
+    -webkit-transition:all 0.2s ease-in-out;
+    -moz-transition:all 0.2s ease-in-out;
+    -o-transition:all 0.2s ease-in-out;
+    transition:all 0.2s ease-in-out;
+    // margin-right:-5px;
+
+    &:hover {
+      background:$blue;
+      color:#FFF;
+      cursor:pointer;
+    }
   }
 }

@@ -155,7 +155,7 @@ nav {
 
 .stay-tuned {
   background:getColor(base);
-  max-width:400px;
+  max-width:370px;
   margin:auto;
   display:flex;
   align-items:center;
@@ -168,7 +168,7 @@ nav {
   }
   
   .tuned-title {
-    flex:1;
+    flex:2;
     background:getColor(text3);
     color:getColor(textWhiteBG);
     border-top-left-radius:15px;
@@ -176,11 +176,17 @@ nav {
   }
 
   .tuned-item {
-    flex:2;
+    flex:1;
+    display:flex;
+    padding-right:5px;
   }
 
   .tuned-input {
     border:none;
+    outline:none;
+    flex:1;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .tuned-arrow {
@@ -189,7 +195,10 @@ nav {
     color:getColor(text3);
     border-radius:30px;
     display:inline-block;
-    width:45px;
-    height:45px;
+    padding:0px 25px;
+    // width:45px;
+    // height:45px;
+    font-weight:bold;
+    font-size:22px;
   }
 }

@@ -10,10 +10,10 @@ import Nav from './components/Nav'
 import Footer from './components/Footer'
 
 // Pages
-import Homepage from './pages/Homepage/index'
-import MeetReiko from './pages/MeetRieko'
-import Priorities from './pages/Priorities'
-import Endorsements from './pages/Endorsements'
+import Homepage from './pages/Homepage/Homepage'
+import MeetReiko from './pages/MeetReiko/MeetReiko'
+import Priorities from './pages/Priorities/Priorities'
+import Endorsements from './pages/Endorsements/Endorsements'
 
 const App = () => {
   return (

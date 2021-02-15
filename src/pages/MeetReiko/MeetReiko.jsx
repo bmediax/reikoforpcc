@@ -1,5 +1,6 @@
 import React from 'react'
 import { Helmet } from "react-helmet"
+import './MeetReiko.scss'
 
 const MeetReiko = () => {
     return (

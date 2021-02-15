@@ -1,4 +1,5 @@
 import SliderView from "../../components/SliderView"
+import './Homepage.scss'
 
 const Homepage = () => {
     return (

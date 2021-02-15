@@ -1,4 +1,4 @@
-import SliderView from "../components/SliderView"
+import SliderView from "../../components/SliderView"
 
 const Homepage = () => {
     return (

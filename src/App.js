@@ -10,7 +10,7 @@ import Nav from './components/Nav'
 import Footer from './components/Footer'
 
 // Pages
-import Homepage from './pages/Homepage'
+import Homepage from './pages/Homepage/index'
 import MeetReiko from './pages/MeetRieko'
 import Priorities from './pages/Priorities'
 import Endorsements from './pages/Endorsements'

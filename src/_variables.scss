@@ -1,0 +1,71 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap');
+
+// Text Sizes
+
+// Desktop
+$header-size: 8vmin;
+$para-size: 1.2rem;
+// $medium-size: 5em;
+$small-size: 1rem;
+
+// Color Palette
+$blue:       #008DB1;
+$dark-blue:  #1E4B5D;
+$atom-blue:  #272C35;
+$light-blue: #f4f4f6;
+$med-blue:   #D3DEE9;
+$orange:     #EC7765;
+$sand:       #F2E4DA;
+
+// Base Color Light Mode
+$colors: (
+  base  : #ffffff,
+  text  : $atom-blue,
+  textOnDark: $atom-blue, //Color on Dark BG
+  textOnOrange: #FFF, // Text on Orange BG
+  text3 : $dark-blue,
+  base2 : $light-blue,
+  objBG : $dark-blue,
+  text2 : $med-blue,
+  text-icon: $med-blue,
+  icon-color: #FFF,
+  base-icon: rgb(15, 13, 13),
+  base3 : $light-blue,
+  textWhiteBG: #FFF,
+);
+
+// Base Color Dark Mode
+$colors-dark: (
+  base : map-get($colors, text),
+  textOnDark: #FFF,
+  textOnOrange: $atom-blue,
+  text3 : map-get($colors, base),
+  text : map-get($colors, base),
+  text-icon: $blue,
+  base2: $dark-blue,
+  objBG: $blue,
+  base-icon: $dark-blue,
+  icon-color:#fff,
+  textWhiteBG: $dark-blue,
+  text2: $blue,
+);
+
+:root {
+  @each $name, $color in $colors{
+    --color-#{$name} : #{$color};
+  }
+}
+
+// Dark Mode
+@media(prefers-color-scheme: dark) {
+  :root {
+    @each $name, $color in $colors-dark{
+      --color-#{$name} : #{$color};
+    }
+  }
+}
+
+@function getColor($color-name){
+  @return var(--color-#{$color-name})
+}

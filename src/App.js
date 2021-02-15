@@ -14,6 +14,7 @@ import Homepage from './pages/Homepage/Homepage'
 import MeetReiko from './pages/MeetReiko/MeetReiko'
 import Priorities from './pages/Priorities/Priorities'
 import Endorsements from './pages/Endorsements/Endorsements'
+import Error from './pages/Error'
 
 const App = () => {
   return (
@@ -31,6 +32,7 @@ const App = () => {
               <Route path="/meet-reiko" component={MeetReiko} />
               <Route path="/priorities" component={Priorities} />
               <Route path="/endorsements" component={Endorsements} />
+              <Route component={Error} />
             </Switch>
           </div>
           <Footer logo={Logo} />

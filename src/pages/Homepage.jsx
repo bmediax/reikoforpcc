@@ -1,6 +1,9 @@
+import SliderView from "../components/SliderView"
+
 const Homepage = () => {
     return (
         <div className="container">
+            <SliderView />
             {/* <div id="slider"> */}
                 {/* Stayed Tuned */}
                 {/* <div className="stay-tuned">

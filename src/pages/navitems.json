@@ -1,0 +1,34 @@
+[
+    {
+        "title": "Homepage",
+        "path": "/",
+        "exact": true,
+        "active": false,
+        "component": "<Homepage />",
+        "id":1
+    },
+    {
+        "title": "Meet Reiko",
+        "path": "/meet-reiko",
+        "exact": false,
+        "active": false,
+        "component": "<MeetReiko />",
+        "id":2
+    },
+    {
+        "title": "Priorities",
+        "path": "/priorities",
+        "exact": false,
+        "active": false,
+        "component": "<Priorities />",
+        "id":3
+    },
+    {
+        "title": "Endorsements",
+        "path": "/endorsements",
+        "exact": false,
+        "active": false,
+        "component": "<Endorsements />",
+        "id":4
+    }
+]

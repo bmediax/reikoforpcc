@@ -1,10 +1,10 @@
-// import SliderView from "../../components/SliderView"
+import SliderView from "../../components/SliderView"
 import './Homepage.scss'
 
 const Homepage = () => {
     return (
         <div className="container">
-            {/* <SliderView /> */}
+            <SliderView />
             <section className="priorities">
                 <h1 align="center"> Priorities </h1>
             </section>

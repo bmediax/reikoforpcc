@@ -11,3 +11,19 @@ h1 {
     height:350px;
     background:#eee;
 }
+
+.three-column-option_container {
+    margin:auto;
+    max-width:variables.$page-width;
+}
+
+.three-column-option {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px 10px;
+}
+
+.three-column-option > div {
+    background:red;
+}

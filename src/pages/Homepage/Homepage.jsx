@@ -7,6 +7,17 @@ const Homepage = () => {
             <SliderView />
             <section className="priorities">
                 <h1 align="center"> Priorities </h1>
+
+                <div className="three-column-option_container">
+                    <div className="three-column-option">
+                        <div>Housing</div>
+                        <div>Housing</div>
+                        <div>Housing</div>
+                        <div>Housing</div>
+                        <div>Housing</div>
+                        <div>Housing</div>
+                    </div>
+                </div>
             </section>
             {/* <div id="slider"> */}
                 {/* Stayed Tuned */}

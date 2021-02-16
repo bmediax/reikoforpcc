@@ -1,0 +1,74 @@
+@use './variables';
+
+* {
+  box-sizing:border-box;
+}
+
+a {
+  text-decoration:none;
+}
+
+body {
+  background: variables.getColor(base);
+  margin:0;
+  font-family:'Poppins', sans-serif;
+}
+
+// Navigation
+nav {
+  background:variables.getColor(base);
+  box-shadow:0px 15px 50px rgba(0, 0, 0, 0.08);
+
+  .nav-wrapper {
+    display:flex;
+    align-items:center;
+    min-height:50px;
+    max-width:1150px;
+    margin:auto;
+
+    div {
+      flex:1;
+    }
+
+    .logo-contain {
+      #logo {
+        max-height:100px;
+        padding:20px 0px;
+        display:block;
+        margin:auto;
+      }
+    }
+    .nav-contain {
+      text-align:center;
+      flex:2;
+
+      .nav-item {
+        color:variables.getColor(textOnDark);
+        display:inline-block;
+        margin:0px 15px;
+
+        &:first-child {
+          margin-left: 0 !important;
+        }
+
+        &:last-child {
+          margin-right:0px !important;
+        }
+      }
+    }
+
+    .donate-contain {
+      a.donate {
+        display:block;
+        text-decoration:none;
+        color:variables.getColor(textOnOrange);
+        background:variables.$orange;
+        padding:10px 0;
+        width:150px;
+        margin:auto;
+        border-radius:10px;
+        text-align:center;
+      }
+    }
+  }
+}

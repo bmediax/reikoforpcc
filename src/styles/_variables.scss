@@ -21,6 +21,7 @@ $sand:       #F2E4DA;
 // Base Color Light Mode
 $colors: (
   base  : #ffffff,
+  textHeaderDark : $atom-blue,
   text  : $atom-blue,
   textOnDark: $atom-blue, //Color on Dark BG
   textOnOrange: #FFF, // Text on Orange BG
@@ -38,6 +39,7 @@ $colors: (
 // Base Color Dark Mode
 $colors-dark: (
   base : map-get($colors, text),
+  textHeaderDark: #FFF,
   textOnDark: #FFF,
   textOnOrange: $atom-blue,
   text3 : map-get($colors, base),

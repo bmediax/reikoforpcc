@@ -28,6 +28,8 @@ $colors: (
   text  : $atom-blue,
   textOnDark: $atom-blue, //Color on Dark BG
   textOnOrange: #FFF, // Text on Orange BG
+  selectedText : $med-blue,
+  Darkbase: $atom-blue,
   text3 : $dark-blue,
   base2 : $light-blue,
   objBG : $dark-blue,
@@ -46,6 +48,8 @@ $colors-dark: (
   textOnDark: #FFF,
   textOnOrange: $atom-blue,
   minimalBorder: rgb(45, 45, 45),
+  Darkbase: lighten($atom-blue, 3%),
+  selectedText: $dark-blue,
   text3 : map-get($colors, base),
   text : map-get($colors, base),
   text-icon: $blue,

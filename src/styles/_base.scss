@@ -82,3 +82,54 @@ section {
     color:variables.getColor(textHeaderDark);
   }
 }
+
+footer {
+  background:variables.getColor(Darkbase);
+  padding:2% 0px;
+}
+
+#footer-wrapper {
+  max-width:variables.$page-width;
+  margin:auto;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+  .footer-logo {
+    flex: 1;
+  }
+
+  .footer-nav {
+    flex:1;
+    list-style:none;
+    margin:auto;
+      
+    li {
+      display:inline-block;
+      margin-right:15px;
+
+      a {
+        text-decoration:none;
+        color:variables.getColor(text2);
+      }
+
+      &:last-child {
+        margin-right:0px !important;
+      }
+    }
+  }
+
+  .footer-social {
+    flex:1;
+    text-align:center;
+
+    span {
+      margin-right:15px;
+      color:variables.getColor(text2);
+
+      &:last-child {
+        margin-right:0px !important;
+      }
+    }
+  }
+}

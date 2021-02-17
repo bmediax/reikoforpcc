@@ -24,6 +24,7 @@ $sand:       #F2E4DA;
 $colors: (
   base  : #ffffff,
   textHeaderDark : $atom-blue,
+  minimalBorder: #f8f9fd,
   text  : $atom-blue,
   textOnDark: $atom-blue, //Color on Dark BG
   textOnOrange: #FFF, // Text on Orange BG
@@ -44,6 +45,7 @@ $colors-dark: (
   textHeaderDark: #FFF,
   textOnDark: #FFF,
   textOnOrange: $atom-blue,
+  minimalBorder: rgb(45, 45, 45),
   text3 : map-get($colors, base),
   text : map-get($colors, base),
   text-icon: $blue,

@@ -8,16 +8,13 @@
     span {
         border-radius:25px;
     }
-
-    span:first-child {
-        margin-right:2% !important;
-    }
-
+    
     .profile-module_img {
         flex:1;
-        background-size: cover !important;
-        background-position: center center !important;
-        background-repeat: no-repeat !important;
+        margin-right:2% !important;
+        border-radius:25px;
+        max-width:500px;
+        align-self: center;
     }
     
     .profile-module_textarea {

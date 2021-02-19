@@ -9,12 +9,22 @@
             font-size:2.7vmax;
         }
     }
+
+    .profile-module {
+        flex-direction: column;
+
+        .profile-module_img {
+            max-width:300px;
+            margin-bottom:5%;
+        }
+    }
 }
 
 @media screen and (max-width:550px) {
     header h1 {
         font-size: 10vmin !important;
     }
+
 
     .three-column-option {
         grid-template-columns: 1fr;

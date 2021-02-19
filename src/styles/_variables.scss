@@ -42,13 +42,15 @@ $colors: (
   lightBase: $light-high,
   darkBase: $light-med,
 
+  // TEXT
+  textHeader : $dark-blue,
+
   // BTN:
   lightClean-btnBG: #ECEFF7,
   lightClean-btnTXT: #5F7B97,
   // UI END --------------
 
   base  : #ffffff,
-  textHeaderDark : $dark-blue,
   minimalBorder: #f8f9fd,
   text  : $atom-blue,
   textOnDark: $atom-blue, //Color on Dark BG
@@ -72,13 +74,15 @@ $colors-dark: (
   lightBase: $dark-high,
   darkBase: $dark-med,
 
-  //BTN: ---------------------
+  // Text
+  textHeader: $light-megher,
+
+  // Button
   lightClean-btnBG: #2F3642,
   lightClean-btnTXT: #5F7B97,
   // UI END -------------------
 
   base : map-get($colors, text),
-  textHeaderDark: #FFF,
   textOnDark: #FFF,
   textOnOrange: $atom-blue,
   minimalBorder: rgb(45, 45, 45),

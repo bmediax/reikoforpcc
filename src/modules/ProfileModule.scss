@@ -9,9 +9,12 @@
         border-radius:25px;
     }
 
+    span:first-child {
+        margin-right:2% !important;
+    }
+
     .profile-module_img {
         flex:1;
-        margin-right:2%;
         background-size: cover !important;
         background-position: center center !important;
         background-repeat: no-repeat !important;
@@ -21,7 +24,7 @@
         align-self: baseline;
         flex:2;
         padding:20px 30px;
-        background:variables.$light-base;
+        background:variables.getColor(darkBase);
         
         p {
             color:variables.$light-text;

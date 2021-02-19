@@ -1,10 +1,21 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap');
 
-// UI Light Colors
+// UI Light Color
+$light-high:#FFF;
+$light-megher: #F8F9FD;
+$light-med: #F8F9FD;
+$light-low: #D3DEE9;
+
+// UI Dark Colors
+$dark-high:#292F39;
+$dark-med:#242932;
+$dark-low:#1F232A;
+
 $light-base: #F8F9FD;
 $light-text: #AFB1CA;
-$light-btn: #ECEFF7;
+$light-btn:  #ECEFF7;
+
 
 // Desktop
 $header-size: 8vmin;
@@ -22,9 +33,20 @@ $light-blue: #f4f4f6;
 $med-blue:   #D3DEE9;
 $orange:     #EC7765;
 $sand:       #F2E4DA;
+$lightClean: #5F7B97;
 
 // Base Color Light Mode
 $colors: (
+  // UI START ------------
+  // BASE:
+  lightBase: $light-high,
+  darkBase: $light-med,
+
+  // BTN:
+  lightClean-btnBG: #ECEFF7,
+  lightClean-btnTXT: #5F7B97,
+  // UI END --------------
+
   base  : #ffffff,
   textHeaderDark : $dark-blue,
   minimalBorder: #f8f9fd,
@@ -46,6 +68,15 @@ $colors: (
 
 // Base Color Dark Mode
 $colors-dark: (
+  // UI START
+  lightBase: $dark-high,
+  darkBase: $dark-med,
+
+  //BTN: ---------------------
+  lightClean-btnBG: #2F3642,
+  lightClean-btnTXT: #5F7B97,
+  // UI END -------------------
+
   base : map-get($colors, text),
   textHeaderDark: #FFF,
   textOnDark: #FFF,
@@ -101,12 +132,12 @@ $colors-dark: (
 
 // Configurations
 .minimal-btn {
-  background:$light-btn;
-  color:#5F7B97;
+  background:getColor(lightClean-btnBG);
+  color:getColor(lightClean-btnTXT);
   padding:10px 70px;
-  
+
   &:hover {
-    background:#5F7B97;
+    background: $lightClean;
     color:#FFF;
   }
 }

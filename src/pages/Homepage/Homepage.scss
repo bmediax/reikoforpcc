@@ -1,11 +1,6 @@
 // Importing Index.scss Functions
 @use '../../styles/variables';
 
-h1 {
-    color: variables.getColor('textHeaderDark');
-}
-
-
 #slider {
     padding-top:30px;
     height:350px;
@@ -41,8 +36,12 @@ h1 {
             box-shadow:0px 20px 50px rgba(0, 0, 0, 0.08);
             cursor: pointer;
 
-            h2, p {
+            h2 {
                 color:variables.$blue;
+            }
+
+            p {
+                color:variables.$dark-blue;
             }
         }
 
@@ -59,14 +58,14 @@ h1 {
             text-align:center;
             margin:0;
             padding:10px 0 0 0;
-            color:variables.getColor(text2);
+            color:variables.getColor(hiddenText);
         }
 
         p {
             text-align:center;
             padding:10px 0 0 0;
             margin:0px;
-            color:variables.getColor(selectedText);
+            color:variables.getColor(hiddenText);
         }
 
         img {

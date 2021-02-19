@@ -24,7 +24,7 @@
         background:variables.getColor(darkBase);
         
         p {
-            color:variables.$light-text;
+            color:variables.getColor(lightText);
             padding: 0px;
             margin: 0;
             line-height:35px;

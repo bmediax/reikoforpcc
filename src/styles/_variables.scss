@@ -6,15 +6,17 @@ $light-high:#FFF;
 $light-megher: #F8F9FD;
 $light-med: #F8F9FD;
 $light-low: #D3DEE9;
+$light-lower: #AFB1CA;
 
 // UI Dark Colors
 $dark-high:#292F39;
 $dark-med:#242932;
 $dark-low:#1F232A;
+$dark-lower: #BFC0DC;
 
-$light-base: #F8F9FD;
-$light-text: #AFB1CA;
-$light-btn:  #ECEFF7;
+// $light-base: #F8F9FD;
+// $light-text: #AFB1CA;
+// $light-btn:  #ECEFF7;
 
 
 // Desktop
@@ -22,33 +24,35 @@ $header-size: 8vmin;
 $para-size: 1.2rem;
 // $medium-size: 5em;
 $small-size: 1rem;
-
 $page-width: 1200px;
 
 // Color Palette
 $blue:       #008DB1;
 $dark-blue:  #1E4B5D;
 $atom-blue:  #272C35;
+$atom-blue_light: #303742;
 $light-blue: #f4f4f6;
 $med-blue:   #D3DEE9;
 $orange:     #EC7765;
-$sand:       #F2E4DA;
+// $sand:       #F2E4DA;
 $lightClean: #5F7B97;
 
 // Base Color Light Mode
 $colors: (
-  // UI START ------------
+  // ------- UI START ------------
   // BASE:
   lightBase: $light-high,
   darkBase: $light-med,
 
   // TEXT
   textHeader : $dark-blue,
+  lightText: $light-lower,
+  hiddenText: $med-blue,
 
   // BTN:
   lightClean-btnBG: #ECEFF7,
   lightClean-btnTXT: #5F7B97,
-  // UI END --------------
+  // -------- UI END --------------
 
   base  : #ffffff,
   minimalBorder: #f8f9fd,
@@ -70,17 +74,19 @@ $colors: (
 
 // Base Color Dark Mode
 $colors-dark: (
-  // UI START
+  // ----- UI START ---------
   lightBase: $dark-high,
   darkBase: $dark-med,
 
   // Text
   textHeader: $light-megher,
+  lightText: $dark-lower,
+  hiddenText: $atom-blue_light,
 
   // Button
   lightClean-btnBG: #2F3642,
   lightClean-btnTXT: #5F7B97,
-  // UI END -------------------
+  // -------- UI END ---------
 
   base : map-get($colors, text),
   textOnDark: #FFF,
@@ -144,4 +150,8 @@ $colors-dark: (
     background: $lightClean;
     color:#FFF;
   }
+}
+
+h1 {
+  color: getColor('textHeaderDark');
 }

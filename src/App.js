@@ -1,5 +1,5 @@
 // Importing Reacting
-import React from 'react'
+import { React} from 'react'
 
 // Technologies
 import { Helmet } from "react-helmet"

@@ -1,7 +1,10 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap');
 
-// Text Sizes
+// UI Light Colors
+$light-base: #F8F9FD;
+$light-text: #AFB1CA;
+$light-btn: #ECEFF7;
 
 // Desktop
 $header-size: 8vmin;
@@ -23,7 +26,7 @@ $sand:       #F2E4DA;
 // Base Color Light Mode
 $colors: (
   base  : #ffffff,
-  textHeaderDark : $atom-blue,
+  textHeaderDark : $dark-blue,
   minimalBorder: #f8f9fd,
   text  : $atom-blue,
   textOnDark: $atom-blue, //Color on Dark BG
@@ -77,5 +80,33 @@ $colors-dark: (
 }
 
 @function getColor($color-name){
-  @return var(--color-#{$color-name})
+  @return var(--color-#{$color-name});
+}
+
+// Buttons
+.btn {
+  display:block;
+  text-align:center;
+  border-radius:15px;
+  text-decoration:none;
+  font-family:"Poppins", sans-serif;
+  font-weight:600;
+  font-size:1rem;
+  margin-top:15px;
+  -webkit-transition:all 0.2s ease-in-out;
+  -moz-transition:all 0.2s ease-in-out;
+  -o-transition:all 0.2s ease-in-out;
+  transition:all 0.2s ease-in-out;
+}
+
+// Configurations
+.minimal-btn {
+  background:$light-btn;
+  color:#5F7B97;
+  padding:10px 70px;
+  
+  &:hover {
+    background:#5F7B97;
+    color:#FFF;
+  }
 }

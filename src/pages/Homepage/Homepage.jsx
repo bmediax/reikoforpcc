@@ -1,12 +1,14 @@
 import SliderView from "../../components/SliderView"
 import './Homepage.scss'
+import Meetreiko from './Meetreiko'
 
 const Homepage = () => {
     return (
         <div className="container">
             <SliderView />
+            <Meetreiko />
             <section className="priorities">
-                <h1 align="center"> Priorities </h1>
+                <h1> Priorities </h1>
 
                 <div className="three-column-option_container">
                     <div className="three-column-option">

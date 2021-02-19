@@ -10,7 +10,7 @@ const Nav = (props) => {
                     </Link>
                 </div>
                 <div className="nav-contain">
-                    <Link className="nav-item" to="/meet-reiko">Meet Reiko</Link>
+                    <Link active="true" className="nav-item" to="/meet-reiko">Meet Reiko</Link>
                     <Link className="nav-item" to="/priorities">Priorities</Link>
                     <Link className="nav-item" to="/endorsements">Endorsements</Link>
                 </div>

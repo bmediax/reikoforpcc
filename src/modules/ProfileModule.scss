@@ -1,0 +1,33 @@
+@use '../styles/variables';
+
+.profile-module {
+    display:flex;
+    justify-content: center;
+    min-height:200px;
+
+    span {
+        border-radius:25px;
+    }
+
+    .profile-module_img {
+        flex:1;
+        margin-right:2%;
+        background-size: cover !important;
+        background-position: center center !important;
+        background-repeat: no-repeat !important;
+    }
+    
+    .profile-module_textarea {
+        align-self: baseline;
+        flex:2;
+        padding:20px 30px;
+        background:variables.$light-base;
+        
+        p {
+            color:variables.$light-text;
+            padding: 0px;
+            margin: 0;
+            line-height:35px;
+        }
+    }
+}

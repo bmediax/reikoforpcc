@@ -6,13 +6,13 @@
     min-height:200px;
 
     span {
-        border-radius:25px;
+        @include variables.objectCorner(medium);
     }
     
     .profile-module_img {
         flex:1;
         margin-right:2% !important;
-        border-radius:25px;
+        @include variables.objectCorner(medium);
         max-width:500px;
         align-self: center;
     }

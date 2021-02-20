@@ -1,19 +1,12 @@
 // Importing Index.scss Functions
 @use '../../styles/variables';
 
-#slider {
-    padding-top:30px;
-    height:350px;
-    background:#eee;
-}
-
 .priorities {
     background:variables.getColor(darkBase);
 }
 
 .three-column-option_container {
     margin:auto;
-    // max-width:variables.$page-width;
 }
 
 .three-column-option {
@@ -25,15 +18,12 @@
     div {
         background:variables.getColor(darkBase);
         padding:20px 30px;
-        border-radius:50px;
-        -webkit-transition:all 0.2s ease-in-out;
-        -moz-transition:all 0.2s ease-in-out;
-        -o-transition:all 0.2s ease-in-out;
-        transition:all 0.2s ease-in-out;
+        @include variables.objectCorner(medium);
+        @include variables.enableAnimation;
 
         &:hover {
             background:variables.getColor(lightBase);
-            box-shadow:0px 20px 50px rgba(0, 0, 0, 0.08);
+            @include variables.objectShadow(hover);
             cursor: pointer;
 
             h2 {
@@ -84,8 +74,8 @@
     .endo_logos {
         background:variables.getColor(lightBase);
         padding:5% 5%;
-        border-radius:25px;
         // box-shadow:0px 20px 40px rgba(0, 0, 0, 0.08);
+        @include variables.objectCorner(medium);
         @include variables.enableAnimation;
         @include variables.objectShadow(base);
 
@@ -95,12 +85,12 @@
 
         .endo_logo-part {
             display:flex;
-            margin-bottom:15px;
 
             .endos {
                 background:-webkit-linear-gradient(top left, red, blue);
                 height:5vw;
                 flex:1;
+                @include variables.objectCorner("small")
             }
         }
     }

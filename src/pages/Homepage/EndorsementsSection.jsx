@@ -12,6 +12,7 @@ const EndorsementsSection = () => {
                     <span className="endos"></span>
                     <span className="endos"></span>
                 </div>
+                <br />
                 <div className="endo_logo-part">
                     <span className="endos"></span>
                     <span className="endos"></span>

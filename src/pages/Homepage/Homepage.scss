@@ -127,7 +127,28 @@
 
         .event-des {
             flex:2;
+            padding:30px 40px;
             margin-right:variables.$objectSpace_small;
+
+            h3, p {
+                padding:0px;
+                margin:0;
+            }
+
+            h3 {
+                font-size:2rem;
+                margin-bottom:10px;
+                color:variables.getColor(textSubHeader);
+            }
+
+            p {
+                color:variables.getColor(lightText);
+                line-height:35px;
+            }
+
+            a {
+                margin-top:20px;
+            }
         }
 
         .event-img {

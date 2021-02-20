@@ -31,7 +31,7 @@ $atom-blue:  #272C35;
 $atom-blue_light: #303742;
 $light-blue: #f4f4f6;
 $med-blue:   #D3DEE9;
-$orange:     #EC7765;
+$red:     #EC7765;
 // $sand:       #F2E4DA;
 $lightClean: #5F7B97;
 
@@ -44,6 +44,7 @@ $colors: (
 
   // TEXT
   textHeader : $dark-blue,
+  textSubHeader: $blue,
   lightText: $light-lower,
   hiddenText: $med-blue,
 
@@ -52,6 +53,8 @@ $colors: (
   lightClean-btnTXT: #5F7B97,
   red-btnBG: rgba(#EC7765, .1),
   red-btnTXT: #EC7765,
+  blue-btnBG: rgba($blue, .1),
+  blue-btnTXT: $blue,
   // -------- UI END --------------
 
   base  : #ffffff,
@@ -82,6 +85,7 @@ $colors-dark: (
   textHeader: $light-megher,
   lightText: $dark-lower,
   hiddenText: #394d6d,
+  textSubHeader: $blue,
 
   // Button
   lightClean-btnBG: #2F3642,

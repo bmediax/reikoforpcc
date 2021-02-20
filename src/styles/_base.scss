@@ -120,7 +120,17 @@ section {
   color:variables.getColor(red-btnTXT);
 
   &:hover {
-    background: variables.$orange;
+    background: variables.$red;
+    color:#FFF;
+  }
+}
+
+.blue-btn {
+  background:variables.getColor(blue-btnBG);
+  color:variables.getColor(blue-btnTXT);
+
+  &:hover {
+    background: variables.$blue;
     color:#FFF;
   }
 }

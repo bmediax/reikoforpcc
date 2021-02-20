@@ -132,6 +132,8 @@
 
         .event-img {
             flex:1;
+            background-size:cover !important;
+            background-position: center center !important;
         }
 
         &:nth-child(2) {

@@ -9,10 +9,10 @@ const EventsSection = () => {
             <div className="events-module">
                 <span className="events-module_section">
                     <span className="event-des"></span>
-                    <span className="event-img"></span>
+                    <span className="event-img" style={{background: "url('https://via.placeholder.com/420x250?text=Events%20Image')"}}></span>
                 </span>
                 <span className="events-module_section">
-                    <span className="event-img"></span>
+                    <span className="event-img" style={{background: "url('https://via.placeholder.com/420x250?text=Events%20Image')"}}></span>
                     <span className="event-des"></span>
                 </span>
             </div>

@@ -3,7 +3,7 @@ import SectionTemplate from '../../components/SectionTemplate'
 
 const Meetreiko = () => {
     return (
-        <SectionTemplate topic="meet-reiko_section">
+        <SectionTemplate topic="meet-reiko_section" tag="meet-reiko">
             <h1> Meet Reiko Mia Williams </h1>
 
             <ProfileModule 

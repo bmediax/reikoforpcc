@@ -2,7 +2,7 @@ import SectionTemplate from '../../components/SectionTemplate'
 
 const EventsSection = () => {
     return (
-        <SectionTemplate topic="events">
+        <SectionTemplate topic="events" tag="events">
             <h1> Events </h1>
 
             {/* Events Module */}

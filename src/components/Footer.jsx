@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 
 const Footer = (props) => {
     return (
@@ -8,9 +8,10 @@ const Footer = (props) => {
                     <img src={props.logo} alt="Reiko for PCC Logo" width="60px"/>
                 </div>
                 <ul className="footer-nav">
-                    <li><Link to="/meet-reiko">Meet Reiko</Link></li>
-                    <li><Link to="/priorities">Priorities</Link></li>
-                    <li><Link to="/endorsements">Endorsements</Link></li>
+                    <li><a href="#meet-reiko">Meet Reiko</a></li>
+                    <li><a href="#priorities">Priorities</a></li>
+                    <li><a href="#endorsements">Endorsements</a></li>
+                    <li><a href="#endorsements">Events</a></li>
                 </ul>
                 <div className="footer-social">
                     <span>FB</span>

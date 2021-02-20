@@ -1,6 +1,6 @@
 const SectionTemplate = (props) => {
     return (
-        <section className={props.topic}>
+        <section className={props.topic} id={props.tag}>
             {props.children}
         </section>
     )

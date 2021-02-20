@@ -3,7 +3,7 @@ import SectionTemplate from '../../components/SectionTemplate'
 
 const EndorsementsSection = () => {
     return (
-        <SectionTemplate topic="endorsements">
+        <SectionTemplate topic="endorsements" tag="endorsements">
             <h1> Endorsements </h1>
 
             {/* Endorsement Logos */}

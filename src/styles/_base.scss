@@ -38,7 +38,7 @@ nav {
     .logo-contain {
       #logo {
         max-height:100px;
-        padding:20px 0px;
+        padding:10px 0px;
         display:block;
         margin:auto;
       }
@@ -149,7 +149,7 @@ h3 {
 
 footer {
   background:variables.getColor(Darkbase);
-  padding:2% 0px;
+  // padding:2% 0px;
 }
 
 #footer-wrapper {
@@ -161,6 +161,13 @@ footer {
 
   .footer-logo {
     flex: 1;
+    
+    img {
+      max-width:200px;
+      height:100%;
+      width:100%;
+      margin-top:10px;
+    }
   }
 
   .footer-nav {

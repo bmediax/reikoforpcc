@@ -5,7 +5,7 @@ const Footer = (props) => {
         <footer>
             <div id="footer-wrapper">
                 <div className="footer-logo">
-                    <img src={props.logo} alt="Reiko for PCC Logo" width="60px"/>
+                    <img src={props.logo} alt="Reiko for PCC Logo" />
                 </div>
                 <ul className="footer-nav">
                     <li><a href="#meet-reiko">Meet Reiko</a></li>

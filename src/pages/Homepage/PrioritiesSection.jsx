@@ -1,6 +1,5 @@
 import SectionTemplate from '../../components/SectionTemplate'
 import React from'react'
-// import { Overlay } from 'react-portal-overlay';
 
 const PrioritiesSection = () => {
     return (

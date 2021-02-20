@@ -16,14 +16,14 @@
     grid-gap: 50px 50px;
 
     div {
-        background:variables.getColor(darkBase);
         padding:20px 30px;
+        background:variables.getColor(darkBase);
         @include variables.objectCorner(medium);
         @include variables.enableAnimation;
 
         &:hover {
             background:variables.getColor(lightBase);
-            @include variables.objectShadow(hover);
+            @include variables.objectShadow(base);
             cursor: pointer;
 
             h2 {

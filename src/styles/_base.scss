@@ -91,6 +91,11 @@ section {
   }
 }
 
+h3 {
+  font-size:2.2vmax;
+  color:variables.getColor(textSubHeader);
+}
+
 .btn {
   display:block;
   text-align:center;

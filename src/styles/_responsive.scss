@@ -1,6 +1,9 @@
 @use './variables';
 
 @media screen and (max-width:800px) {
+    h3 {
+        font-size:3.5vmax;
+    }
     .three-column-option {
         grid-template-columns: 1fr 1fr;
         grid-gap: 20px 20px;
@@ -32,6 +35,25 @@
         .endos {
             margin-bottom:4% !important;
         }
+    }
+
+    .events-module_section {
+        flex-direction: column-reverse;
+
+        .event-des {
+            margin-top:variables.$objectSpace_small;
+            margin-right:0 !important;
+        }
+
+        &:nth-child(2) {
+            flex-direction: column !important;
+            .event-img {
+                margin-right:0px !important;
+            }
+        }
+        // .event-des, .event-img {
+        //     flex:1;
+        // }
     }
 }
 

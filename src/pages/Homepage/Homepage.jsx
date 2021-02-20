@@ -3,6 +3,7 @@ import './Homepage.scss'
 import Meetreiko from './Meetreiko'
 import PrioritiesSection from './PrioritiesSection'
 import EndorsementsSection from './EndorsementsSection'
+import EventsSection from './EventsSection'
 
 const Homepage = () => {
     return (
@@ -11,6 +12,7 @@ const Homepage = () => {
             <Meetreiko />
             <PrioritiesSection />
             <EndorsementsSection />
+            <EventsSection />
         </div>
     )
 }

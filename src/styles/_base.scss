@@ -91,6 +91,40 @@ section {
   }
 }
 
+.btn {
+  display:block;
+  text-align:center;
+  text-decoration:none;
+  font-family:"Poppins", sans-serif;
+  font-weight:600;
+  font-size:1rem;
+  padding:10px 60px;
+  @include variables.objectCorner("small");
+  @include variables.enableAnimation;
+}
+
+// Configurations
+.minimal-btn {
+  background:variables.getColor(lightClean-btnBG);
+  color:variables.getColor(lightClean-btnTXT);
+  padding:10px 70px;
+
+  &:hover {
+    background: variables.$lightClean;
+    color:#FFF;
+  }
+}
+
+.red-btn {
+  background:variables.getColor(red-btnBG);
+  color:variables.getColor(red-btnTXT);
+
+  &:hover {
+    background: variables.$orange;
+    color:#FFF;
+  }
+}
+
 footer {
   background:variables.getColor(Darkbase);
   padding:2% 0px;

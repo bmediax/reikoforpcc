@@ -110,3 +110,40 @@
         @include variables.objectCorner("small");
     }
 }
+
+.events {
+    background:variables.getColor(darkBase);
+
+    .events-module_section {
+        display:flex;
+        margin-bottom:variables.$objectSpace_small;
+
+        span {
+            background-color:variables.getColor(lightBase);
+            min-height:250px;
+            @include variables.objectShadow("base");
+            @include variables.objectCorner("medium");
+        }
+
+        .event-des {
+            flex:2;
+            margin-right:variables.$objectSpace_small;
+        }
+
+        .event-img {
+            flex:1;
+        }
+
+        &:nth-child(2) {
+            .event-des {
+                flex:2;
+                margin-right:0px;
+            }
+    
+            .event-img {
+                flex:1;
+                margin-right:variables.$objectSpace_small;
+            }
+        }
+    }
+}

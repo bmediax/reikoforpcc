@@ -14,10 +14,8 @@ $dark-med:#242932;
 $dark-low:#1F232A;
 $dark-lower: #BFC0DC;
 
-// $light-base: #F8F9FD;
-// $light-text: #AFB1CA;
-// $light-btn:  #ECEFF7;
-
+// Object Configuration
+$objectSpace_small: 20px;
 
 // Desktop
 $header-size: 8vmin;
@@ -152,40 +150,5 @@ $colors-dark: (
 
   @else if $value == "medium" {
     border-radius:25px;
-  }
-}
-
-// Buttons
-.btn {
-  display:block;
-  text-align:center;
-  text-decoration:none;
-  font-family:"Poppins", sans-serif;
-  font-weight:600;
-  font-size:1rem;
-  padding:10px 60px;
-  @include objectCorner("small");
-  @include enableAnimation;
-}
-
-// Configurations
-.minimal-btn {
-  background:getColor(lightClean-btnBG);
-  color:getColor(lightClean-btnTXT);
-  padding:10px 70px;
-
-  &:hover {
-    background: $lightClean;
-    color:#FFF;
-  }
-}
-
-.red-btn {
-  background:getColor(red-btnBG);
-  color:getColor(red-btnTXT);
-
-  &:hover {
-    background: $orange;
-    color:#FFF;
   }
 }

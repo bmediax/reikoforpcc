@@ -52,8 +52,8 @@ $colors: (
   // BTN:
   lightClean-btnBG: #ECEFF7,
   lightClean-btnTXT: #5F7B97,
-  donate-btnBG: rgba(#EC7765, .1),
-  donate-btnTXT: #EC7765,
+  red-btnBG: rgba(#EC7765, .1),
+  red-btnTXT: #EC7765,
   // -------- UI END --------------
 
   base  : #ffffff,
@@ -83,13 +83,13 @@ $colors-dark: (
   // Text
   textHeader: $light-megher,
   lightText: $dark-lower,
-  hiddenText: $atom-blue_light,
+  hiddenText: #394d6d,
 
   // Button
   lightClean-btnBG: #2F3642,
   lightClean-btnTXT: #5F7B97,
-  donate-btnBG: rgba(#EC7765, .2),
-  donate-btnTXT: #EC7765,
+  red-btnBG: rgba(#EC7765, .2),
+  red-btnTXT: #EC7765,
   // -------- UI END ---------
 
   base : map-get($colors, text),
@@ -159,12 +159,11 @@ $colors-dark: (
 .btn {
   display:block;
   text-align:center;
-  border-radius:15px;
   text-decoration:none;
   font-family:"Poppins", sans-serif;
   font-weight:600;
   font-size:1rem;
-  margin-top:15px;
+  padding:10px 60px;
   @include objectCorner("small");
   @include enableAnimation;
 }
@@ -182,8 +181,8 @@ $colors-dark: (
 }
 
 .red-btn {
-  background:getColor(donate-btnBG);
-  color:getColor(donate-btnTXT);
+  background:getColor(red-btnBG);
+  color:getColor(red-btnTXT);
 
   &:hover {
     background: $orange;

@@ -74,7 +74,6 @@
     .endo_logos {
         background:variables.getColor(lightBase);
         padding:5% 5%;
-        // box-shadow:0px 20px 40px rgba(0, 0, 0, 0.08);
         @include variables.objectCorner(medium);
         @include variables.enableAnimation;
         @include variables.objectShadow(base);
@@ -101,5 +100,13 @@
                 }
             }
         }
+    }
+
+    .endo_want {
+        text-align:center;
+        width:80%;
+        padding-top:20px;
+        margin:auto;
+        @include variables.objectCorner("small");
     }
 }

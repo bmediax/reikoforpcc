@@ -20,9 +20,10 @@
     }
 
     .endo_logo-part {
-        flex-direction: column;
+        // flex-direction: column;
         // &:first-child {
         // }
+        flex-wrap: wrap;
 
         &:first-child {
             margin-bottom:0 !important;

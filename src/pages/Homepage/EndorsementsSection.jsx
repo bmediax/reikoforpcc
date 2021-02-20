@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import SectionTemplate from '../../components/SectionTemplate'
 
 const EndorsementsSection = () => {
@@ -29,6 +30,10 @@ const EndorsementsSection = () => {
                         <img src="https://via.placeholder.com/150x50" alt="Endorsement Logo" />
                     </span>
                 </div>
+            </div>
+            <div className="endo_want">
+                <h2> Interested in Endorsing? </h2>
+                <Link to="/" className="btn red-btn" style={{display: "inline-block"}}>View More</Link>
             </div>
         </SectionTemplate>
     )

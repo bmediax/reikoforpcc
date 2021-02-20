@@ -1,5 +1,8 @@
 import ProfileModule from '../../modules/ProfileModule'
 import SectionTemplate from '../../components/SectionTemplate'
+import { FcAbout } from 'react-icons/fc'
+
+const AboutIcon = <FcAbout />
 
 const Meetreiko = () => {
     return (
@@ -11,7 +14,8 @@ const Meetreiko = () => {
                 descr="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus sag   enenatis mi. Cras justo sem, volutpat tincidunt risus vitae, suscipit lobortis quam. Suspendisse sed odio erat. Nam odio lectus, tristique in lacus nec, condimentum malesuada nibh. Praesent quis metus risus. Etiam ut leo sit amet neque facilisis egestas. Sed sed ex quis orci ultricies." 
                 img="https://via.placeholder.com/300x250?text=Headshot%20Image" 
                 link="meet-reiko" 
-                linkText="Learn More" />
+                linkText="Learn More" 
+                icon={AboutIcon} />
         </SectionTemplate>
     )
 }

@@ -17,7 +17,7 @@ const Nav = (props) => {
                     <a className="nav-item" href="#events">Events</a>
                 </div>
                 <div className="donate-contain">
-                    <a href="https://google.com" className="btn red-btn donate">Donate <AiFillHeart style={{paddingTop:"4px"}}/></a>
+                    <a href="https://google.com" className="btn red-btn donate">Donate <AiFillHeart className="btn-icon" style={{marginTop: "-2px"}}/></a>
                 </div>
             </div>
         </nav>

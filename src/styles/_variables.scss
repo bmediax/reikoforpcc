@@ -52,10 +52,12 @@ $colors: (
   // BTN:
   lightClean-btnBG: #ECEFF7,
   lightClean-btnTXT: #5F7B97,
+  donate-btnBG: rgba(#EC7765, .1),
+  donate-btnTXT: #EC7765,
   // -------- UI END --------------
 
   base  : #ffffff,
-  minimalBorder: #f8f9fd,
+  aBorder: #f8f9fd,
   text  : $atom-blue,
   textOnDark: $atom-blue, //Color on Dark BG
   textOnOrange: #FFF, // Text on Orange BG
@@ -86,6 +88,8 @@ $colors-dark: (
   // Button
   lightClean-btnBG: #2F3642,
   lightClean-btnTXT: #5F7B97,
+  donate-btnBG: rgba(#EC7765, .2),
+  donate-btnTXT: #EC7765,
   // -------- UI END ---------
 
   base : map-get($colors, text),
@@ -148,6 +152,17 @@ $colors-dark: (
 
   &:hover {
     background: $lightClean;
+    color:#FFF;
+  }
+}
+
+.red-btn {
+  background:getColor(donate-btnBG);
+  color:getColor(donate-btnTXT);
+  // padding:10px 70px;
+
+  &:hover {
+    background: $orange;
     color:#FFF;
   }
 }

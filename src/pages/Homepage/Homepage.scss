@@ -13,7 +13,7 @@
 
 .three-column-option_container {
     margin:auto;
-    max-width:variables.$page-width;
+    // max-width:variables.$page-width;
 }
 
 .three-column-option {
@@ -75,6 +75,33 @@
             text-align:center;
             max-width:130px;
             max-height:130px;
+        }
+    }
+}
+
+// Endorsements
+.endorsements {
+    .endo_logos {
+        background:variables.getColor(lightBase);
+        padding:5% 5%;
+        border-radius:25px;
+        // box-shadow:0px 20px 40px rgba(0, 0, 0, 0.08);
+        @include variables.enableAnimation;
+        @include variables.objectShadow(base);
+
+        &:hover {
+            @include variables.objectShadow(hover)
+        }
+
+        .endo_logo-part {
+            display:flex;
+            margin-bottom:15px;
+
+            .endos {
+                background:-webkit-linear-gradient(top left, red, blue);
+                height:5vw;
+                flex:1;
+            }
         }
     }
 }

@@ -167,6 +167,19 @@ $colors-dark: (
   }
 }
 
-h1 {
-  color: getColor('textHeaderDark');
+@mixin enableAnimation {
+  -webkit-transition:all 0.2s ease-in-out;
+  -moz-transition:all 0.2s ease-in-out;
+  -o-transition:all 0.2s ease-in-out;
+  transition:all 0.2s ease-in-out;
+}
+
+@mixin objectShadow($type) {
+  @if $type == "base" {
+    box-shadow:0px 15px 30px rgba(0, 0, 0, 0.05);
+  }
+
+  @else if $type == "hover" {
+    box-shadow:0px 15px 50px rgba(0, 0, 0, 0.09);
+  }
 }

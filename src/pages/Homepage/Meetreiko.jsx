@@ -1,8 +1,9 @@
 import ProfileModule from '../../modules/ProfileModule'
+import SectionTemplate from '../../components/SectionTemplate'
 
 const Meetreiko = () => {
     return (
-        <section className="meet-reiko_section">
+        <SectionTemplate topic="meet-reiko_section">
             <h1> Meet Reiko Mia Williams </h1>
 
             <ProfileModule 
@@ -10,7 +11,7 @@ const Meetreiko = () => {
                 img="https://via.placeholder.com/300x250?text=Headshot%20Image" 
                 link="meet-reiko" 
                 linkText="Learn More" />
-        </section>
+        </SectionTemplate>
     )
 }
 

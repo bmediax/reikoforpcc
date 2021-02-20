@@ -1,6 +1,8 @@
+import SectionTemplate from '../../components/SectionTemplate'
+
 const PrioritiesSection = () => {
     return (
-        <section className="priorities">
+        <SectionTemplate topic="priorities">
             <h1> Priorities </h1>
 
             <div className="three-column-option_container">
@@ -37,7 +39,7 @@ const PrioritiesSection = () => {
                     </div>
                 </div>
             </div>
-        </section>
+        </SectionTemplate>
     )
 }
 

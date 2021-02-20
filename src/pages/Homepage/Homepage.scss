@@ -86,11 +86,19 @@
         .endo_logo-part {
             display:flex;
 
+            &:first-child {
+                margin-bottom:4%;
+            }
+
             .endos {
-                background:-webkit-linear-gradient(top left, red, blue);
-                height:5vw;
                 flex:1;
-                @include variables.objectCorner("small")
+                margin-bottom:0;
+                @include variables.objectCorner("small");
+
+                img {
+                    display:block;
+                    margin:auto;
+                }
             }
         }
     }

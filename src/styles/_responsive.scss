@@ -18,6 +18,20 @@
             margin-bottom:5%;
         }
     }
+
+    .endo_logo-part {
+        flex-direction: column;
+        // &:first-child {
+        // }
+
+        &:first-child {
+            margin-bottom:0 !important;
+        }
+        
+        .endos {
+            margin-bottom:4% !important;
+        }
+    }
 }
 
 @media screen and (max-width:550px) {

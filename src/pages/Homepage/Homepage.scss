@@ -123,6 +123,11 @@
             min-height:250px;
             @include variables.objectShadow("base");
             @include variables.objectCorner("medium");
+            @include variables.enableAnimation;
+
+            &:hover {
+                @include variables.objectShadow("hover");
+            }
         }
 
         .event-des {

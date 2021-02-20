@@ -1,3 +1,4 @@
+import { AiFillHeart } from "react-icons/ai";
 // import { a } from 'react-router-dom'
 
 const Nav = (props) => {
@@ -16,7 +17,7 @@ const Nav = (props) => {
                     <a className="nav-item" href="#events">Events</a>
                 </div>
                 <div className="donate-contain">
-                    <a href="https://google.com" className="btn red-btn donate">Donate</a>
+                    <a href="https://google.com" className="btn red-btn donate">Donate <AiFillHeart style={{paddingTop:"4px"}}/></a>
                 </div>
             </div>
         </nav>

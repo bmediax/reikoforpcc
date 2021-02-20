@@ -28,7 +28,7 @@ nav {
     display:flex;
     align-items:center;
     min-height:50px;
-    max-width:variables.$page-width;
+    // max-width:variables.$page-width;
     margin:auto;
 
     div {
@@ -51,6 +51,11 @@ nav {
         color:variables.getColor(textOnDark);
         display:inline-block;
         margin:0px 15px;
+        @include variables.enableAnimation;
+
+        &:hover {
+          color:variables.$blue;
+        }
 
         &:first-child {
           margin-left: 0 !important;
@@ -149,11 +154,9 @@ h3 {
 
 footer {
   background:variables.getColor(Darkbase);
-  // padding:2% 0px;
 }
 
 #footer-wrapper {
-  max-width:variables.$page-width;
   margin:auto;
   display:flex;
   justify-content: center;
@@ -161,6 +164,7 @@ footer {
 
   .footer-logo {
     flex: 1;
+    text-align:center;
     
     img {
       max-width:200px;
@@ -174,10 +178,11 @@ footer {
     flex:1;
     list-style:none;
     margin:auto;
+    text-align:center;
       
     li {
       display:inline-block;
-      margin-right:15px;
+      margin-right:25px;
 
       a {
         text-decoration:none;
@@ -194,8 +199,8 @@ footer {
     flex:1;
     text-align:center;
 
-    span {
-      margin-right:15px;
+    a {
+      margin-right:25px;
       color:variables.getColor(text2);
 
       &:last-child {

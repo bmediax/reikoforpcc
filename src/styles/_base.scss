@@ -120,7 +120,7 @@ h3 {
   @include variables.enableAnimation;
 }
 
-// Configurations
+// Button Configurations
 .minimal-btn {
   background:variables.getColor(lightClean-btnBG);
   color:variables.getColor(lightClean-btnTXT);
@@ -128,6 +128,7 @@ h3 {
 
   &:hover {
     background: variables.$lightClean;
+    box-shadow: variables.$shadowView rgba(variables.$lightClean, .2);
     color:#FFF;
   }
 }
@@ -139,6 +140,7 @@ h3 {
   &:hover {
     background: variables.$red;
     color:#FFF;
+    box-shadow: variables.$shadowView rgba(variables.$red, .2);
   }
 }
 
@@ -149,7 +151,13 @@ h3 {
   &:hover {
     background: variables.$blue;
     color:#FFF;
+    box-shadow: variables.$shadowView rgba(variables.$blue, .2);
   }
+}
+
+.btn-icon {
+  margin-bottom: -3px ;
+  margin-left: 5px;
 }
 
 footer {
@@ -208,9 +216,4 @@ footer {
       }
     }
   }
-}
-
-.btn-icon {
-  margin-bottom: -3px ;
-  margin-left: 5px;
 }

@@ -4,6 +4,11 @@
     h3 {
         font-size:3.5vmax;
     }
+
+    .btn {
+        width:100% !important;
+    }
+
     .three-column-option {
         grid-template-columns: 1fr 1fr;
         grid-gap: 20px 20px;
@@ -20,22 +25,33 @@
             max-width:300px;
             margin-bottom:5%;
         }
-    }
 
-    .endo_logo-part {
-        // flex-direction: column;
-        // &:first-child {
-        // }
-        flex-wrap: wrap;
-
-        &:first-child {
-            margin-bottom:0 !important;
-        }
-        
-        .endos {
-            margin-bottom:4% !important;
+        .profile-module_textarea {
+            padding: 5% 3%;
+            background:variables.getColor(lightBase);
         }
     }
+    
+    .endorsements {
+        .endo_want {
+            width:100%;
+        }
+        .endo_logo-part {
+            // flex-direction: column;
+            // &:first-child {
+            // }
+            flex-wrap: wrap;
+    
+            &:first-child {
+                margin-bottom:0 !important;
+            }
+            
+            .endos {
+                margin-bottom:4% !important;
+            }
+        }
+    }
+    
 
     .events-module_section {
         flex-direction: column-reverse;
@@ -43,6 +59,8 @@
         .event-des {
             margin-top:variables.$objectSpace_small;
             margin-right:0 !important;
+            box-shadow:none !important;
+            background:variables.getColor(darkBase) !important;
         }
 
         &:nth-child(2) {

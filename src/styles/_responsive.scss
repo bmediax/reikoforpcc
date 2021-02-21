@@ -55,6 +55,47 @@
     .footer-nav {
         display:none;
     }
+
+    .nav-contain {
+        display:none !important;
+        background:variables.getColor(darkBase);
+        flex:none;
+        height:100vh;
+        position:absolute;
+        top:100px;
+        right:0;
+        left:0;
+        
+        .nav-item {
+            display:block !important;
+            margin:0px !important;
+            padding:20px 0px;
+
+            &:hover {
+                background:variables.getColor(lightBase);
+                // color:variables.getColor(lightBase) !important;
+                @include variables.objectShadow(base);
+            }
+        }
+
+        .donate-mobile {
+            display:block !important; 
+            background:variables.getColor(red-btnBG);
+            color:variables.getColor(red-btnTXT) !important;
+            
+            &:hover {
+                background:variables.$red;
+                color:variables.getColor(lightBase) !important;
+            }
+        } 
+    }
+    .donate {
+        display:none !important;
+    }
+
+    .menu-icon {
+        display:block !important;
+    }
 }
 
 @media screen and (max-width:550px) {

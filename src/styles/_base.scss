@@ -47,6 +47,10 @@ nav {
       text-align:center;
       flex:2;
 
+      .donate-mobile {
+        display:none !important;
+      }
+
       .nav-item {
         color:variables.getColor(textOnDark);
         display:inline-block;
@@ -71,13 +75,16 @@ nav {
       a.donate {
         display:block;
         text-decoration:none;
-        // color:variables.getColor(textOnOrange);
-        // background:variables.$orange;
         padding:10px 0;
         width:150px;
         margin:auto;
         border-radius:10px;
         text-align:center;
+      }
+      .menu-icon {
+        display:none;
+        margin:auto;
+        font-size:2rem;
       }
     }
   }

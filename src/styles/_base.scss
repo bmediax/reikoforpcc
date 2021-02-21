@@ -139,6 +139,7 @@ h3 {
 
   &:hover {
     background: variables.$red;
+    @include variables.buttonGradient(orange-gradient);
     color:#FFF;
     box-shadow: variables.$shadowView rgba(variables.$red, .2);
   }
@@ -150,6 +151,7 @@ h3 {
 
   &:hover {
     background: variables.$blue;
+    @include variables.buttonGradient(blue-gradient);
     color:#FFF;
     box-shadow: variables.$shadowView rgba(variables.$blue, .2);
   }

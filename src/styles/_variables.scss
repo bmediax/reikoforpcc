@@ -156,3 +156,19 @@ $colors-dark: (
     border-radius:25px;
   }
 }
+
+// Gradation 
+@mixin buttonGradient($colour) {
+  @if $colour == "orange-gradient" {
+    background:-webkit-linear-gradient(to right, $red, #ec9965);
+    background:-moz-linear-gradient(to right, $red, #ec9965);
+    background:-o-linear-gradient(to right, $red, #ec9965);
+    background:linear-gradient(to right, $red, #ec9965);
+  }
+  @else if $colour == "blue-gradient" {
+    background:-webkit-linear-gradient(to right, $blue, #02b9a4);
+    background:-moz-linear-gradient(to right, $blue, #02b9a4);
+    background:-o-linear-gradient(to right, $blue, #02b9a4);
+    background:linear-gradient(to right, $blue, #02b9a4);
+  }
+}

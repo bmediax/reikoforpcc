@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import SectionTemplate from '../../components/SectionTemplate'
 import { RiCalendarEventLine } from "react-icons/ri";
 
 const EventsSection = () => {
+    const [isMenuOpen, SetIsMenuOpen] = useState(false)
+    
     return (
         <SectionTemplate topic="events" tag="events">
             <h1> Events </h1>

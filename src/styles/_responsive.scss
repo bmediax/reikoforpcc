@@ -74,6 +74,11 @@
         display:none;
     }
 
+    .logo-contain #logo {
+        max-height: 75px !important;
+        padding: 5px 0px !important;
+    }
+
     .nav-contain {
         display:none !important;
         background:variables.getColor(darkBase);
@@ -113,6 +118,7 @@
 
     .menu-icon {
         display:block !important;
+        top:15px !important;
     }
 }
 

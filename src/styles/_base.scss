@@ -83,8 +83,21 @@ nav {
       }
       .menu-icon {
         display:none;
-        margin:auto;
-        font-size:2rem;
+        font-size:3rem;
+        position: absolute;
+        right: 25px;
+        top: 25px;
+        color:variables.getColor(textHeader);
+        background:variables.getColor(darkBase);
+        @include variables.objectCorner("small");
+        @include variables.enableAnimation;
+        padding:10px;
+
+        &:hover {
+          cursor:pointer;
+          color:variables.getColor(lightBase);
+          background:variables.$blue;
+        }
       }
     }
   }

@@ -125,6 +125,7 @@
 
     .three-column-option {
         grid-template-columns: 1fr;
+        grid-gap: 10px;
 
         div h2 {
             font-size:3vmax;

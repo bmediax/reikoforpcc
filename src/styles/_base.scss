@@ -88,15 +88,15 @@ nav {
         right: 25px;
         top: 25px;
         color:variables.getColor(textHeader);
-        background:variables.getColor(darkBase);
+        background:variables.getColor(lightBase);
         @include variables.objectCorner("small");
         @include variables.enableAnimation;
         padding:10px;
 
         &:hover {
           cursor:pointer;
-          color:variables.getColor(lightBase);
-          background:variables.$blue;
+          background:variables.getColor(darkBase);
+          color:variables.$blue;
         }
       }
     }
@@ -159,7 +159,7 @@ h3 {
 
   &:hover {
     background: variables.$red;
-    @include variables.buttonGradient(orange-gradient);
+    // @include variables.buttonGradient(orange-gradient);
     color:#FFF;
     box-shadow: variables.$shadowView rgba(variables.$red, .2);
   }
@@ -171,9 +171,18 @@ h3 {
 
   &:hover {
     background: variables.$blue;
-    @include variables.buttonGradient(blue-gradient);
+    // @include variables.buttonGradient(blue-gradient);
     color:#FFF;
     box-shadow: variables.$shadowView rgba(variables.$blue, .2);
+  }
+}
+
+.donate-btn {
+  @include variables.buttonGradient(orange-gradient);
+  color:variables.getColor(lightBase);
+
+  &:hover {
+    box-shadow: variables.$shadowView rgba(variables.$red, .2);
   }
 }
 

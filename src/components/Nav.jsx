@@ -20,7 +20,7 @@ const Nav = (props) => {
                 </div>
                 <div className="donate-contain">
                     <RiMenu3Fill className="menu-icon" />
-                    <a href="https://google.com" className="btn red-btn donate">Donate <AiFillHeart className="btn-icon" style={{marginTop: "-2px"}}/></a>
+                    <a href="https://google.com" className="btn donate donate-btn">Donate <AiFillHeart className="btn-icon" style={{marginTop: "-2px"}}/></a>
                 </div>
             </div>
         </nav>

@@ -36,18 +36,20 @@
         .endo_want {
             width:100%;
         }
-        .endo_logo-part {
-            // flex-direction: column;
-            // &:first-child {
-            // }
-            flex-wrap: wrap;
-    
-            &:first-child {
-                margin-bottom:0 !important;
-            }
-            
-            .endos {
-                margin-bottom:4% !important;
+        .endo_logos {
+            padding: 25px 5%;
+
+            .endo_logo-part {
+                flex-direction: column;
+                margin-bottom:0px;
+                
+                .endos {
+                    margin-bottom:4%;
+
+                    &:last-child {
+                        margin-bottom:0px !important;
+                    }
+                }
             }
         }
     }

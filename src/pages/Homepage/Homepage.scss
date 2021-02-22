@@ -73,7 +73,7 @@
 .endorsements {
     .endo_logos {
         background:variables.getColor(lightBase);
-        padding:5% 5%;
+        padding:3% 5%;
         @include variables.objectCorner(medium);
         @include variables.enableAnimation;
         @include variables.objectShadow(base);
@@ -84,19 +84,27 @@
 
         .endo_logo-part {
             display:flex;
+            margin-bottom:25px;
 
-            &:first-child {
-                margin-bottom:4%;
+            &:last-child {
+                margin-bottom:0px;
             }
 
             .endos {
                 flex:1;
-                margin-bottom:0;
+                align-self:center;
                 @include variables.objectCorner("small");
+                // min-height: 25px;
 
                 img {
                     display:block;
                     margin:auto;
+                }
+
+                p {
+                    padding:0px;
+                    margin:0;
+                    text-align:center;
                 }
             }
         }

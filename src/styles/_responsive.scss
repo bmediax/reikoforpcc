@@ -1,5 +1,65 @@
 @use './variables';
 
+@media screen and (min-width:860px) {
+    .nav-contain {
+        display:block !important;
+    }
+}
+
+@media screen and (max-width:860px) {
+    .nav-contain {
+        display:none;
+        background:variables.getColor(darkBase);
+        flex:none;
+        height:100vh;
+        position:absolute;
+        top:75px;
+        right:0;
+        left:0;
+        
+        .nav-item {
+            display:block !important;
+            margin:0px !important;
+            padding:20px 0px;
+
+            &:hover {
+                background:variables.getColor(lightBase);
+                // color:variables.getColor(lightBase) !important;
+                @include variables.objectShadow(base);
+            }
+        }
+
+        .donate-mobile {
+            display:block !important; 
+            background:variables.getColor(red-btnBG);
+            color:variables.getColor(red-btnTXT) !important;
+            
+            &:hover {
+                background:variables.$red;
+                color:variables.getColor(lightBase) !important;
+            }
+        } 
+    }
+
+    .footer-nav {
+        display:none;
+    }
+
+    .logo-contain #logo {
+        max-height: 75px !important;
+        padding: 5px 0px !important;
+    }
+
+    .donate {
+        display:none !important;
+    }
+
+    .menu-icon {
+        display:block !important;
+        top:15px !important;
+    }
+}
+
 @media screen and (max-width:800px) {
     h3 {
         font-size:3.5vmax;
@@ -71,56 +131,6 @@
                 margin-right:0px !important;
             }
         }
-    }
-    .footer-nav {
-        display:none;
-    }
-
-    .logo-contain #logo {
-        max-height: 75px !important;
-        padding: 5px 0px !important;
-    }
-
-    .nav-contain {
-        display:none !important;
-        background:variables.getColor(darkBase);
-        flex:none;
-        height:100vh;
-        position:absolute;
-        top:100px;
-        right:0;
-        left:0;
-        
-        .nav-item {
-            display:block !important;
-            margin:0px !important;
-            padding:20px 0px;
-
-            &:hover {
-                background:variables.getColor(lightBase);
-                // color:variables.getColor(lightBase) !important;
-                @include variables.objectShadow(base);
-            }
-        }
-
-        .donate-mobile {
-            display:block !important; 
-            background:variables.getColor(red-btnBG);
-            color:variables.getColor(red-btnTXT) !important;
-            
-            &:hover {
-                background:variables.$red;
-                color:variables.getColor(lightBase) !important;
-            }
-        } 
-    }
-    .donate {
-        display:none !important;
-    }
-
-    .menu-icon {
-        display:block !important;
-        top:15px !important;
     }
 }
 

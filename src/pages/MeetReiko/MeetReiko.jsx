@@ -1,13 +1,13 @@
 import React from 'react'
 import { Helmet } from "react-helmet"
+import { motion } from 'framer-motion'
 import './MeetReiko.scss'
+import { variants as motionVariants } from '../../tools/motionVariants'
 import SectionTemplate from '../../components/SectionTemplate'
 
 const MeetReiko = () => {
-    
-
     return (
-        <React.Fragment>
+        <motion.div initial="out" animate="in" exit="out" variants={motionVariants}>
             <Helmet>
                 <title> Reiko 4 PCC | Meet Reiko </title>
             </Helmet>
@@ -25,7 +25,7 @@ const MeetReiko = () => {
                     <li>Transparent commitment within the PCC Board to nurture a collaborative culture of Diversity, Equity, and Inclusion among faculty, staff, and administrators throughout Portland Community College and beyond.</li>
                 </ul>
             </SectionTemplate>
-        </React.Fragment>
+        </motion.div>
     )
 }
 

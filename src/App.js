@@ -3,7 +3,8 @@ import { React } from 'react'
 
 // Technologies
 import { Helmet } from "react-helmet"
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route  } from 'react-router-dom'
+import { AnimatePresence } from 'framer-motion'
 
 // Components
 import Logo from './assets/logo.png'
@@ -39,13 +40,15 @@ const App = () => {
           <div className="RMW_container">
               <Nav logo={Logo} />
               <div className="RMW_wrapper">
-                <Switch>
-                  <Route path="/" exact component={Homepage} />
-                  <Route path="/meet-reiko" component={MeetReiko} />
-                  <Route path="/priorities" component={Priorities} />
-                  <Route path="/endorsements" component={Endorsements} />
-                  <Route component={Error} />
-                </Switch>
+                <AnimatePresence exitBeforeEnter>
+                  <Switch>
+                    <Route path="/" exact component={Homepage} />
+                    <Route path="/meet-reiko" component={MeetReiko} />
+                    <Route path="/priorities" component={Priorities} />
+                    <Route path="/endorsements" component={Endorsements} />
+                    <Route component={Error} />
+                  </Switch>
+                </AnimatePresence>
               </div>
               <Footer logo={Logo} />
           </div>

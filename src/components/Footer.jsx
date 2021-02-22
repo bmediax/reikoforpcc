@@ -1,8 +1,11 @@
 // import { Link } from 'react-router-dom'
+import { useContext } from 'react'
 import { SiFacebook, SiInstagram, SiMinutemailer } from "react-icons/si";
 import ReactTooltip from "react-tooltip";
+import { navContext } from '../tools/navContext';
 
 const Footer = (props) => {
+    const navItems = useContext(navContext)
     return (
         <footer>
             <div id="footer-wrapper">
@@ -10,10 +13,9 @@ const Footer = (props) => {
                     <img src={props.logo} alt="Reiko for PCC Logo" />
                 </div>
                 <ul className="footer-nav">
-                    <li><a href="#meet-reiko">Meet Reiko</a></li>
-                    <li><a href="#priorities">Priorities</a></li>
-                    <li><a href="#endorsements">Endorsements</a></li>
-                    <li><a href="#events">Events</a></li>
+                {navItems.map(navs => (
+                    <li><a href={navs.path}>{navs.title}</a></li>
+                ))};
                 </ul>
                 <div className="footer-social">
                     <a href="https://google.com"><SiMinutemailer data-for="main" data-tip="Email Us" data-iscapture="true" alt="Email Reiko" /></a>

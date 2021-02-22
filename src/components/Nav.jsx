@@ -1,9 +1,12 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import { RiMenu3Fill } from 'react-icons/ri'
 import Donatebtn from '../components/Donatebtn'
 import { Link } from 'react-router-dom'
+import { navContext } from '../tools/navContext'
 
 const Nav = (props) => {
+    const navItems = useContext(navContext)
+
     const [mobileMenu, setMobileMenu ] = useState(false);
 
     const handleMobileToggle = () => {
@@ -20,14 +23,16 @@ const Nav = (props) => {
                 </div>
                 <div className="nav-contain" style={{display: mobileMenu ? 'block' : 'none'}}>
                     <Link className="nav-item" to="/meet-reiko" onClick={handleMobileToggle}>Meet Reiko</Link>
-                    <a className="nav-item" href="/#priorities" onClick={handleMobileToggle}>Priorities</a>
-                    <a className="nav-item" href="/#endorsements" onClick={handleMobileToggle}>Endorsements</a>
-                    <a className="nav-item" href="/#events" onClick={handleMobileToggle}>Events</a>
+                    {navItems.map(navs => (
+                        <React.Fragment>
+                            <a className="nav-item" href={navs.path} onClick={handleMobileToggle}>{navs.title}</a>
+                        </React.Fragment>
+                    ))}
                     <a className="nav-item donate-mobile" href={props.donationlink} style={{display: 'none'}}>Donate</a>
                 </div >
                 <div className="donate-contain">
                     <RiMenu3Fill className="menu-icon" onClick={handleMobileToggle} />
-                    <Donatebtn donationlink={props.donationlink}/>
+                    <Donatebtn />
                 </div>
             </div>
         </nav>

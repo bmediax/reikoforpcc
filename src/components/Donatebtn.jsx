@@ -1,8 +1,12 @@
 import { AiFillHeart } from "react-icons/ai";
+import { useContext } from "react/cjs/react.development";
+import { donationContext } from "../tools/donationContext";
 
 const Donatebtn = (props) => {
+    const donationlink = useContext(donationContext)
+
     return (
-        <a href={props.donationlink} className="btn donate donate-btn">Donate <AiFillHeart className="btn-icon" style={{marginTop: "-2px"}}/></a>
+        <a href={donationlink} className="btn donate donate-btn">Donate <AiFillHeart className="btn-icon" style={{marginTop: "-2px"}}/></a>
     )
 }
 

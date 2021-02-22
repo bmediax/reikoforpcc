@@ -32,7 +32,7 @@
             }
 
             p {
-                color:variables.$dark-blue;
+                color:variables.getColor(hiddenTextHover);
             }
         }
 

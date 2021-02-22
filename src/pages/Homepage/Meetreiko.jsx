@@ -1,7 +1,6 @@
 import ProfileModule from '../../modules/ProfileModule'
 import SectionTemplate from '../../components/SectionTemplate'
 import { FcAbout } from 'react-icons/fc'
-import RmwHeadshot from '../../assets/imgs/RMW-headshot.jpg'
 
 const AboutIcon = <FcAbout />
 
@@ -12,7 +11,6 @@ const Meetreiko = () => {
 
             <ProfileModule 
                 title="WHY AM I RUNNING?"
-                img={RmwHeadshot}
                 link="meet-reiko" 
                 linkText="Read More" 
                 icon={AboutIcon} />

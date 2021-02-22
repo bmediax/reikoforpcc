@@ -12,9 +12,12 @@
     .profile-module_img {
         flex:1;
         margin-right:2% !important;
-        @include variables.objectCorner(medium);
-        max-width:500px;
+        // max-width:500px;
         align-self: center;
+        text-align:center;
+        img, source {
+            @include variables.objectCorner(medium);
+        }
     }
     
     .profile-module_textarea {

@@ -9,9 +9,12 @@ const MeetReiko = () => {
             <Helmet>
                 <title> Reiko 4 PCC | Meet Reiko </title>
             </Helmet>
-            <SectionTemplate>
+            <div id="cover">
                 <h1> Meet Reiko </h1>
-                <p>Assisted by many beautiful people, my educational odyssey proceeded with a BS in Journalism, Government, & Politics (University of Maryland), to an MSW in Child Welfare (Howard University), to Portland State University where an M.Ed. was earned, and a Doctorate in Education (in Education Policy & Leadership) is nearly completed.  Currently the Principal at Sabin Elementary School, my work experiences include serving as a social worker (Casey Family Programs), Assistant Director of Minority Recruitment and as an Associate Director for Diversity in Admissions (Portland State University), Counselor & Advisor (at PCC Rock Creek Campus), on the African American Advisory Committee as well as Strategic Planning & Outreach Committee  (Portland Public Schools), and as Board Chair on both the Youth Employment Institute and the African American Health Coalition.</p>
+            </div>
+            <SectionTemplate>
+                <p>Assisted by many beautiful people, my educational odyssey proceeded with a BS in Journalism, Government, & Politics (University of Maryland), to an MSW in Child Welfare (Howard University), to Portland State University where an M.Ed. was earned, and a Doctorate in Education (in Education Policy & Leadership) is nearly completed. </p>
+                <p>Currently the Principal at Sabin Elementary School, my work experiences include serving as a social worker (Casey Family Programs), Assistant Director of Minority Recruitment and as an Associate Director for Diversity in Admissions (Portland State University), Counselor & Advisor (at PCC Rock Creek Campus), on the African American Advisory Committee as well as Strategic Planning & Outreach Committee  (Portland Public Schools), and as Board Chair on both the Youth Employment Institute and the African American Health Coalition.</p>
                 <p>My life experiences, educational training, and work background help prepare me to serve on the PCC Board of Directors. As an elected Trustee supportive of fair labor practices, my top priorities will be to promote:</p>
                 
                 <ul>

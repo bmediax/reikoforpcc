@@ -1,8 +1,8 @@
 import { AiFillHeart } from "react-icons/ai";
 
-const Donatebtn = () => {
+const Donatebtn = (props) => {
     return (
-        <a href="https://secure.actblue.com/donate/friends-of-reiko-1" className="btn donate donate-btn">Donate <AiFillHeart className="btn-icon" style={{marginTop: "-2px"}}/></a>
+        <a href={props.donationlink} className="btn donate donate-btn">Donate <AiFillHeart className="btn-icon" style={{marginTop: "-2px"}}/></a>
     )
 }
 

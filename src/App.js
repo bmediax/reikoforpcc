@@ -18,6 +18,8 @@ import Endorsements from './pages/Endorsements/Endorsements'
 import Error from './pages/Error'
 
 const App = () => {
+  const DonationLink = "https://secure.actblue.com/donate/friends-of-reiko-1"
+
   return (
     <Router>
       <Helmet>
@@ -26,7 +28,7 @@ const App = () => {
         <link rel="icon" type="image/png" href={Logo} sizes="16x16" />
       </Helmet>
       <div className="RMW_container">
-          <Nav logo={Logo} />
+          <Nav logo={Logo} donationlink={DonationLink}/>
           <div className="RMW_wrapper">
             <Switch>
               <Route path="/" exact component={Homepage} />

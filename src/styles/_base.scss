@@ -18,6 +18,20 @@ section p, section li {
   color:variables.getColor(normalText);
 }
 
+#cover {
+  background:variables.getColor(red-btnTXT);
+  min-height:20vw;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+
+  h1 {
+    color:variables.getColor(textHeader);
+    text-align:center;
+    font-size:4vmax;
+  }
+}
+
 // Navigation
 nav {
   position:sticky;
@@ -51,9 +65,9 @@ nav {
       text-align:center;
       flex:2;
 
-      .donate-mobile {
-        display:none !important;
-      }
+      // .donate-mobile {
+      //   display:none;
+      // }
 
       .nav-item {
         color:variables.getColor(textOnDark);

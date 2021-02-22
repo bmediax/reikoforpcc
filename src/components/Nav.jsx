@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 const Nav = (props) => {
     const [mobileMenu, setMobileMenu ] = useState(false);
 
-    const handleMobileOpen = () => {
+    const handleMobileToggle = () => {
         setMobileMenu(!mobileMenu)
     }
 
@@ -19,15 +19,15 @@ const Nav = (props) => {
                     </a>
                 </div>
                 <div className="nav-contain" style={{display: mobileMenu ? 'block' : 'none'}}>
-                    <Link className="nav-item" to="/meet-reiko">Meet Reiko</Link>
-                    <a className="nav-item" href="/#priorities">Priorities</a>
-                    <a className="nav-item" href="/#endorsements">Endorsements</a>
-                    <a className="nav-item" href="/#events">Events</a>
-                    <a className="nav-item donate-mobile" href="#events">Donate</a>
-                </div>
+                    <Link className="nav-item" to="/meet-reiko" onClick={handleMobileToggle}>Meet Reiko</Link>
+                    <a className="nav-item" href="/#priorities" onClick={handleMobileToggle}>Priorities</a>
+                    <a className="nav-item" href="/#endorsements" onClick={handleMobileToggle}>Endorsements</a>
+                    <a className="nav-item" href="/#events" onClick={handleMobileToggle}>Events</a>
+                    <a className="nav-item donate-mobile" href={props.donationlink} style={{display: 'none'}}>Donate</a>
+                </div >
                 <div className="donate-contain">
-                    <RiMenu3Fill className="menu-icon" onClick={handleMobileOpen} />
-                    <Donatebtn />
+                    <RiMenu3Fill className="menu-icon" onClick={handleMobileToggle} />
+                    <Donatebtn donationlink={props.donationlink}/>
                 </div>
             </div>
         </nav>

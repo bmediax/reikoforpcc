@@ -1,4 +1,4 @@
-import SliderView from "../../components/SliderView"
+// import SliderView from "../../components/SliderView"
 import './Homepage.scss'
 import Meetreiko from './Meetreiko'
 import PrioritiesSection from './PrioritiesSection'
@@ -8,7 +8,7 @@ import EventsSection from './EventsSection'
 const Homepage = () => {
     return (
         <div className="container">
-            <SliderView />
+            {/* <SliderView /> */}
             <Meetreiko />
             <PrioritiesSection />
             <EndorsementsSection />

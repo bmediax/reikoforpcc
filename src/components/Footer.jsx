@@ -13,7 +13,7 @@ const Footer = (props) => {
                     <li><a href="#meet-reiko">Meet Reiko</a></li>
                     <li><a href="#priorities">Priorities</a></li>
                     <li><a href="#endorsements">Endorsements</a></li>
-                    <li><a href="#endorsements">Events</a></li>
+                    <li><a href="#events">Events</a></li>
                 </ul>
                 <div className="footer-social">
                     <a href="https://google.com"><SiMinutemailer data-for="main" data-tip="Email Us" data-iscapture="true" alt="Email Reiko" /></a>

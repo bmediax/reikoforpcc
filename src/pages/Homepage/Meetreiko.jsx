@@ -1,6 +1,7 @@
 import ProfileModule from '../../modules/ProfileModule'
 import SectionTemplate from '../../components/SectionTemplate'
 import { FcAbout } from 'react-icons/fc'
+import RmwHeadshot from '../../assets/imgs/RMW-headshot.jpg'
 
 const AboutIcon = <FcAbout />
 
@@ -10,9 +11,9 @@ const Meetreiko = () => {
             <h1> Meet Reiko Mia Williams </h1>
 
             <ProfileModule 
-                title="Who am I?" 
-                descr="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus sag   enenatis mi. Cras justo sem, volutpat tincidunt risus vitae, suscipit lobortis quam. Suspendisse sed odio erat. Nam odio lectus, tristique in lacus nec, condimentum malesuada nibh. Praesent quis metus risus. Etiam ut leo sit amet neque facilisis egestas. Sed sed ex quis orci ultricies." 
-                img="https://via.placeholder.com/300x250?text=Headshot%20Image" 
+                title="WHY AM I RUNNING?" 
+                descr="“It Takes A Village” reflects my life experiences. A black teenage parent, my Mother, took adult education programs (supported by an extended family) to earn her license as a practical nurse.  While completing her B.A. in Nursing, she died of leukemia just before my 13th birthday. A parent to three daughters myself, she has inspired me to serve communities that have helped me and others over time. Community colleges better support struggling families with affordable access to high-quality public education and workforce training while with childcare services, healthcare, housing, and other partners that help pave pathways to opportunity." 
+                img={RmwHeadshot}
                 link="meet-reiko" 
                 linkText="Learn More" 
                 icon={AboutIcon} />

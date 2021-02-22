@@ -1,5 +1,5 @@
-import { AiFillHeart } from "react-icons/ai";
 import { RiMenu3Fill } from 'react-icons/ri'
+import Donatebtn from '../components/Donatebtn'
 // import { a } from 'react-router-dom'
 
 const Nav = (props) => {
@@ -20,7 +20,7 @@ const Nav = (props) => {
                 </div>
                 <div className="donate-contain">
                     <RiMenu3Fill className="menu-icon" />
-                    <a href="https://google.com" className="btn donate donate-btn">Donate <AiFillHeart className="btn-icon" style={{marginTop: "-2px"}}/></a>
+                    <Donatebtn />
                 </div>
             </div>
         </nav>

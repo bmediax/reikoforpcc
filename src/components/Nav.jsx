@@ -1,6 +1,6 @@
 import { RiMenu3Fill } from 'react-icons/ri'
 import Donatebtn from '../components/Donatebtn'
-// import { a } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const Nav = (props) => {
     return (
@@ -12,10 +12,10 @@ const Nav = (props) => {
                     </a>
                 </div>
                 <div className="nav-contain">
-                    <a className="nav-item" href="#meet-reiko">Meet Reiko</a>
-                    <a className="nav-item" href="#priorities">Priorities</a>
-                    <a className="nav-item" href="#endorsements">Endorsements</a>
-                    <a className="nav-item" href="#events">Events</a>
+                    <Link className="nav-item" to="/meet-reiko">Meet Reiko</Link>
+                    <a className="nav-item" href="/#priorities">Priorities</a>
+                    <a className="nav-item" href="/#endorsements">Endorsements</a>
+                    <a className="nav-item" href="/#events">Events</a>
                     <a className="nav-item donate-mobile" href="#events">Donate</a>
                 </div>
                 <div className="donate-contain">

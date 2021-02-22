@@ -7,7 +7,9 @@ const ProfileModule = (props) => {
             <img className="profile-module_img" src={props.img} alt="Profile Headshot" />
             <span className="profile-module_textarea">
                 <h3>{props.title}</h3>
-                <p>{props.descr}</p>
+                <p>“It Takes A Village” reflects my life experiences. A black teenage parent, my Mother, took adult education programs (supported by an extended family) to earn her license as a practical nurse. While completing her B.A. in Nursing, she died of leukemia just before my 13th birthday.</p>
+                <br />
+                <p>A parent to three daughters myself, she has inspired me to serve communities that have helped me and others over time. Community colleges better support struggling families with affordable access to high-quality public education and workforce training while with childcare services, healthcare, housing, and other partners that help pave pathways to opportunity.</p>
                 <Link to={props.link} className="btn minimal-btn" style={{marginTop:"15px"}}>{props.linkText} {props.icon}</Link>
             </span>
         </div>

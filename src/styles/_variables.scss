@@ -46,6 +46,7 @@ $colors: (
   textHeader : $dark-blue,
   textSubHeader: $blue,
   lightText: $light-lower,
+  normalText: rgb(45, 45, 45),
   hiddenText: $med-blue,
 
   // BTN:
@@ -86,6 +87,7 @@ $colors-dark: (
   lightText: $dark-lower,
   hiddenText: #394d6d,
   textSubHeader: $blue,
+  normalText: rgb(200, 200, 200),
 
   // Button
   lightClean-btnBG: #2F3642,

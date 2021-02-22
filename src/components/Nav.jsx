@@ -14,9 +14,9 @@ const Nav = (props) => {
         <nav>
             <div className="nav-wrapper">
                 <div className="logo-contain">
-                    <a href="/" exact="true">
+                    <Link to="/" exact="true">
                         <img src={props.logo} alt="Rieko Mia Williams For PCC Logo" id="logo" />
-                    </a>
+                    </Link>
                 </div>
                 <div className="nav-contain" style={{display: mobileMenu ? 'block' : 'none'}}>
                     <Link className="nav-item" to="/meet-reiko" onClick={handleMobileToggle}>Meet Reiko</Link>

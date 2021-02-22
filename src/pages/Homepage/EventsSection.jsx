@@ -1,25 +1,25 @@
 import React from 'react'
 import SectionTemplate from '../../components/SectionTemplate'
 import { RiCalendarEventLine } from "react-icons/ri";
-import RmwGroup from '../../assets/imgs/RMW-group.jpg'
+import { eventsData } from '../../data/eventsData'
 
 const EventsSection = () => {
-    // const [isMenuOpen, SetIsMenuOpen] = useState(false)
-    
     return (
         <SectionTemplate topic="events" tag="events">
             <h1> Events </h1>
 
             {/* Events Module */}
             <div className="events-module">
-                <span className="events-module_section">
-                    <span className="event-des">
-                        <h3>Campaign Kick - Off</h3>
-                        <p>Join me for my first campaign event! Come learn about my priorities and why representation matters. Speakers at the event include: Alex Díaz Rios, Zone 7 PCC Board Director Olivia Alcaire, Hillsboro City Councilor Citlalli Nuñez, PCC Student And More!</p>
-                        <a target="_blank" rel="noreferrer" href="https://calndr.link/event/9KSRrUdaTG" className="btn blue-btn">View Event <RiCalendarEventLine  className="btn-icon" /></a>
+                {eventsData.map(event => (
+                    <span key={event.id} className="events-module_section">
+                        <span className="event-des">
+                            <h3>{event.title}</h3>
+                            <p>{event.description}</p>
+                            <a target="_blank" rel="noreferrer" href={event.link} className="btn blue-btn">View Event <RiCalendarEventLine  className="btn-icon" /></a>
+                        </span>
+                        <span className="event-img" style={{background: `url('${event.img}')`}} />
                     </span>
-                    <span className="event-img" style={{background: `url('${RmwGroup}')`}} />
-                </span>
+                ))}
                 {/* <span className="events-module_section">
                     <span className="event-img" style={{background: "url('https://via.placeholder.com/420x250?text=Events%20Image')"}} />
                     <span className="event-des">

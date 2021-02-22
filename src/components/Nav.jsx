@@ -24,7 +24,7 @@ const Nav = (props) => {
                 <div className="nav-contain" style={{display: mobileMenu ? 'block' : 'none'}}>
                     <Link className="nav-item" to="/meet-reiko" onClick={handleMobileToggle}>Meet Reiko</Link>
                     {navItems.map(navs => (
-                        <React.Fragment>
+                        <React.Fragment key={navs.id}>
                             <a className="nav-item" href={navs.path} onClick={handleMobileToggle}>{navs.title}</a>
                         </React.Fragment>
                     ))}

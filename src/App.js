@@ -38,7 +38,7 @@ const App = () => {
         </Helmet>
         <navContext.Provider value={navObjects}>
           <div className="RMW_container">
-              <Nav logo={Logo} />
+              <Nav />
               <div className="RMW_wrapper">
                 <AnimatePresence exitBeforeEnter>
                   <Switch>

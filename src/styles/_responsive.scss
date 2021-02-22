@@ -46,8 +46,11 @@
     }
 
     .logo-contain #logo {
-        max-height: 75px !important;
         padding: 5px 0px !important;
+        
+        img, source {
+            max-height: 75px !important;
+        }
     }
 
     .donate {

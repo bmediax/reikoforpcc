@@ -7,6 +7,9 @@ import { motion } from 'framer-motion'
 import { useMediaQuery } from 'react-responsive';
 import { navVariants } from '../tools/motionVariants'
 
+import logoPng from "../assets/logo.png"
+import logoWebp from '../assets/logo.webp'
+
 const Nav = (props) => {
     const isMobile = useMediaQuery({ query: `(max-width:860px)`})
 
@@ -21,7 +24,11 @@ const Nav = (props) => {
             <div className="nav-wrapper">
                 <div className="logo-contain">
                     <Link to="/" exact="true">
-                        <img src={props.logo} alt="Rieko Mia Williams For PCC Logo" id="logo" />
+                        <picture id="logo">
+                            <source srcSet={logoWebp} type="image/webp" />
+                            <source srcSet={logoPng} type="image/jpeg" /> 
+                            <img src={logoPng} alt="Rieko Mia Williams For PCC Logo"/>
+                        </picture>
                     </Link>
                 </div>
                 <motion.div className="nav-contain" style={{display: mobileMenu ? 'block' : 'none'}} animate={mobileMenu ? "open" : "closed"} variants={isMobile? navVariants: null}>

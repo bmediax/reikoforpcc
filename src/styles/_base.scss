@@ -54,11 +54,13 @@ nav {
     }
 
     .logo-contain {
+      padding:5px 0px;
       #logo {
-        max-height:100px;
-        padding:10px 0px;
-        display:block;
-        margin:auto;
+        img, source {
+          max-height:65px !important;
+          display:block;
+          margin:auto;
+        }
       }
     }
     .nav-contain {

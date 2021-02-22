@@ -2,12 +2,12 @@ import React from 'react'
 import { Helmet } from "react-helmet"
 import { motion } from 'framer-motion'
 import './MeetReiko.scss'
-import { variants as motionVariants } from '../../tools/motionVariants'
+import { pageVariants } from '../../tools/motionVariants'
 import SectionTemplate from '../../components/SectionTemplate'
 
 const MeetReiko = () => {
     return (
-        <motion.div initial="out" animate="in" exit="out" variants={motionVariants}>
+        <motion.div initial="out" animate="in" exit="out" variants={pageVariants}>
             <Helmet>
                 <title> Reiko 4 PCC | Meet Reiko </title>
             </Helmet>

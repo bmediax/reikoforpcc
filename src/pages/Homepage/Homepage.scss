@@ -20,7 +20,7 @@
         padding:20px 30px;
         background:variables.getColor(darkBase);
         @include variables.objectCorner(medium);
-        @include variables.enableAnimation;
+        // @include variables.enableAnimation;
 
         &:hover {
             background:variables.getColor(lightBase);

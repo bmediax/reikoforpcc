@@ -22,10 +22,10 @@
         flex:2;
         padding:20px 30px;
         padding:2% 2.5%;
-        background:variables.getColor(darkBase);
+        // background:variables.getColor(darkBase);
         
         p {
-            color:variables.getColor(lightText);
+            color:variables.getColor(normalText);
             padding: 0px;
             margin: 0;
             line-height:35px;

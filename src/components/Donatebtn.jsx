@@ -1,5 +1,5 @@
 import { AiFillHeart } from "react-icons/ai";
-import { useContext } from "react/cjs/react.development";
+import { useContext } from 'react'
 import { donationContext } from "../tools/donationContext";
 
 const Donatebtn = (props) => {

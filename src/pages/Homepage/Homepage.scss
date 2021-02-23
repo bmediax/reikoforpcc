@@ -187,8 +187,10 @@
 }
 
 #slider {
-    background:variables.getColor(Darkbase);
-    height:60vmin;
+    // background:url(../../assets/imgs/Reiko-Elections.jpg);
+    // background-size:cover;
+    // background-position: center;
+    height:80vh;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -201,11 +203,12 @@
         padding:0px;
         margin:auto;
         text-align:center;
+        @include variables.objectShadow("hover");
     }
     
     h1 {
         font-size:8vmin;
-        color:variables.$blue;
+        color:#FFF;
     }
     
     p {

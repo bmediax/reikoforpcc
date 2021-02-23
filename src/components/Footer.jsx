@@ -1,6 +1,6 @@
 // import { Link } from 'react-router-dom'
 import { useContext } from 'react'
-import { SiFacebook, SiInstagram, SiMinutemailer } from "react-icons/si";
+import { SiInstagram, SiMinutemailer } from "react-icons/si";
 import ReactTooltip from "react-tooltip";
 import { navContext } from '../tools/navContext';
 

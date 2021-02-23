@@ -41,6 +41,7 @@ $colors: (
   // BASE:
   lightBase: $light-high,
   darkBase: $light-med,
+  Darkbase: $atom-blue,
 
   // TEXT
   textHeader : $dark-blue,
@@ -65,7 +66,6 @@ $colors: (
   textOnDark: $atom-blue, //Color on Dark BG
   textOnOrange: #FFF, // Text on Orange BG
   selectedText : $med-blue,
-  Darkbase: $atom-blue,
   text3 : $dark-blue,
   base2 : $light-blue,
   objBG : $dark-blue,

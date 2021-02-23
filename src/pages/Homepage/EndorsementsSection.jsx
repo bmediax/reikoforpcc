@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { React } from 'react'
 import { AiFillHeart } from 'react-icons/ai'
 import SectionTemplate from '../../components/SectionTemplate'
 
@@ -48,10 +48,10 @@ const EndorsementsSection = () => {
                     </span>
                 </div>
             </div>
-            <div className="endo_want">
+            {/* <div className="endo_want" style={{paddingBottom: "6%"}}>
                 <h2> Interested in Endorsing? </h2>
-                <Link to="/" className="btn red-btn" style={{display: "inline-block"}}>I want to Endorse Reiko! <AiFillHeart className="btn-icon" /></Link>
-            </div>
+                <button className="btn red-btn" style={{cursor: "pointer", display: endorse ? "none" : "inline-block", border: "none"}}>I want to Endorse Reiko! <AiFillHeart className="btn-icon" /></button>
+            </div> */}
         </SectionTemplate>
     )
 }

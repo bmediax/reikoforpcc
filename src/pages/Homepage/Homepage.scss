@@ -185,3 +185,39 @@
         }
     }
 }
+
+#slider {
+    background:variables.getColor(Darkbase);
+    height:60vmin;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    span.slider_text {
+        flex:1;
+    }
+
+    h1, p {
+        padding:0px;
+        margin:auto;
+        text-align:center;
+    }
+    
+    h1 {
+        font-size:8vmin;
+        color:variables.$blue;
+    }
+    
+    p {
+        font-size:3.5vmin;
+        color:#FFF;
+    }
+}
+
+@supports(-webkit-appearance: none) or (-moz-appearance: none) {
+    input[type='checkbox'],
+    input[type='radio'] {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+    }
+  }

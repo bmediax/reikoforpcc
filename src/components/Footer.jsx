@@ -18,9 +18,9 @@ const Footer = (props) => {
                 ))};
                 </ul>
                 <div className="footer-social">
-                    <a href="https://google.com"><SiMinutemailer data-for="main" data-tip="Email Us" data-iscapture="true" alt="Email Reiko" /></a>
-                    <a href="https://google.com"><SiFacebook data-for="main" data-tip="Like us on Facebook" data-iscapture="true" alt="Like on Facebook" /></a>
-                    <a href="https://google.com"><SiInstagram data-for="main" data-tip="Follow us on Instagram" data-iscapture="true" alt="Follow us on Facebook"/></a>
+                    <a href="mailto:reiko4pcc@gmail.com"><SiMinutemailer data-for="main" data-tip="Email Us" data-iscapture="true" alt="Email Reiko" /></a>
+                    {/* <a href="https://google.com"><SiFacebook data-for="main" data-tip="Like us on Facebook" data-iscapture="true" alt="Like on Facebook" /></a> */}
+                    <a href="https://www.facebook.com/Williams4PCC"><SiInstagram data-for="main" data-tip="Follow us on Instagram" data-iscapture="true" alt="Follow us on Facebook"/></a>
                     <ReactTooltip
                         id="main"
                         multiline={true}

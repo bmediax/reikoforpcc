@@ -1,4 +1,4 @@
-// import SliderView from "../../components/SliderView"
+import SliderView from "../../components/SliderView"
 import { motion } from 'framer-motion'
 import './Homepage.scss'
 import { pageVariants } from '../../tools/motionVariants'
@@ -10,7 +10,7 @@ import EventsSection from './EventsSection'
 const Homepage = () => {
     return (
         <motion.div className="container" initial="out" animate="in" exit="out" variants={pageVariants}>
-            {/* <SliderView /> */}
+            <SliderView />
             <Meetreiko />
             <PrioritiesSection />
             <EndorsementsSection />

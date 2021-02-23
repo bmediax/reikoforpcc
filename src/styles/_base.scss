@@ -197,6 +197,17 @@ h3 {
   }
 }
 
+.blue-btn-solid {
+  background: variables.$blue;
+  color:#FFF;
+
+  &:hover {
+    // @include variables.buttonGradient(blue-gradient);
+    cursor:pointer;
+    box-shadow: variables.$shadowView rgba(variables.$blue, .2);
+  }
+}
+
 .donate-btn {
   @include variables.buttonGradient(orange-gradient);
   color:variables.getColor(lightBase);

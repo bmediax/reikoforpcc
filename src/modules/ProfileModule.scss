@@ -17,6 +17,12 @@
         text-align:center;
         img, source {
             @include variables.objectCorner(medium);
+            box-shadow:0px 5px 20px rgba(0, 0, 0, 0.1);
+            @include variables.enableAnimation();
+            
+            &:hover {
+                box-shadow:0px 10px 40px rgba(0, 0, 0, 0.2);
+            }
         }
     }
     

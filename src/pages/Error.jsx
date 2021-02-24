@@ -1,8 +1,12 @@
 import './Error.scss'
+import RiekoLogo from '../assets/logo.png'
 
 const Error = () => {
     return (
-        <h1>Error 404 | Not Found</h1>
+        <div id="error">
+            <img src={RiekoLogo} alt="Reiko Mia Williams for PCC Zone 7" id="notfound-logo" />
+            <h1>Error 404: Not Found</h1>
+        </div>
     )
 }
 

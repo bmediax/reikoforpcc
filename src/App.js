@@ -46,7 +46,7 @@ const App = () => {
                     <Route path="/meet-reiko" component={MeetReiko} />
                     <Route path="/priorities" component={Priorities} />
                     <Route path="/endorsements" component={Endorsements} />
-                    {/* <Route component={Error} /> */}
+                    <Route component={Error} />
                   </Switch>
                 </AnimatePresence>
               </div>

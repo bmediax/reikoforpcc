@@ -1,32 +1,33 @@
 name: Surge Development
 
-on: push
+on:
+  push:
+    branches: [ dev ]
 
 jobs:
-  build:
-
-    runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [10.x, 12.x, 14.x, 15.x]
-
-    steps:
-    - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
-    - run: npm ci
-    - run: npm run build --if-present
   my-job:
     name: Surge Development
     runs-on: ubuntu-latest
     steps:
-      - name: Deploy to reikoforpcc.surge.sh
-        uses: dswistowski/surge-sh-action@v1
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+      # Install node version 12
+      - uses: actions/setup-node@v2-beta
         with:
-          domain: 'reikoforpcc.surge.sh'
-          project: './build'
-          login: ${{ secrets.surge_login }}
-          token: ${{ secrets.surge_token }}
+          node-version: '12'
+
+      # Install npm packages
+      - name: Install packages
+        run: npm install
+
+      # Build react app
+      - name: Build the app
+        run: npm run build
+
+      # Install Surge 
+      - name: Install Surge
+        run: npm install -g surge
+
+      # Deploy to the defined URL using the token
+      - name: Deploy to surge
+        run: surge ./build reikoforpcc.surge.sh --token ${{ secrets.surge_token }}

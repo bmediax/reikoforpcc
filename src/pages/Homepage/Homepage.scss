@@ -94,7 +94,7 @@
 
             .endorsement-card {
                 background:variables.getColor(lightBase);
-                padding:10% 0;
+                padding:10% 10px;
                 border:2px solid variables.getColor(darkBase);
                 @include variables.objectCorner('medium');
                 transition-property: box-shadow;
@@ -128,33 +128,6 @@
                     &:before {
                         color:variables.$blue;
                     }
-                }
-            }
-        }
-
-        .endo_logo-part {
-            display:flex;
-            margin-bottom:25px;
-
-            &:last-child {
-                margin-bottom:0px;
-            }
-
-            .endos {
-                flex:1;
-                align-self:center;
-                @include variables.objectCorner("small");
-                // min-height: 25px;
-
-                img {
-                    display:block;
-                    margin:auto;
-                }
-
-                p {
-                    padding:0px;
-                    margin:0;
-                    text-align:center;
                 }
             }
         }

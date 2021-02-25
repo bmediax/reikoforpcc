@@ -28,17 +28,6 @@
                 @include variables.objectShadow(base);
             }
         }
-
-        .donate-mobile {
-            display:block !important; 
-            background:variables.getColor(red-btnBG);
-            color:variables.getColor(red-btnTXT) !important;
-            
-            &:hover {
-                background:variables.$red;
-                color:variables.getColor(lightBase) !important;
-            }
-        } 
     }
 
     .footer-nav {

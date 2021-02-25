@@ -6,6 +6,7 @@ import { navContext } from '../tools/navContext'
 import { motion } from 'framer-motion'
 import { useMediaQuery } from 'react-responsive';
 import { navVariants } from '../tools/motionVariants'
+import { btnDonateVariants } from '../tools/motionVariants'
 
 import logoPng from "../assets/logo.png"
 import logoWebp from '../assets/logo.webp'
@@ -22,9 +23,9 @@ const Nav = (props) => {
     return (
         <nav>
             <div className="nav-wrapper">
-                <div className="mobile-nav-contain">
+                <motion.div className="mobile-nav-contain" whileHover="in" whileTap="out" variants={btnDonateVariants}>
                     <RiMenu3Fill className="menu-icon" onClick={handleMobileToggle} />
-                </div>
+                </motion.div>
                 <div className="logo-contain">
                     <Link to="/" exact="true">
                         <picture id="logo">

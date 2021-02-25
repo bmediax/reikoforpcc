@@ -70,11 +70,13 @@ nav {
         @include variables.objectCorner("small");
         @include variables.enableAnimation;
         padding:10px;
+        background:variables.getColor(blue-btnBG);
+        color:variables.$blue;
 
         &:hover {
           cursor:pointer;
-          background:variables.getColor(darkBase);
-          color:variables.$blue;
+          background:variables.$blue;
+          color:#FFF;
         }
       }
     }

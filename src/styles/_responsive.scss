@@ -51,6 +51,7 @@
     }
 
     .logo-contain #logo {
+        flex:2;
         padding: 5px 0px !important;
         
         img, source {
@@ -58,14 +59,34 @@
         }
     }
 
-    .donate {
-        display:none !important;
+    .donate-btn {
+        background:variables.getColor(red-btnBG) !important;
+        color:variables.getColor(red-btnTXT) !important;
     }
 
-    .menu-icon {
-        display:block !important;
-        top:15px !important;
+    a.donate {
+        width:50px !important;
+        padding:10px 0px !important;
+        text-align:center;
+        
+        &:before {
+            content:"" !important;
+        }
+
+        .btn-icon {
+            margin-bottom:-2px;
+            margin-left:0px;
+        }
     }
+
+    .mobile-nav-contain {
+        display:block !important;
+
+        .menu-icon {
+            display:block !important;
+        }
+    }
+
 }
 
 @media screen and (max-width:800px) {

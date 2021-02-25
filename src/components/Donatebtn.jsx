@@ -14,7 +14,7 @@ const Donatebtn = (props) => {
             whileHover="in" 
             whileTap="out" 
             variants={btnDonateVariants}>
-                Donate <AiFillHeart className="btn-icon" style={{marginTop: "-2px"}}/>
+                <AiFillHeart className="btn-icon" style={{marginTop: "-2px"}}/>
         </motion.a>
     )
 }

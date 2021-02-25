@@ -46,6 +46,7 @@ nav {
   .nav-wrapper {
     display:flex;
     align-items:center;
+    justify-content:center;
     min-height:50px;
     // max-width:variables.$page-width;
     margin:auto;
@@ -54,7 +55,32 @@ nav {
       flex:1;
     }
 
+    .mobile-nav-contain {
+      display:none;
+      align-self: center;
+      justify-self: center;
+      
+      .menu-icon {
+        display:none;
+        font-size:3rem;
+        text-align:center;
+        margin:auto;
+        color:variables.getColor(textHeader);
+        background:variables.getColor(lightBase);
+        @include variables.objectCorner("small");
+        @include variables.enableAnimation;
+        padding:10px;
+
+        &:hover {
+          cursor:pointer;
+          background:variables.getColor(darkBase);
+          color:variables.$blue;
+        }
+      }
+    }
+
     .logo-contain {
+      flex:1;
       // padding:5px 0px;
       #logo {
         img, source {
@@ -101,23 +127,9 @@ nav {
         margin:auto;
         border-radius:10px;
         text-align:center;
-      }
-      .menu-icon {
-        display:none;
-        font-size:3rem;
-        position: absolute;
-        right: 25px;
-        top: 25px;
-        color:variables.getColor(textHeader);
-        background:variables.getColor(lightBase);
-        @include variables.objectCorner("small");
-        @include variables.enableAnimation;
-        padding:10px;
 
-        &:hover {
-          cursor:pointer;
-          background:variables.getColor(darkBase);
-          color:variables.$blue;
+        &:before {
+          content:"Donate"
         }
       }
     }
@@ -209,12 +221,13 @@ h3 {
 }
 
 .donate-btn {
-  @include variables.buttonGradient(orange-gradient);
-  color:variables.getColor(lightBase);
+  background:variables.getColor(red-btnBG);
+  color:variables.getColor(red-btnTXT);
 
   &:hover {
-    box-shadow: variables.$shadowView rgba(variables.$red, .2);
+    background: variables.$red;
     color:#FFF;
+    box-shadow: variables.$shadowView rgba(variables.$red, .2);
   }
 }
 

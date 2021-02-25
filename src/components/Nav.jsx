@@ -22,6 +22,9 @@ const Nav = (props) => {
     return (
         <nav>
             <div className="nav-wrapper">
+                <div className="mobile-nav-contain">
+                    <RiMenu3Fill className="menu-icon" onClick={handleMobileToggle} />
+                </div>
                 <div className="logo-contain">
                     <Link to="/" exact="true">
                         <picture id="logo">
@@ -41,7 +44,6 @@ const Nav = (props) => {
                     <a className="nav-item donate-mobile" href={props.donationlink} style={{display: 'none'}}>Donate</a>
                 </motion.div >
                 <div className="donate-contain">
-                    <RiMenu3Fill className="menu-icon" onClick={handleMobileToggle} />
                     <Donatebtn />
                 </div>
             </div>

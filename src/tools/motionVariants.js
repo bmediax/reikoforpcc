@@ -22,3 +22,12 @@ export const btnDonateVariants = {
         scale: 0.9
     },
 }
+
+export const cardVariants = {
+    in: {
+        scale: 1.1
+    },
+    out: {
+        scale: 0.9
+    },
+}

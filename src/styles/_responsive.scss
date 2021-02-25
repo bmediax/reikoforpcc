@@ -71,7 +71,10 @@
             display:block !important;
         }
     }
-
+    .endorsementmodule_wrapper {
+        grid-template-columns: 1fr 1fr !important;
+        grid-gap:10px !important;
+    }
 }
 
 @media screen and (max-width:800px) {
@@ -112,7 +115,9 @@
             width:100%;
         }
         .endo_logos {
-            padding: 25px 5%;
+            padding: 0px;
+            box-shadow:none !important;
+            background:none !important;
 
             .endo_logo-part {
                 flex-direction: column;

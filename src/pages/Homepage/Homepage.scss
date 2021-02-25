@@ -74,7 +74,7 @@
 .endorsements {
     .endo_logos {
         background:variables.getColor(lightBase);
-        padding:3% 5%;
+        padding:5% 5%;
         @include variables.objectCorner(medium);
         @include variables.enableAnimation;
         @include variables.objectShadow(base);

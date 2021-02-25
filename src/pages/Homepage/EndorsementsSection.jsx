@@ -6,7 +6,6 @@ import SectionTemplate from '../../components/SectionTemplate'
 const EndorsementsSection = () => {
     return (
         <SectionTemplate topic="endorsements" tag="endorsements">
-            <h1> Endorsements </h1>
 
             {/* Endorsement Logos */}
             {/* <div className="endo_logos">
@@ -44,7 +43,7 @@ const EndorsementsSection = () => {
 
             {/* Endorsement Logos */}
             <div className="endo_logos">
-                <h2>Students</h2>
+                <h1> Endorsements </h1>
                 <div className="endorsementmodule_wrapper">
                     <EndorsementCard />
                     <EndorsementCard />

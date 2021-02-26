@@ -147,9 +147,11 @@
 
         &:nth-child(2) {
             flex-direction: column !important;
-            .event-img {
-                margin-right:0px !important;
-            }
+        }
+
+        .event-date {
+            width:170px !important;
+            margin:auto;
         }
     }
 }

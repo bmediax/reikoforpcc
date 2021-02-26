@@ -17,7 +17,11 @@ const EventsSection = () => {
                             <p>{event.description}</p>
                             <a target="_blank" rel="noreferrer" href={event.link} className="btn blue-btn">View Event <RiCalendarEventLine  className="btn-icon" /></a>
                         </span>
-                        <span className="event-img" style={{background: `url('${event.img}')`}} />
+                        <span className="event-date">
+                            <span className="event-date_month">March</span>
+                            <span className="event-date_day">5th</span>
+                        </span>
+                        {/* <span className="event-img" style={{background: `url('${event.img}')`}} /> */}
                     </span>
                 ))}
                 {/* <span className="events-module_section">

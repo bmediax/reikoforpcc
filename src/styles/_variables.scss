@@ -24,6 +24,9 @@ $para-size: 1.2rem;
 $small-size: 1rem;
 $page-width: 1200px;
 
+$border-radius-small: 15px;
+$border-radius-medium: 30px;
+
 // Color Palette
 $blue:       #008DB1;
 $dark-blue:  #1E4B5D;
@@ -153,11 +156,11 @@ $colors-dark: (
 
 @mixin objectCorner($value) {
   @if $value == "small" {
-    border-radius:15px;
+    border-radius:$border-radius-small;
   }
 
   @else if $value == "medium" {
-    border-radius:25px;
+    border-radius:$border-radius-medium;
   }
 }
 

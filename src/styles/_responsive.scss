@@ -138,6 +138,18 @@
     .events-module_section {
         flex-direction: column-reverse;
 
+        .event-links {
+            flex-direction: column;
+            display:block;
+            width:100% !important;
+
+            .small-btn {
+                margin-top:15px !important;
+                width:100%;
+                margin-right:auto !important;
+            }
+        }
+
         .event-des {
             margin-top:variables.$objectSpace_small;
             margin-right:0 !important;

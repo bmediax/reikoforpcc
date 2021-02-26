@@ -1,8 +1,8 @@
 // Importing Index.scss Functions
-@use '../../styles/variables';
+@use '../../styles/variables' as *;
 
 .priorities {
-    background:variables.getColor(darkBase);
+    background:getColor(darkBase);
 }
 
 .three-column-option_container {
@@ -18,21 +18,21 @@
 
     div {
         padding:20px 30px;
-        background:variables.getColor(darkBase);
-        @include variables.objectCorner(medium);
-        // @include variables.enableAnimation;
+        background:getColor(darkBase);
+        @include objectCorner(medium);
+        // @include enableAnimation;
 
         &:hover {
-            background:variables.getColor(lightBase);
-            @include variables.objectShadow(base);
+            background:getColor(lightBase);
+            @include objectShadow(base);
             cursor: pointer;
 
             h2 {
-                color:variables.$blue;
+                color:$blue;
             }
 
             p {
-                color:variables.getColor(hiddenTextHover);
+                color:getColor(hiddenTextHover);
             }
         }
 
@@ -49,14 +49,14 @@
             text-align:center;
             margin:0;
             padding:10px 0 0 0;
-            color:variables.getColor(hiddenText);
+            color:getColor(hiddenText);
         }
 
         p {
             text-align:center;
             padding:10px 0 0 0;
             margin:0px;
-            color:variables.getColor(hiddenText);
+            color:getColor(hiddenText);
         }
 
         img {
@@ -73,14 +73,14 @@
 // Endorsements
 .endorsements {
     .endo_logos {
-        background:variables.getColor(lightBase);
+        background:getColor(lightBase);
         padding:5% 5%;
-        @include variables.objectCorner(medium);
-        @include variables.enableAnimation;
-        @include variables.objectShadow(base);
+        @include objectCorner(medium);
+        @include enableAnimation;
+        @include objectShadow(base);
 
         &:hover {
-            @include variables.objectShadow(hover)
+            @include objectShadow(hover)
         }
     }
 
@@ -89,26 +89,26 @@
         width:80%;
         padding-top:20px;
         margin:auto;
-        @include variables.objectCorner("small");
+        @include objectCorner("small");
     }
 }
 
 // Events Module
 .events {
-    background:variables.getColor(darkBase);
+    background:getColor(darkBase);
     .events-module_section {
         display:flex;
-        margin-bottom:variables.$objectSpace_small;
+        margin-bottom:$objectSpace_small;
 
         .event-des, .event-date {
-            background-color:variables.getColor(lightBase);
+            background-color:getColor(lightBase);
             min-height:250px;
-            @include variables.objectShadow("base");
-            @include variables.objectCorner("medium");
-            @include variables.enableAnimation;
+            @include objectShadow("base");
+            @include objectCorner("medium");
+            @include enableAnimation;
 
             &:hover {
-                @include variables.objectShadow("hover");
+                @include objectShadow("hover");
             }
         }
 
@@ -116,7 +116,7 @@
             flex:2.5;
             // padding:30px 40px;
             padding:3% 4%;
-            margin-right:variables.$objectSpace_small;
+            margin-right:$objectSpace_small;
 
             h3, p {
                 padding:0px;
@@ -129,7 +129,7 @@
             }
 
             p {
-                color:variables.getColor(lightText);
+                color:getColor(lightText);
                 line-height:35px;
             }
 
@@ -161,9 +161,9 @@
             .event-date_month {
                 flex:1.2;
                 font-size:3vmax;
-                background:variables.getColor(blue-btnTXT);
-                border-radius:variables.$border-radius-medium variables.$border-radius-medium 0px 0px;
-                color:variables.getColor(lightBase);
+                background:getColor(blue-btnTXT);
+                border-radius:$border-radius-medium $border-radius-medium 0px 0px;
+                color:getColor(lightBase);
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -175,7 +175,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                color:variables.$blue;
+                color:$blue;
             }
         }
 
@@ -193,28 +193,32 @@
     
             .event-date {
                 flex:1;
-                margin-right:variables.$objectSpace_small;
+                margin-right:$objectSpace_small;
             }
         }
     }
 
-    .even-past {
+    .event-past {
         .event-date {
             .event-date_month {
-                color:#000;
-                background:rgba(0, 0, 0, 0.05);
+                color:getColor(lightBase);
+                background:getColor(lightText);
             }
             .event-date_day {
-                color:#000;
+                color:getColor(lightText);
             }
         }
         .event-des {
             h3, p, .event-links a {
-                color:#000 !important;
+                color:getColor(lightText);
             }
 
             .event-links a {
-                background:rgb(0, 0, 0, 0.05);
+                background:rgba(0, 0, 0, 0.02);
+
+                &:hover {
+                    box-shadow:none;
+                }
             }
         }
     }

@@ -1,4 +1,4 @@
-@use '../styles/variables';
+@use '../styles/variables' as *;
 
 // Endorsement New
 .endorsementmodule_wrapper {
@@ -10,10 +10,10 @@
     align-items:center;
 
     .endorsement-card {
-        background:variables.getColor(lightBase);
         padding:10% 10px;
-        border:2px solid variables.getColor(darkBase);
-        @include variables.objectCorner('medium');
+        @include objectCorner('medium');
+        background:getColor(lightBase);
+        border:2px solid getColor(darkBase);
         transition-property: box-shadow;
         transition-duration: .4s;
 
@@ -31,7 +31,7 @@
             content:"Thank you";
             margin:auto;
             text-align:center;
-            color:variables.getColor(darkBase);
+            color:getColor(darkBase);
             font-weight:800;
             display:block;
             transition-property: color;
@@ -40,10 +40,10 @@
 
         &:hover {
             border-color: transparent;
-            @include variables.objectShadow(base);
+            @include objectShadow(base);
 
             &:before {
-                color:variables.$blue;
+                color:$blue;
             }
         }
     }

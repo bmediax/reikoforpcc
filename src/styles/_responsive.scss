@@ -142,6 +142,7 @@
             margin-top:variables.$objectSpace_small;
             margin-right:0 !important;
             box-shadow:none !important;
+            padding: 0 4% 3% 4%;
             background:variables.getColor(darkBase) !important;
         }
 
@@ -152,6 +153,10 @@
         .event-date {
             width:170px !important;
             margin:auto;
+
+            .event-date_month {
+                padding:10px 0px;
+            }
         }
     }
 }

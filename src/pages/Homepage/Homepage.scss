@@ -150,7 +150,7 @@
             
             .event-date_month {
                 flex:1.2;
-                font-size:4.4vmax;
+                font-size:3vmax;
                 background:variables.getColor(blue-btnTXT);
                 border-radius:variables.$border-radius-medium variables.$border-radius-medium 0px 0px;
                 color:variables.getColor(lightBase);
@@ -161,7 +161,7 @@
 
             .event-date_day {
                 flex:1.5;
-                font-size:7vmax;
+                font-size:8vmax;
                 display: flex;
                 justify-content: center;
                 align-items: center;

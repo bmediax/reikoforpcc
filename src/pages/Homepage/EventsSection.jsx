@@ -21,7 +21,6 @@ const EventsSection = () => {
                             <span className="event-date_month">February</span>
                             <span className="event-date_day">23</span>
                         </span>
-                        {/* <span className="event-img" style={{background: `url('${event.img}')`}} /> */}
                     </span>
                 ))}
                 {/* <span className="events-module_section">

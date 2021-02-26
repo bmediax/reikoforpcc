@@ -96,7 +96,6 @@
 // Events Module
 .events {
     background:variables.getColor(darkBase);
-
     .events-module_section {
         display:flex;
         margin-bottom:variables.$objectSpace_small;
@@ -192,12 +191,34 @@
                 margin-right:0px;
             }
     
-            .event-img {
+            .event-date {
                 flex:1;
                 margin-right:variables.$objectSpace_small;
             }
         }
     }
+
+    .even-past {
+        .event-date {
+            .event-date_month {
+                color:#000;
+                background:rgba(0, 0, 0, 0.05);
+            }
+            .event-date_day {
+                color:#000;
+            }
+        }
+        .event-des {
+            h3, p, .event-links a {
+                color:#000 !important;
+            }
+
+            .event-links a {
+                background:rgb(0, 0, 0, 0.05);
+            }
+        }
+    }
+
 }
 
 #slider {

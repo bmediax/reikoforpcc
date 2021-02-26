@@ -31,15 +31,14 @@ const EventsSection = () => {
                     <span className="event-des">
                         <h3>{caldata.data.title}</h3>
                         <p>{caldata.data.description}</p>
-
                         <div className="event-links">
-                            <a target="_blank" rel="noreferrer" href={caldata.data.link} className="small-btn blue-btn">
+                            <a href={caldata.links.event_page} className="small-btn blue-btn">
                                 View Event Page<RiCalendarEventLine  className="btn-icon" />
                             </a>
-                            <a target="_blank" rel="noreferrer" href={caldata.data.link} className="small-btn blue-btn">
+                            <a href={caldata.links.google} className="small-btn blue-btn">
                                 Add to Google <RiCalendarEventLine  className="btn-icon" />
                             </a>
-                            <a target="_blank" rel="noreferrer" href={caldata.data.link} className="small-btn blue-btn">
+                            <a href={caldata.links.office365} className="small-btn blue-btn">
                                 Add to Outlook<RiCalendarEventLine  className="btn-icon" />
                             </a>
                         </div>

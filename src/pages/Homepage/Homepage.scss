@@ -134,9 +134,20 @@
                 line-height:35px;
             }
 
-            a {
-                margin-top:20px;
-                display:inline-block;
+            .event-links {
+                display:flex;
+                align-items: center;
+
+                a {
+                    flex:1;
+                    margin-top:20px;
+                    font-size:1rem !important;
+                    margin-right:15px;
+
+                    &:last-child {
+                        margin-right:0px !important;
+                    }
+                }
             }
         }
 

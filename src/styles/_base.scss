@@ -159,6 +159,19 @@ h3 {
   color:variables.getColor(textSubHeader);
 }
 
+.small-btn {
+  display:block;
+  text-align:center;
+  text-decoration:none;
+  font-family:"Poppins", sans-serif;
+  font-weight:600;
+  font-size:1rem;
+  padding:12px 10px;
+
+  @include variables.objectCorner("small");
+  @include variables.enableAnimation;
+}
+
 .btn {
   display:block;
   text-align:center;

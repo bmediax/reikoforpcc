@@ -6,6 +6,7 @@ import Meetreiko from './Meetreiko'
 import PrioritiesSection from './PrioritiesSection'
 import EndorsementsSection from './EndorsementsSection'
 import EventsSection from './EventsSection'
+import GetinvolvedSection from "./GetinvolvedSection"
 
 const Homepage = () => {
     return (
@@ -14,6 +15,7 @@ const Homepage = () => {
             <Meetreiko />
             <PrioritiesSection />
             <EndorsementsSection />
+            <GetinvolvedSection />
             <EventsSection />
         </motion.div>
     )

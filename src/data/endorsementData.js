@@ -46,5 +46,47 @@ export const endorsementData = [
         position:"",
         company:"",
         id: 8
+    },
+    {
+        name: "Travis Nelson",
+        position: "Community Member",
+        company:"",
+        id: 9
+    },
+    {
+        name: "Danielle Garza",
+        position: "Community Member",
+        company:"",
+        id:10
+    },
+    {
+        name: "Jaime Rodriguez",
+        position: "Community Member",
+        company:"",
+        id:11
+    },
+    {
+        name: "Chuck Riley",
+        position: "State senator",
+        company:"",
+        id:12
+    },
+    {
+        name: "Dr. Katie Riley",
+        position: "Washington County Kids President",
+        company:"",
+        id:13
+    },
+    {
+        name: "Nafisa Fai",
+        position: "Washington County Commissioner",
+        company:"",
+        id:14
+    },
+    {
+        name: "Dr. Olga Acuna",
+        position: "Former Hillsboro City Councilor",
+        company:"",
+        id:15
     }
 ]

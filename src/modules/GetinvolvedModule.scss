@@ -1,0 +1,11 @@
+@use '../styles/variables' as *;
+
+.get-involved {
+    @include buttonGradient(orange-gradient);
+
+    h1 {
+        color:getColor(darkBase);
+        padding:0px;
+        margin:0px 0px 20px 0px;
+    }
+}

@@ -7,7 +7,7 @@ const PopupModule = (props) => {
     }
 
     return (
-        <div className="popup-modal_wrapper">
+        <div id={props.ide} className="popup-modal_wrapper">
             {props.children}
         </div>
     );

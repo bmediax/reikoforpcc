@@ -1,6 +1,8 @@
 @use '../styles/variables' as *;
 
 .get-involved {
+    padding-top:4% !important;
+    padding-bottom:4% !important;
     @include buttonGradient(orange-gradient);
 
     h1 {

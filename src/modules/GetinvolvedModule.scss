@@ -157,7 +157,7 @@
       & + label {
         font-size: 14px;
         line-height: 21px;
-        display: inline-block;
+        // display: inline-block;
         vertical-align: top;
         cursor: pointer;
         margin-left: 4px;
@@ -205,18 +205,18 @@
         }
       }
     }
-    input[type='radio'] {
-      border-radius: 50%;
-      &:after {
-        width: 19px;
-        height: 19px;
-        border-radius: 50%;
-        background: var(--active-inner);
-        opacity: 0;
-        transform: scale(var(--s, .7));
-      }
-      &:checked {
-        --s: .5;
-      }
-    }
-  }
+}
+    // input[type='radio'] {
+    //   border-radius: 50%;
+    //   &:after {
+    //     width: 19px;
+    //     height: 19px;
+    //     border-radius: 50%;
+    //     background: var(--active-inner);
+    //     opacity: 0;
+    //     transform: scale(var(--s, .7));
+    //   }
+    //   &:checked {
+    //     --s: .5;
+    //   }
+    // }

@@ -19,7 +19,7 @@ const GetinvolvedModule = () => {
         e.preventDefault();
         const {first, last, email, org, phonebank, lawnsign, endorse} = formData
         try {
-            const response = await fetch(
+            await fetch(
                 "https://v1.nocodeapi.com/bmediax/google_sheets/YnGwFVSmQsDSetUl?tabId=form",
                 {
                     method: "post",

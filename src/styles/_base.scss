@@ -264,15 +264,15 @@ h3 {
   outline:none;
   background:variables.getColor(darktextHeader);
   border: 3px solid variables.getColor(darktextHeader);
-  color:variables.getColor(lightBase);
+  color:variables.getColor(red-btnTXT);
   margin:auto;
 
   &:hover {
     // @include variables.buttonGradient(blue-gradient);
     cursor:pointer;
-    color:variables.getColor(darktextHeader);
-    background:variables.getColor(lightBase);
-    border-color: variables.getColor(lightBase);
+    color:#FFF;
+    // background:variables.getColor(lightBase);
+    // border-color: variables.getColor(lightBase);
     @include variables.objectShadow(hover);
   }
 }

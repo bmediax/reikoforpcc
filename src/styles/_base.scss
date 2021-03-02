@@ -260,6 +260,23 @@ h3 {
   }
 }
 
+.dark-btn-solid {
+  outline:none;
+  background:variables.getColor(darktextHeader);
+  border: 3px solid variables.getColor(darktextHeader);
+  color:variables.getColor(lightBase);
+  margin:auto;
+
+  &:hover {
+    // @include variables.buttonGradient(blue-gradient);
+    cursor:pointer;
+    color:variables.getColor(darktextHeader);
+    background:variables.getColor(lightBase);
+    border-color: variables.getColor(lightBase);
+    @include variables.objectShadow(hover);
+  }
+}
+
 .donate-btn {
   background:variables.getColor(red-btnBG);
   color:variables.getColor(red-btnTXT);

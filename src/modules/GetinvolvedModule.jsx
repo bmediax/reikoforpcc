@@ -13,7 +13,7 @@ const GetinvolvedModule = () => {
     return (
         <SectionTemplate topic="get-involved" tag="getinvolved">
             <h1>Get involved</h1>
-            <button onClick={toggleModal} className="btn transparent-btn-solid"> { modal ? "Hide" : "I want to help out!"}</button>
+            <button onClick={toggleModal} className="btn dark-btn-solid"> { modal ? "Hide" : "I want to help out!"}</button>
             <PopupModule show={modal}>
                 <h3> Get Involved</h3>
 
@@ -32,17 +32,17 @@ const GetinvolvedModule = () => {
 
                     <div className="getinvolved-checkbox">
                         <label>I'd like to</label><br />
-                        <input type="checkbox" id="phonebank" name="phonebank" value="phonebank" />
+                        <input type="checkbox" id="phonebank" name="phonebank" value="true" />
                         <label htmlFor="phonebank">Phone Bank</label>
                         <br />
-                        <input type="checkbox" id="lawnsign" name="lawnsign" value="lawnsign" />
+                        <input type="checkbox" id="lawnsign" name="lawnsign" value="true" />
                         <label htmlFor="lawnsign">Receive Lawn Sign </label>
                         <br />
-                        <input type="checkbox" id="endorse" name="endorse" value="endorse" />
+                        <input type="checkbox" id="endorse" name="endorse" value="true" />
                         <label htmlFor="endorse">Endorse Reiko and I authorize her campaign to display my name publicly</label>
                     </div>
 
-                    <input type="submit" value="send" className="btn minimal-btn" />
+                    <input type="submit" value="SEND" className="btn minimal-btn" />
                 </form>
             </PopupModule>
         </SectionTemplate>

@@ -18,6 +18,7 @@ const GetinvolvedModule = () => {
                 <h3> Get Involved</h3>
 
                 <form className="getinvolved-form">
+                    <div id="close-modal" onClick={toggleModal}>x</div>
                     <label for="first">First Name</label>
                     <input type="text" id="first" placeholder="John" />
 
@@ -39,7 +40,7 @@ const GetinvolvedModule = () => {
                         <label htmlFor="lawnsign">Receive Lawn Sign </label>
                         <br />
                         <input type="checkbox" id="endorse" name="endorse" value="true" />
-                        <label htmlFor="endorse">Endorse Reiko and I authorize her campaign to display my name publicly</label>
+                        <label htmlFor="endorse">Endorse Reiko and authorize her campaign to display my name publicly</label>
                     </div>
 
                     <input type="submit" value="SEND" className="btn minimal-btn" />

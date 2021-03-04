@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import './MeetReiko.scss'
 import { pageVariants } from '../../tools/motionVariants'
 import SectionTemplate from '../../components/SectionTemplate'
+import GetinvolvedModule from '../../modules/GetinvolvedModule'
 
 const MeetReiko = () => {
     return (
@@ -25,6 +26,7 @@ const MeetReiko = () => {
                     <li>Transparent commitment within the PCC Board to nurture a collaborative culture of Diversity, Equity, and Inclusion among faculty, staff, and administrators throughout Portland Community College and beyond.</li>
                 </ul>
             </SectionTemplate>
+            <GetinvolvedModule />
         </motion.div>
     )
 }

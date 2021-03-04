@@ -38,6 +38,7 @@ const GetinvolvedModule = () => {
                 setFormSent(true)
                 setMessage("Message Sent!");
                 setIsVerified(false)
+                const alertBanner = document.getElementById("banner-alert").style.display = "none";
             } catch (error) {
                 console.error("Error:", error);
                 setFormSent(false)
@@ -45,6 +46,7 @@ const GetinvolvedModule = () => {
             }
         } else {
             e.preventDefault();
+            const alertBanner = document.getElementById("banner-alert").style.display = "block";
             setMessage("Please enter Captcha to continue!")
             console.log("Nope")
         }
@@ -70,7 +72,7 @@ const GetinvolvedModule = () => {
             <button onClick={toggleModal} className="btn dark-btn-solid"> { modal ? "Hide Form" : "I want to help out!"}</button>
             <PopupModule show={modal} ide="getinvo">
                 <h3> Volunteer Form</h3>
-                <p align="center" className="banner-alert">{isVerified ? '' : message}</p>
+                <p align="center" className="banner-alert" id="banner-alert">{isVerified ? '' : message}</p>
                 <form className="getinvolved-form" required onSubmit={sendData} >
                     <div id="close-modal" onClick={toggleModal}>x</div>
                     <label htmlFor="first">First Name</label>

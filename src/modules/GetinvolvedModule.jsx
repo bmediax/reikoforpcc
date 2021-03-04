@@ -38,7 +38,6 @@ const GetinvolvedModule = () => {
                 setFormSent(true)
                 setMessage("Message Sent!");
                 setIsVerified(false)
-                const alertBanner = document.getElementById("banner-alert").style.display = "none";
             } catch (error) {
                 console.error("Error:", error);
                 setFormSent(false)
@@ -46,7 +45,6 @@ const GetinvolvedModule = () => {
             }
         } else {
             e.preventDefault();
-            const alertBanner = document.getElementById("banner-alert").style.display = "block";
             setMessage("Please enter Captcha to continue!")
             console.log("Nope")
         }

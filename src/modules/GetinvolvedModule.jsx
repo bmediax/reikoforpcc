@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Recaptcha from 'react-recaptcha'
 import SectionTemplate from '../components/SectionTemplate'
 import './GetinvolvedModule.scss'
 import PopupModule from './PopupModule'
@@ -8,6 +9,7 @@ const GetinvolvedModule = () => {
     const [ formSent, setFormSent ] = useState(false)
     const [ formData, setFormData ] = useState({})
     const [ message, setMessage ] = useState("")
+    const [isVerified, setIsVerified] = useState(false)
 
     const handleInput = e => {
         const copyFormData = { ...formData };
@@ -16,33 +18,50 @@ const GetinvolvedModule = () => {
     }
 
     const sendData = async e => {
-        e.preventDefault();
-        const {first, last, email, org, phonebank, lawnsign, endorse} = formData
-        try {
-            await fetch(
-                "https://v1.nocodeapi.com/bmediax/google_sheets/YnGwFVSmQsDSetUl?tabId=form",
-                {
-                    method: "post",
-                    body: JSON.stringify([[first, last, email, org, phonebank, lawnsign, endorse]]),
-                    headers: {
-                        "Content-Type": "application/json"
+        if (isVerified) {
+            e.preventDefault();
+            const {first, last, email, org, phonebank, lawnsign, endorse} = formData
+            try {
+                await fetch(
+                    "https://v1.nocodeapi.com/bmediax/google_sheets/YnGwFVSmQsDSetUl?tabId=form",
+                    {
+                        method: "post",
+                        body: JSON.stringify([[first, last, email, org, phonebank, lawnsign, endorse]]),
+                        headers: {
+                            "Content-Type": "application/json"
+                        }
                     }
-                }
-            );
-            // const json = await response.json();
-            // console.log("Success:", JSON.stringify(json));
-            toggleModal()
-            setFormSent(true)
-            setMessage("Message Sent!");
-        } catch (error) {
-            console.error("Error:", error);
-            setFormSent(false)
-            setMessage("Error");
+                );
+                // const json = await response.json();
+                // console.log("Success:", JSON.stringify(json));
+                toggleModal()
+                setFormSent(true)
+                setMessage("Message Sent!");
+                setIsVerified(false)
+            } catch (error) {
+                console.error("Error:", error);
+                setFormSent(false)
+                setMessage("Error");
+            }
+        } else {
+            e.preventDefault();
+            setMessage("Please enter Captcha to continue!")
+            console.log("Nope")
         }
     };
 
     const toggleModal = () => {
         setModal(!modal)
+    }
+
+    // recaptchaLoaded() {
+    //     console.log("Captcha successfully loaded");
+    // }
+
+    const verifyCallback = (response) => {
+        if (response) {
+            setIsVerified(true)
+        }
     }
 
     return (
@@ -51,6 +70,7 @@ const GetinvolvedModule = () => {
             <button onClick={toggleModal} className="btn dark-btn-solid"> { modal ? "Hide Form" : "I want to help out!"}</button>
             <PopupModule show={modal} ide="getinvo">
                 <h3> Volunteer Form</h3>
+                <p align="center" className="banner-alert">{isVerified ? '' : message}</p>
                 <form className="getinvolved-form" required onSubmit={sendData} >
                     <div id="close-modal" onClick={toggleModal}>x</div>
                     <label htmlFor="first">First Name</label>
@@ -76,7 +96,12 @@ const GetinvolvedModule = () => {
                         <input type="checkbox" id="endorse" name="endorse" onChange={handleInput} />
                         <label htmlFor="endorse">Endorse Reiko and authorize her campaign to display my name publicly</label>
                     </div>
-
+                    <Recaptcha 
+                        sitekey="6LcCE3IaAAAAAOV_06li12uB_T7iOjPCAbBUSM5C"
+                        render="explicit"
+                        verifyCallback={verifyCallback}
+                        SameSite="Secure"
+                    />
                     <input name="submit" type="submit" value="SEND" className="btn minimal-btn" />
                 </form>
             </PopupModule>

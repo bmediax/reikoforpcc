@@ -65,17 +65,17 @@ const GetinvolvedModule = () => {
                     <label htmlFor="titleorg">Title / Organization</label>
                     <input name="org" type="text" id="titleorg" placeholder="Title / Organization" onChange={handleInput}/>
 
-                    {/* <div className="getinvolved-checkbox"> */}
-                    <label>I'd like to</label><br />
-                    <input type="checkbox" id="phonebank" name="phonebank" value={true} onChange={handleInput} />
-                    <label htmlFor="phonebank">Phone Bank</label>
-                    <br />
-                    <input type="checkbox" id="lawnsign" name="lawnsign" value={true} onChange={handleInput} />
-                    <label htmlFor="lawnsign">Receive Lawn Sign </label>
-                    <br />
-                    <input type="checkbox" id="endorse" name="endorse" value={true} onChange={handleInput} />
-                    <label htmlFor="endorse">Endorse Reiko and authorize her campaign to display my name publicly</label>
-                    {/* </div> */}
+                    <div className="getinvolved-checkbox">
+                        <label>I'd like to</label><br />
+                        <input type="checkbox" id="phonebank" name="phonebank" onChange={handleInput} />
+                        <label htmlFor="phonebank">Phone Bank</label>
+                        <br />
+                        <input type="checkbox" id="lawnsign" name="lawnsign" onChange={handleInput} />
+                        <label htmlFor="lawnsign">Receive Lawn Sign </label>
+                        <br />
+                        <input type="checkbox" id="endorse" name="endorse" onChange={handleInput} />
+                        <label htmlFor="endorse">Endorse Reiko and authorize her campaign to display my name publicly</label>
+                    </div>
 
                     <input name="submit" type="submit" value="SEND" className="btn minimal-btn" />
                 </form>

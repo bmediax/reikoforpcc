@@ -38,3 +38,5 @@ const Layout = ({children, title}) => {
         </donationContext.Provider>
     )
 }
+
+export default Layout

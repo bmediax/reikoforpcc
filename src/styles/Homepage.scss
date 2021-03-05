@@ -1,5 +1,5 @@
 // Importing Index.scss Functions
-@use '../../styles/variables' as *;
+@use './variables' as *;
 
 .priorities {
     background:getColor(darkBase);

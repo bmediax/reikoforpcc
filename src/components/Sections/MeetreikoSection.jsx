@@ -4,7 +4,7 @@ import { FcAbout } from 'react-icons/fc'
 
 const AboutIcon = <FcAbout />
 
-const Meetreiko = () => {
+const MeetreikoSection = () => {
     return (
         <SectionTemplate topic="meet-reiko_section" tag="meet-reiko">
             <h1> Meet Reiko Mia Williams </h1>
@@ -18,4 +18,4 @@ const Meetreiko = () => {
     )
 }
 
-export default Meetreiko
+export default MeetreikoSection

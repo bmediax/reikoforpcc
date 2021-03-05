@@ -1,6 +1,6 @@
 import '../pages/Homepage/Homepage.scss'
 
-const SliderView = () => {
+const SliderSection = () => {
     return (
         <div id="slider">
             <span className="slider_text">
@@ -11,4 +11,4 @@ const SliderView = () => {
     )
 }
 
-export default SliderView
+export default SliderSection

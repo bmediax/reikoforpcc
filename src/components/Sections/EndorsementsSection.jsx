@@ -1,12 +1,12 @@
 import { React } from 'react'
 // import { AiFillHeart } from 'react-icons/ai'
-import EndorsementCard from '../../modules/EndorsementModule'
-import SectionTemplate from '../../components/SectionTemplate'
+import EndorsementCard from '../modules/EndorsementModule'
+import SectionLayout from '../../layout/SectionLayout'
 import { endorsementData } from '../../data/endorsementData'
 
 const EndorsementsSection = () => {
     return (
-        <SectionTemplate topic="endorsements" tag="endorsements">
+        <SectionLayout topic="endorsements" tag="endorsements">
             <div className="endo_logos">
                 <h1> Endorsements </h1>
                 <div className="endorsementmodule_wrapper">
@@ -19,7 +19,7 @@ const EndorsementsSection = () => {
                 <h2> Interested in Endorsing? </h2>
                 <button className="btn red-btn" style={{cursor: "pointer", display: endorse ? "none" : "inline-block", border: "none"}}>I want to Endorse Reiko! <AiFillHeart className="btn-icon" /></button>
             </div> */}
-        </SectionTemplate>
+        </SectionLayout>
     )
 }
 

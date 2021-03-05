@@ -12,12 +12,12 @@ import Layout from '../layout/Layout'
 import { pageVariants } from '../utils/motionVariants'
 
 // Sections
-import SliderSection from '../components/SliderSection'
+import SliderSection from '../components/Sections/SliderSection'
 import MeetreikoSection from '../components/Sections/MeetreikoSection'
 import PrioritiesSection from '../components/Sections/PrioritiesSection'
 import EndorsementsSection from '../components/Sections/EndorsementsSection'
 import EventsSection from '../components/Sections/EventsSection'
-import GetinvolvedModule from '../components/Sections/GetinvolvedModule'
+import GetinvolvedModule from '../components/modules/GetinvolvedModule'
 
 const Homepage = () => {
     return (

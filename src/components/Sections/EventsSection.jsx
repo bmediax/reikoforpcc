@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react'
-import SectionTemplate from '../../components/SectionTemplate'
 import { BiLinkExternal } from "react-icons/bi";
 import { IoLogoGoogle } from 'react-icons/io'
 import { SiMicrosoftoutlook } from 'react-icons/si'
-import axios from '../../tools/axios'
+import SectionLayout from '../../layout/SectionLayout'
+import axios from '../../utils/axios'
 
 const EventsSection = () => {
     const [caldata, setCaldata] = useState('');
@@ -24,7 +24,7 @@ const EventsSection = () => {
     }
 
     return (
-        <SectionTemplate topic="events" tag="events">
+        <SectionLayout topic="events" tag="events">
             <h1> Events </h1>
 
             {/* Events Module */}
@@ -56,7 +56,7 @@ const EventsSection = () => {
                     <a href="https://google.com" className="btn blue-btn">View Event <RiCalendarEventLine  className="btn-icon" /></a>
                 </span> */}
             </div>
-        </SectionTemplate>
+        </SectionLayout>
     )
 }
 

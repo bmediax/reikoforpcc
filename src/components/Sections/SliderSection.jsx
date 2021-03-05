@@ -1,5 +1,3 @@
-import '../pages/Homepage/Homepage.scss'
-
 const SliderSection = () => {
     return (
         <div id="slider">

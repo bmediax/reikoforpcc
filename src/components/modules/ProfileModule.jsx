@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import './ProfileModule.scss'
-import RmwHeadshotwebp from '../assets/imgs/RMW-headshot.webp'
-import RmwHeadshotjpeg from '../assets/imgs/RMW-headshot.jpg'
+import RmwHeadshotwebp from '../../assets/imgs/RMW-headshot.webp'
+import RmwHeadshotjpeg from '../../assets/imgs/RMW-headshot.jpg'
 
 const ProfileModule = (props) => {
     return (

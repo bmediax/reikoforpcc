@@ -1,12 +1,12 @@
-import ProfileModule from '../../modules/ProfileModule'
-import SectionTemplate from '../../components/SectionTemplate'
+import ProfileModule from '../modules/ProfileModule'
+import SectionLayout from '../../layout/SectionLayout'
 import { FcAbout } from 'react-icons/fc'
 
 const AboutIcon = <FcAbout />
 
 const MeetreikoSection = () => {
     return (
-        <SectionTemplate topic="meet-reiko_section" tag="meet-reiko">
+        <SectionLayout topic="meet-reiko_section" tag="meet-reiko">
             <h1> Meet Reiko Mia Williams </h1>
 
             <ProfileModule 
@@ -14,7 +14,7 @@ const MeetreikoSection = () => {
                 link="meet-reiko" 
                 linkText="Read More" 
                 icon={AboutIcon} />
-        </SectionTemplate>
+        </SectionLayout>
     )
 }
 

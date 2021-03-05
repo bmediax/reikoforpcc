@@ -1,4 +1,4 @@
-const SectionTemplate = (props) => {
+const SectionLayout = (props) => {
     return (
         <section className={props.topic} id={props.tag}>
             {props.children}
@@ -6,4 +6,4 @@ const SectionTemplate = (props) => {
     )
 }
 
-export default SectionTemplate
+export default SectionLayout

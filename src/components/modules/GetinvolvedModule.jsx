@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import Recaptcha from 'react-recaptcha'
-import SectionTemplate from '../components/SectionTemplate'
+import SectionLayout from '../../layout/SectionLayout'
 import './GetinvolvedModule.scss'
 import PopupModule from './PopupModule'
 
@@ -65,7 +65,7 @@ const GetinvolvedModule = () => {
     }
 
     return (
-        <SectionTemplate topic="get-involved" tag="getinvolved">
+        <SectionLayout topic="get-involved" tag="getinvolved">
             <h1>Get involved</h1>
             <button onClick={toggleModal} className="btn dark-btn-solid"> { modal ? "Hide Form" : "I want to help out!"}</button>
             <PopupModule show={modal} ide="getinvo">
@@ -106,7 +106,7 @@ const GetinvolvedModule = () => {
                 </form>
             </PopupModule>
             <p align="center" style={{margin: "0px", padding: "0px", color: "white", fontWeight: "Bold", fontSize: "2rem"}}>{formSent ? message : ''}</p>
-        </SectionTemplate>
+        </SectionLayout>
     )
 }
 

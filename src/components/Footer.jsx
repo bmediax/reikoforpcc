@@ -4,7 +4,7 @@ import ReactTooltip from "react-tooltip";
 
 import { MdEmail } from "react-icons/md";
 import { AiFillFacebook } from "react-icons/ai";
-import { navContext } from '../tools/navContext';
+import { navContext } from '../data/context/navContext';
 
 const Footer = (props) => {
     const navItems = useContext(navContext)
@@ -24,7 +24,7 @@ const Footer = (props) => {
                         id="main"
                         multiline={true}
                     />
-                    <a href="https://www.facebook.com/Williams4PCC"><AiFillFacebook data-for="main" data-tip="Like us on Facebook" data-iscapture="true" alt="Follow us on Facebook"/></a>
+                    <a href="https://facebook.com/Williams4PCC"><AiFillFacebook data-for="main" data-tip="Like us on Facebook" data-iscapture="true" alt="Follow us on Facebook"/></a>
                     <a href="mailto:reiko4pcc@gmail.com"><MdEmail data-for="main" data-tip="Email Us" data-iscapture="true" alt="Email Reiko" /></a>
                 </div>
             </div>

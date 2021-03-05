@@ -21,7 +21,7 @@ import GetinvolvedModule from '../components/modules/GetinvolvedModule'
 
 const Homepage = () => {
     return (
-        <Layout>
+        <Layout title="Homepage">
             <motion.div className="container" initial="out" animate="in" exit="out" variants={pageVariants}>
                 <SliderSection />
                 <MeetreikoSection />

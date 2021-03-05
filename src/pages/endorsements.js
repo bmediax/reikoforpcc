@@ -1,14 +1,12 @@
 import React from 'react'
-import { Helmet } from 'react-helmet'
+import Layout from '../layout/Layout'
+// import { Helmet } from 'react-helmet'
 
 const Endorsements = () => {
     return (
-        <React.Fragment>
-            <Helmet>
-                <title> Reiko 4 PCC | Endorsements </title>
-            </Helmet>
+        <Layout title="Endorsements">
             <h1> Endorsements </h1>
-        </React.Fragment>
+        </Layout>
     )
 }
 

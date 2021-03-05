@@ -1,15 +1,20 @@
 import React, { useState, useContext } from 'react'
+
+// Utils
 import { RiMenu3Fill } from 'react-icons/ri'
-import Donatebtn from '../components/Donatebtn'
-import { Link } from 'react-router-dom'
-import { navContext } from '../tools/navContext'
+import { Link } from 'gatsby'
 import { motion } from 'framer-motion'
 import { useMediaQuery } from 'react-responsive';
-import { navVariants } from '../tools/motionVariants'
-import { btnDonateVariants } from '../tools/motionVariants'
 
+// Component
+import Donatebtn from '../components/Donatebtn'
+import { navContext } from '../data/context/navContext'
+import { navVariants, btnDonateVariants } from '../utils/motionVariants'
+
+// Will be replaced with ----------------
 import logoPng from "../assets/logo.png"
 import logoWebp from '../assets/logo.webp'
+// gatsby image proccessor -------------
 
 const Nav = (props) => {
     const isMobile = useMediaQuery({ query: `(max-width:860px)`})

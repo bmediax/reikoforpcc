@@ -12,6 +12,9 @@ import Logo from '../assets/logo.png'
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
 
+// Style
+import '../styles/_base.scss'
+
 // Utils
 import { AnimatePresence } from 'framer-motion'
 

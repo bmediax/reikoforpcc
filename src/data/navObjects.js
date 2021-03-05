@@ -4,7 +4,6 @@ export const navObjects = [
         path: "/#priorities",
         exact: false,
         active: false,
-        // component: "<Priorities />",
         id:1
     },
     {
@@ -12,7 +11,6 @@ export const navObjects = [
         path: "/#endorsements",
         exact: false,
         active: false,
-        // component: "<Endorsements />",
         id:2
     },
     {
@@ -20,7 +18,6 @@ export const navObjects = [
         path: "/#events",
         exact: false,
         active: false,
-        // component: "<Endorsements />",
         id:3
     }
 ]

@@ -226,9 +226,10 @@
 }
 
 #slider {
-    // background:url("../assets/imgs/RMW-DeskWait.jpg");
-    background-size:cover;
-    background-position: center;
+    background:url("../images/photos/RMW-DeskWait.jpeg") !important;
+    background-repeat:no-repeat !important;
+    background-size:cover !important;
+    background-position: center !important;
     height:80vh;
     display:flex;
     justify-content: center;

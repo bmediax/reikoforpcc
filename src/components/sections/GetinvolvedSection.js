@@ -67,12 +67,12 @@ const GetinvolvedModule = () => {
     return (
         <SectionLayout topic="get-involved" tag="getinvolved">
             <h1>Get involved</h1>
-            <button onClick={toggleModal} className="btn dark-btn-solid"> { modal ? "Hide Form" : "I want to help out!"}</button>
+            <button onClick={toggleModal} onKeyDown={toggleModal} className="btn dark-btn-solid"> { modal ? "Hide Form" : "I want to help out!"}</button>
             <PopupModule show={modal} ide="getinvo">
                 <h3> Volunteer Form</h3>
                 <p align="center" className="banner-alert" id="banner-alert">{isVerified ? '' : message}</p>
                 <form className="getinvolved-form" required onSubmit={sendData} >
-                    <div id="close-modal" onClick={toggleModal}>x</div>
+                    {/* <div id="close-modal" onClick={toggleModal}>x</div> */}
                     <label htmlFor="first">First Name</label>
                     <input name="first" type="text" id="first" placeholder="John" onChange={handleInput} required/>
 
@@ -86,7 +86,7 @@ const GetinvolvedModule = () => {
                     <input name="org" type="text" id="titleorg" placeholder="Title / Organization" onChange={handleInput} />
 
                     <div className="getinvolved-checkbox">
-                        <label>I'd like to</label><br />
+                        <p>I'd like to</p>
                         <input type="checkbox" id="phonebank" name="phonebank" onChange={handleInput} />
                         <label htmlFor="phonebank">Phone Bank</label>
                         <br />

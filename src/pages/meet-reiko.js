@@ -21,6 +21,7 @@ const MeetReiko = () => {
           <li>Transparent commitment within the PCC Board to nurture a collaborative culture of Diversity, Equity, and Inclusion among faculty, staff, and administrators throughout Portland Community College and beyond.</li>
         </ul>
       </SectionLayout>
+      <GetinvolvedSection />
     </Layout>
   )
 }

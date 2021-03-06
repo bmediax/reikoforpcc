@@ -1,54 +1,29 @@
 {
   "name": "reikoforpcc",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
+  "description": "reikoforpcc",
+  "author": "bmediax",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
   "dependencies": {
-    "@emotion/core": "^11.0.0",
-    "@fortawesome/fontawesome-svg-core": "^1.2.34",
-    "@fortawesome/free-solid-svg-icons": "^5.15.2",
-    "@fortawesome/react-fontawesome": "^0.1.14",
-    "@testing-library/jest-dom": "^5.11.9",
-    "@testing-library/react": "^11.2.5",
-    "@testing-library/user-event": "^12.8.1",
-    "axios": "^0.21.1",
-    "framer-motion": "^3.10.0",
-    "gatsby": "^3.0.3",
+    "gatsby": "^3.0.1",
+    "gatsby-plugin-gatsby-cloud": "^2.0.0",
+    "gatsby-plugin-image": "^1.0.0",
     "gatsby-plugin-sass": "^4.0.2",
+    "gatsby-plugin-sharp": "^3.0.0",
+    "gatsby-source-filesystem": "^3.0.0",
+    "gatsby-transformer-sharp": "^3.0.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-icons": "^4.2.0",
-    "react-recaptcha": "^2.3.10",
-    "react-responsive": "^8.2.0",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.3",
-    "react-tooltip": "^4.2.15",
-    "web-vitals": "^1.1.0"
-  },
-  "scripts": {
-    "dev": "gatsby develop -p 3333 -o",
-    "build": "gatsby build"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "@trivago/prettier-plugin-sort-imports": "^1.4.4",
-    "parcel-bundler": "^1.12.4",
-    "resolve-url-loader": "^3.1.2"
+    "sass": "^1.32.8"
   }
 }

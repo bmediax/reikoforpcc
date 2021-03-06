@@ -1,16 +1,20 @@
 module.exports = {
   siteMetadata: {
-    title: `Reiko for PCC`,
+    title: "reikoforpcc",
   },
   plugins: [
+    "gatsby-plugin-sass",
+    "gatsby-plugin-gatsby-cloud",
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
     {
-      resolve: `gatsby-plugin-sass`,
+      resolve: "gatsby-source-filesystem",
       options: {
-        cssLoaderOptions: {
-          camelCase: false,
-          useResolveUrlLoader: true,
-        },
+        name: "images",
+        path: "./src/images/",
       },
+      __key: "images",
     },
-  ]
-}
+  ],
+};

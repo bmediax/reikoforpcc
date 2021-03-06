@@ -10,11 +10,12 @@ import { navContext } from '../data/context/navContext'
 import { donationContext } from '../data/context/donationContext'
 
 // Components
-// import Logo from '../images/logo.png'
+import Logo from '../images/gfx/logo.png'
 import Nav from '../components/Nav'
 import Footer from "../components/Footer"
 
 // Style
+import '../styles/_responsive.scss'
 import '../styles/_base.scss'
 
 // Utils
@@ -34,8 +35,8 @@ const Layout = (props) => {
                     <Nav />
                     <div className="RMW_wrapper">
                         {props.children}
-                        <Footer />
                     </div>
+                    <Footer logo={Logo} />
                 </div>
             </navContext.Provider>
         </donationContext.Provider>

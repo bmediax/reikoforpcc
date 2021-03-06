@@ -14,6 +14,11 @@ body {
   font-family:'Poppins', sans-serif;
 }
 
+// Height Minimum for emtpy content
+.RMW_wrapper { 
+  min-height:75vh;
+}
+
 section p, section li {
   color:variables.getColor(normalText);
 }
@@ -85,11 +90,9 @@ nav {
       flex:1;
       // padding:5px 0px;
       #logo {
-        img, source {
-          max-height:65px !important;
-          display:block;
-          margin:auto;
-        }
+        max-height:65px !important;
+        display:block;
+        margin:auto;
       }
     }
     .nav-contain {

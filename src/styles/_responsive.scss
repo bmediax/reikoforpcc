@@ -1,0 +1,207 @@
+@use './variables';
+
+@media screen and (min-width:860px) {
+    .nav-contain {
+        display:block !important;
+    }
+}
+
+@media screen and (max-width:860px) {
+    .nav-contain {
+        display:none;
+        background:variables.getColor(darkBase);
+        flex:none;
+        height:100vh;
+        position:absolute;
+        top:85px;
+        right:0;
+        left:0;
+        
+        .nav-item {
+            display:block !important;
+            margin:0px !important;
+            padding:20px 0px;
+
+            &:hover {
+                background:variables.getColor(lightBase);
+                // color:variables.getColor(lightBase) !important;
+                @include variables.objectShadow(base);
+            }
+        }
+    }
+
+    .footer-nav {
+        display:none;
+    }
+
+    #footer-wrapper .footer-social {
+        text-align:right !important;
+        margin-right:5%;
+    }
+
+    .logo-contain #logo {
+        flex:2;
+        padding: 5px 0px !important;
+        
+        img, source {
+            max-height: 75px !important;
+        }
+    }
+
+    a.donate {
+        width:50px !important;
+        padding:10px 0px !important;
+        text-align:center;
+        border-radius:15px !important;
+        
+        &:before {
+            content:"" !important;
+        }
+
+        .btn-icon {
+            margin-bottom:-2px;
+            margin-left:0px;
+        }
+    }
+
+    .mobile-nav-contain {
+        display:block !important;
+
+        .menu-icon {
+            display:block !important;
+        }
+    }
+    .endorsementmodule_wrapper {
+        grid-template-columns: 1fr 1fr !important;
+        grid-gap:10px !important;
+    }
+}
+
+@media screen and (max-width:800px) {
+    h3 {
+        font-size:3.5vmax;
+    }
+
+    .btn {
+        width:100% !important;
+        padding:16px 60px;
+        font-size:1.1rem;
+    }
+
+    .three-column-option {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px 20px;
+
+        div h2 {
+            font-size:2.7vmax;
+        }
+    }
+
+    .profile-module {
+        flex-direction: column;
+
+        .profile-module_img {
+            max-width:300px;
+            margin-bottom:5%;
+        }
+
+        .profile-module_textarea {
+            padding: 5% 3%;
+        }
+    }
+    
+    .endorsements {
+        .endo_want {
+            width:100%;
+        }
+        .endo_logos {
+            padding: 0px;
+            box-shadow:none !important;
+            background:none !important;
+
+            .endo_logo-part {
+                flex-direction: column;
+                margin-bottom:0px;
+                
+                .endos {
+                    margin-bottom:4%;
+
+                    &:last-child {
+                        margin-bottom:0px !important;
+                    }
+                }
+            }
+        }
+    }
+    
+
+    .events-module_section {
+        flex-direction: column-reverse;
+
+        .event-links {
+            flex-direction: column;
+            display:block;
+            width:100% !important;
+
+            .small-btn {
+                margin-top:15px !important;
+                width:100%;
+                margin-right:auto !important;
+            }
+        }
+
+        .event-des {
+            margin-top:variables.$objectSpace_small;
+            margin-right:0 !important;
+            box-shadow:none !important;
+            padding: 0 4% 3% 4%;
+            background:variables.getColor(darkBase) !important;
+        }
+
+        &:nth-child(2) {
+            flex-direction: column !important;
+        }
+
+        .event-date {
+            width:170px !important;
+            margin:auto;
+
+            .event-date_month {
+                padding:10px 0px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:550px) {
+
+    header h1 {
+        font-size: 10vmin !important;
+    }
+
+
+    .three-column-option {
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+
+        div h2 {
+            font-size:3vmax;
+        }
+    }
+
+    #slider {
+        h1 {
+            font-size:8vmax;
+        }
+
+        p {
+            font-size:5vmax;
+        }
+    }
+
+    .popup-modal_wrapper {
+        border-radius:0px !important;
+        padding-top:50px;
+        padding-bottom:50px;
+    }
+}

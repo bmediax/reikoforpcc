@@ -1,0 +1,266 @@
+// Importing Index.scss Functions
+@use './variables' as *;
+
+.priorities {
+    background:getColor(darkBase);
+}
+
+.three-column-option_container {
+    margin:auto;
+}
+
+.three-column-option {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 50px 50px;
+    align-items: center;
+
+    div {
+        padding:20px 30px;
+        background:getColor(darkBase);
+        @include objectCorner(medium);
+        // @include enableAnimation;
+
+        &:hover {
+            background:getColor(lightBase);
+            @include objectShadow(base);
+            cursor: pointer;
+
+            h2 {
+                color:$blue;
+            }
+
+            p {
+                color:getColor(hiddenTextHover);
+            }
+        }
+
+        h2, p {
+            -webkit-transition:all 0.2s ease-in-out;
+            -moz-transition:all 0.2s ease-in-out;
+            -o-transition:all 0.2s ease-in-out;
+            transition:all 0.2s ease-in-out;
+        }
+
+        h2 {
+            font-family:"Poppins", sans-serif;
+            font-size:2vmax;
+            text-align:center;
+            margin:0;
+            padding:10px 0 0 0;
+            color:getColor(hiddenText);
+        }
+
+        p {
+            text-align:center;
+            padding:10px 0 0 0;
+            margin:0px;
+            color:getColor(hiddenText);
+        }
+
+        img {
+            border-radius:50%;
+            display:block;
+            margin:auto;
+            text-align:center;
+            max-width:130px;
+            max-height:130px;
+        }
+    }
+}
+
+// Endorsements
+.endorsements {
+    .endo_logos {
+        background:getColor(lightBase);
+        padding:5% 5%;
+        @include objectCorner(medium);
+        @include enableAnimation;
+        @include objectShadow(base);
+
+        &:hover {
+            @include objectShadow(hover)
+        }
+    }
+
+    .endo_want {
+        text-align:center;
+        width:80%;
+        padding-top:20px;
+        margin:auto;
+        @include objectCorner("small");
+    }
+}
+
+// Events Module
+.events {
+    background:getColor(darkBase);
+    .events-module_section {
+        display:flex;
+        margin-bottom:$objectSpace_small;
+
+        .event-des, .event-date {
+            background-color:getColor(lightBase);
+            min-height:250px;
+            @include objectShadow("base");
+            @include objectCorner("medium");
+            @include enableAnimation;
+
+            &:hover {
+                @include objectShadow("hover");
+            }
+        }
+
+        .event-des {
+            flex:2.5;
+            // padding:30px 40px;
+            padding:3% 4%;
+            margin-right:$objectSpace_small;
+
+            h3, p {
+                padding:0px;
+                margin:0;
+            }
+
+            h3 {
+                margin-bottom:10px;
+                font-size:5vmin;
+            }
+
+            p {
+                color:getColor(lightText);
+                line-height:35px;
+            }
+
+            .event-links {
+                display:flex;
+                align-items: center;
+
+                a {
+                    flex:1;
+                    margin-top:20px;
+                    font-size:1rem !important;
+                    margin-right:15px;
+
+                    &:last-child {
+                        margin-right:0px !important;
+                    }
+                }
+            }
+        }
+
+        .event-date {
+            background:getColor(lightBase);
+            min-height:150px !important;
+            flex:1;
+            display:flex;
+            flex-direction: column;
+            text-align:center;
+            
+            .event-date_month {
+                flex:1.2;
+                font-size:3vmax;
+                background:getColor(blue-btnTXT);
+                border-radius:$border-radius-medium $border-radius-medium 0px 0px;
+                color:getColor(lightBase);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .event-date_day {
+                flex:1.5;
+                font-size:8vmax;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color:$blue;
+            }
+        }
+
+        .event-img {
+            flex:1;
+            background-size:cover !important;
+            background-position: center center !important;
+        }
+
+        &:nth-child(2) {
+            .event-des {
+                flex:2;
+                margin-right:0px;
+            }
+    
+            .event-date {
+                flex:1;
+                margin-right:$objectSpace_small;
+            }
+        }
+    }
+
+    .event-past {
+        .event-date {
+            .event-date_month {
+                color:getColor(lightBase);
+                background:getColor(lightText);
+            }
+            .event-date_day {
+                color:getColor(lightText);
+            }
+        }
+        .event-des {
+            h3, p, .event-links a {
+                color:getColor(lightText);
+            }
+
+            .event-links a {
+                background:rgba(0, 0, 0, 0.02);
+
+                &:hover {
+                    box-shadow:none;
+                }
+            }
+        }
+    }
+
+}
+
+#slider {
+    // background:url("../assets/imgs/RMW-DeskWait.jpg");
+    background-size:cover;
+    background-position: center;
+    height:80vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    &:before {
+        background: rgba(0, 0, 0, 0.4);
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 80vh;
+    }
+
+    span.slider_text {
+        flex:1;
+    }
+
+    h1, p {
+        position:relative;
+        padding:0px;
+        margin:auto;
+        text-align:center;
+        text-shadow:0px 20px 40px rgba(0, 0, 0, 0.5);
+    }
+    
+    h1 {
+        font-size:8vmin;
+        color:#FFF;
+    }
+    
+    p {
+        font-size:3.5vmin;
+        color:#FFF;
+    }
+}

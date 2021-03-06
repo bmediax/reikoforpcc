@@ -1,10 +1,13 @@
 import * as React from "react"
+import Layout from "../layout"
 // import { Link } from "gatsby"
 
 // markup
 const NotFoundPage = () => {
   return (
-    <h1> 404 Page</h1>
+    <Layout title="Not Found">
+      <h1> Not Found </h1>
+    </Layout>
   )
 }
 

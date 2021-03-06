@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import Recaptcha from 'react-recaptcha'
 import SectionLayout from '../../layout/SectionLayout'
 import '../../styles/GetinvolvedSection.scss'
 import PopupModule from '../modules/PopupModule'
+import Recaptcha from 'react-recaptcha'
 
 const GetinvolvedModule = () => {
     const [ modal, setModal ] = useState(false)

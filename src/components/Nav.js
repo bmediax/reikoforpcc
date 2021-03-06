@@ -27,7 +27,7 @@ const Nav = (props) => {
                 </div>
                 <div className="logo-contain" id="logo">
                     <Link to="/" exact="true">
-                        <StaticImage src="../images/gfx/logo.png" alt="Rieko Mia Williams For PCC Logo" height={65} align="center" />
+                        <StaticImage src="../images/gfx/logo.png" alt="Rieko Mia Williams For PCC Logo" placeholder="blurred" height={65} align="center" />
                     </Link>
                 </div>
                 <div className="nav-contain" style={{display: mobileMenu ? 'block' : 'none'}}>

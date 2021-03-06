@@ -1,7 +1,7 @@
 import * as React from "react"
 
 // Poppins Font
-import '../assets/fonts/poppins/stylesheet.css'
+// import '../assets/fonts/poppins/stylesheet.css'
 
 // import { Helmet } from "react-helmet"
 

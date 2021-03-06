@@ -3,6 +3,7 @@ import React, { useState, useContext } from 'react'
 // Utils
 import { RiMenu3Fill } from 'react-icons/ri'
 import { Link } from 'gatsby'
+import { StaticImage } from "gatsby-plugin-image"
 // import { motion } from 'framer-motion'
 // import { useMediaQuery } from 'react-responsive';
 
@@ -10,10 +11,6 @@ import { Link } from 'gatsby'
 import Donatebtn from '../components/Donatebtn'
 import { navContext } from '../data/context/navContext'
 // import { navVariants, btnDonateVariants } from '../utils/motionVariants'
-
-// Will be replaced with ----------------
-import Logo from '../images/gfx/logo.png'
-// gatsby image proccessor -------------
 
 const Nav = (props) => {
     const navItems = useContext(navContext)
@@ -28,9 +25,9 @@ const Nav = (props) => {
                 <div className="mobile-nav-contain">
                     <RiMenu3Fill className="menu-icon" onClick={handleMobileToggle} />
                 </div>
-                <div className="logo-contain">
+                <div className="logo-contain" id="logo">
                     <Link to="/" exact="true">
-                        <img src={Logo} id="logo" alt="Rieko Mia Williams For PCC Logo"/>
+                        <StaticImage src="../images/gfx/logo.png" alt="Rieko Mia Williams For PCC Logo" height={65} align="center" />
                     </Link>
                 </div>
                 <div className="nav-contain" style={{display: mobileMenu ? 'block' : 'none'}}>

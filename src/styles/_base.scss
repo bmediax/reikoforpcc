@@ -58,6 +58,7 @@ nav {
 
     div {
       flex:1;
+      text-align:center;
     }
 
     .mobile-nav-contain {
@@ -88,13 +89,17 @@ nav {
 
     .logo-contain {
       flex:1;
+      align-self:center;
       // padding:5px 0px;
-      #logo {
-        max-height:65px !important;
-        display:block;
-        margin:auto;
-      }
+
+      // #logo picture {
+      //   max-height:65px !important;
+      //   display:block;
+      //   margin:auto;
+      //   text-align:center;
+      // }
     }
+
     .nav-contain {
       text-align:center;
       flex:2;

@@ -15,7 +15,7 @@ const ProfileModule = (props) => {
             <span className="profile-module_img">
                 <StaticImage src="../../images/photos/RMW-headshot.jpeg" 
                     alt="Reiko Mia Williams Headshot" 
-                    placeholder="blurred" />
+                    placeholder="blurred" width={280} />
             </span>
             <span className="profile-module_textarea">
                 <h3>{props.title}</h3>

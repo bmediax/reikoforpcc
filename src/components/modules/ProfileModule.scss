@@ -1,0 +1,43 @@
+@use '../../styles/variables' as *;
+
+.profile-module {
+    display:flex;
+    justify-content: center;
+    min-height:200px;
+
+    span {
+        @include objectCorner(medium);
+    }
+    
+    .profile-module_img {
+        flex:1;
+        margin-right:2% !important;
+        // max-width:500px;
+        align-self: center;
+        text-align:center;
+        img, source {
+            @include objectCorner(medium);
+            box-shadow:0px 5px 20px rgba(0, 0, 0, 0.1);
+            @include enableAnimation();
+            
+            &:hover {
+                box-shadow:0px 10px 40px rgba(0, 0, 0, 0.2);
+            }
+        }
+    }
+    
+    .profile-module_textarea {
+        align-self: baseline;
+        flex:2;
+        padding:20px 30px;
+        padding:2% 2.5%;
+        // background:getColor(darkBase);
+        
+        p {
+            color:getColor(normalText);
+            padding: 0px;
+            margin: 0;
+            line-height:35px;
+        }
+    }
+}

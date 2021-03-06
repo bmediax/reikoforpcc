@@ -11,7 +11,7 @@ const EndorsementsSection = () => {
                 <h1> Endorsements </h1>
                 <div className="endorsementmodule_wrapper">
                     {endorsementData.map(endorse => (
-                        <EndorsementCard name={endorse.name} position={endorse.position} key={endorse.id} company={endorse.company}/>
+                        <EndorsementCard key={endorse.id} name={endorse.name} position={endorse.position} company={endorse.company}/>
                     ))}
                 </div>
             </div>

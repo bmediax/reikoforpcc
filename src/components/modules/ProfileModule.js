@@ -1,16 +1,21 @@
 import React from 'react'
 
 import { Link } from 'gatsby'
+import { StaticImage } from "gatsby-plugin-image"
+
+// Styling
 import './ProfileModule.scss'
 
 // Import Images
-import RmwHeadshot from '../../images/photos/RMW-headshot.jpeg'
+// import RmwHeadshot from '../../images/photos/RMW-headshot.jpeg'
 
 const ProfileModule = (props) => {
     return (
         <div className="profile-module">
             <span className="profile-module_img">
-                <img src={RmwHeadshot} alt="Profile Headshot" />
+                <StaticImage src="../../images/photos/RMW-headshot.jpeg" 
+                    alt="Reiko Mia Williams Headshot" 
+                    placeholder="blurred" />
             </span>
             <span className="profile-module_textarea">
                 <h3>{props.title}</h3>

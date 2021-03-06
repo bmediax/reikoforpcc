@@ -15,7 +15,9 @@ const Footer = (props) => {
                 </div>
                 <ul className="footer-nav">
                 {navItems.map(navs => (
-                    <li key={navs.id}><a href={navs.path}>{navs.title}</a></li>
+                    <li key={navs.id}>
+                        <a href={navs.path}>{navs.title}</a>
+                    </li>
                 ))}
                 </ul>
                 <div className="footer-social">

@@ -1,6 +1,6 @@
 // Technologies
 import React from "react"
-import '../styles/Homepage.scss'
+import '../styles/homepage.scss'
 
 // Style
 import Layout from '../layout'

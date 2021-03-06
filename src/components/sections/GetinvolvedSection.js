@@ -74,16 +74,16 @@ const GetinvolvedModule = () => {
                 <form className="getinvolved-form" required onSubmit={sendData} >
                     <div id="close-modal" onClick={toggleModal}>x</div>
                     <label htmlFor="first">First Name</label>
-                    <input name="first" type="text" id="first" placeholder="John" onChange={handleInput} />
+                    <input name="first" type="text" id="first" placeholder="John" onChange={handleInput} required/>
 
                     <label htmlFor="last">Last Name</label>
-                    <input name="last" type="text" id="last" placeholder="Appleseed" onChange={handleInput}/>
+                    <input name="last" type="text" id="last" placeholder="Appleseed" onChange={handleInput} required/>
 
                     <label htmlFor="email">Email Address</label>
-                    <input name="email" type="email" id="email" placeholder="email@mail.com" onChange={handleInput} />
+                    <input name="email" type="email" id="email" placeholder="email@mail.com" onChange={handleInput} required/>
 
                     <label htmlFor="titleorg">Title / Organization</label>
-                    <input name="org" type="text" id="titleorg" placeholder="Title / Organization" onChange={handleInput}/>
+                    <input name="org" type="text" id="titleorg" placeholder="Title / Organization" onChange={handleInput} />
 
                     <div className="getinvolved-checkbox">
                         <label>I'd like to</label><br />
@@ -96,13 +96,14 @@ const GetinvolvedModule = () => {
                         <input type="checkbox" id="endorse" name="endorse" onChange={handleInput} />
                         <label htmlFor="endorse">Endorse Reiko and authorize her campaign to display my name publicly</label>
                     </div>
+                    <br />
                     <Recaptcha 
                         sitekey="6LcCE3IaAAAAAOV_06li12uB_T7iOjPCAbBUSM5C"
                         render="explicit"
                         verifyCallback={verifyCallback}
                         SameSite="Secure"
                     />
-                    <input name="submit" type="submit" value="SEND" className="btn minimal-btn" />
+                    <input name="submit" type="submit" value="SEND" onKeyDown={sendData} className="btn minimal-btn" />
                 </form>
             </PopupModule>
             <p align="center" style={{margin: "0px", padding: "0px", color: "white", fontWeight: "Bold", fontSize: "2rem"}}>{formSent ? message : ''}</p>

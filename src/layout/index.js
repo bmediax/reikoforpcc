@@ -1,6 +1,6 @@
 import * as React from "react"
 
-import { Helmet } from "react-helmet"
+// import { Helmet } from "react-helmet"
 
 // Data
 import { navObjects } from '../data/navObject';
@@ -17,6 +17,7 @@ import Footer from "../components/Footer"
 // Style
 import '../styles/_responsive.scss'
 import '../styles/_base.scss'
+import SEO from "../components/seo";
 
 // Utils
 // import { AnimatePresence } from 'framer-motion'
@@ -27,11 +28,8 @@ const Layout = (props) => {
     return (
         <donationContext.Provider value={DonationLink}>
             <navContext.Provider value={navObjects}>
-                <Helmet>
-                    <meta charSet="utf-8" />
-                    <meta http-equiv="origin-trial" content="AmE7JKWYS+Jm3JYE0Znce9RZeHuBUVRFnLhayo4fpKcCiiZpSR8kBt+1Thplw10W4caLlCV37/SNOFZJaoxLXQMAAAB5eyJvcmlnaW4iOiJodHRwczovL3JlaWtvZm9ycGNjLmNvbTo0NDMiLCJmZWF0dXJlIjoiVW5yZXN0cmljdGVkU2hhcmVkQXJyYXlCdWZmZXIiLCJleHBpcnkiOjE2MzM0NzgzOTksImlzU3ViZG9tYWluIjp0cnVlfQ==" />
-                    <title>Reiko4PCC | {props.title}</title>
-                </Helmet>
+                {/* <meta http-equiv="origin-trial" content="AmE7JKWYS+Jm3JYE0Znce9RZeHuBUVRFnLhayo4fpKcCiiZpSR8kBt+1Thplw10W4caLlCV37/SNOFZJaoxLXQMAAAB5eyJvcmlnaW4iOiJodHRwczovL3JlaWtvZm9ycGNjLmNvbTo0NDMiLCJmZWF0dXJlIjoiVW5yZXN0cmljdGVkU2hhcmVkQXJyYXlCdWZmZXIiLCJleHBpcnkiOjE2MzM0NzgzOTksImlzU3ViZG9tYWluIjp0cnVlfQ==" /> */}
+                <SEO title={props.title} />
                 <div className="RMW_container">
                     <Nav />
                     <div className="RMW_wrapper">

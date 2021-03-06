@@ -1,5 +1,4 @@
 import SectionLayout from '../../layout/SectionLayout'
-import React from'react'
 
 const PrioritiesSection = () => {
     return (

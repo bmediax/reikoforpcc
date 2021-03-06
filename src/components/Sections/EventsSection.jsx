@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { BiLinkExternal } from "react-icons/bi";
 import { IoLogoGoogle } from 'react-icons/io'
 import { SiMicrosoftoutlook } from 'react-icons/si'

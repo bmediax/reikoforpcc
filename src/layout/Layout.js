@@ -1,5 +1,3 @@
-import React from 'react'
-
 // Data
 import { navObjects } from '../data/navObjects';
 

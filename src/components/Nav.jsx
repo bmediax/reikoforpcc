@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react'
+import { useState, useContext } from 'react'
 
 // Utils
 import { RiMenu3Fill } from 'react-icons/ri'
@@ -43,9 +43,9 @@ const Nav = (props) => {
                 <motion.div className="nav-contain" style={{display: mobileMenu ? 'block' : 'none'}} animate={mobileMenu ? "open" : "closed"} variants={isMobile? navVariants: null}>
                     <Link className="nav-item" to="/meet-reiko" onClick={handleMobileToggle}>Meet Reiko</Link>
                     {navItems.map(navs => (
-                        <React.Fragment key={navs.id}>
+                        <div key={navs.id}>
                             <a className="nav-item" href={navs.path} onClick={handleMobileToggle}>{navs.title}</a>
-                        </React.Fragment>
+                        </div>
                     ))}
                 </motion.div >
                 <div className="donate-contain">

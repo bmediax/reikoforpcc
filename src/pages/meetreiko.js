@@ -1,9 +1,10 @@
-import React from 'react'
 import { motion } from 'framer-motion'
-import './MeetReiko.scss'
+import '../styles/MeetReiko.scss'
+
 import { pageVariants } from '../utils/motionVariants'
 import SectionLayout from '../layout/SectionLayout'
 import GetinvolvedModule from '../components/modules/GetinvolvedModule'
+import Layout from '../layout/Layout'
 
 const MeetReiko = () => {
     return (

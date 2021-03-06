@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link } from 'gatsby'
 import './ProfileModule.scss'
 import RmwHeadshotwebp from '../../assets/imgs/RMW-headshot.webp'
 import RmwHeadshotjpeg from '../../assets/imgs/RMW-headshot.jpg'

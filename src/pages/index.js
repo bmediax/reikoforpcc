@@ -1,14 +1,11 @@
-// Importing Reacting
-import { React } from 'react'
-
 // Technologies
-import { motion } from 'framer-motion'
-
-// Style
+import React from "react"
 import '../styles/Homepage.scss'
 
+// Style
 import Layout from '../layout/Layout'
 
+import { motion } from 'framer-motion'
 import { pageVariants } from '../utils/motionVariants'
 
 // Sections
@@ -19,7 +16,7 @@ import EndorsementsSection from '../components/Sections/EndorsementsSection'
 import EventsSection from '../components/Sections/EventsSection'
 import GetinvolvedModule from '../components/modules/GetinvolvedModule'
 
-const Homepage = () => {
+const IndexPage = () => {
     return (
         <Layout title="Homepage">
             <motion.div className="container" initial="out" animate="in" exit="out" variants={pageVariants}>
@@ -34,4 +31,4 @@ const Homepage = () => {
     )
 }
 
-export default Homepage
+export default IndexPage

@@ -1,4 +1,3 @@
-import { React } from 'react'
 // import { AiFillHeart } from 'react-icons/ai'
 import EndorsementCard from '../modules/EndorsementModule'
 import SectionLayout from '../../layout/SectionLayout'

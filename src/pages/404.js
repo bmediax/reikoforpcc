@@ -1,6 +1,6 @@
 import RiekoLogo from '../assets/logo.png'
 import Layout from '../layout/Layout'
-// import './Error.scss'
+import '../styles/Error.scss'
 
 const Error = () => {
     return (

@@ -4,7 +4,7 @@ import React, { useState, useContext } from 'react'
 import { RiMenu3Fill } from 'react-icons/ri'
 import { Link } from 'gatsby'
 import { StaticImage } from "gatsby-plugin-image"
-// import { motion } from 'framer-motion'
+import { motion } from 'framer-motion'
 // import { useMediaQuery } from 'react-responsive';
 
 // Component
@@ -37,7 +37,7 @@ const Nav = (props) => {
                             <a className="nav-item" href={navs.path} onClick={handleMobileToggle}>{navs.title}</a>
                         </React.Fragment>
                     ))}
-                </div >
+                </div>
                 <div className="donate-contain">
                     <Donatebtn />
                 </div>

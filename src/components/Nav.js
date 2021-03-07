@@ -17,14 +17,14 @@ const Nav = (props) => {
     const [mobileMenu, setMobileMenu ] = useState(false);
     const handleMobileToggle = () => {
         setMobileMenu(!mobileMenu)
-    }
+    }    
 
     return (
         <nav>
             <div className="nav-wrapper">
-                <div className="mobile-nav-contain">
+                <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }} className="mobile-nav-contain">
                     <RiMenu3Fill className="menu-icon" onClick={handleMobileToggle} />
-                </div>
+                </motion.div>
                 <div className="logo-contain" id="logo">
                     <Link to="/" exact="true">
                         <StaticImage src="../images/gfx/logo.png" alt="Rieko Mia Williams For PCC Logo" placeholder="blurred" height={70} align="center" />

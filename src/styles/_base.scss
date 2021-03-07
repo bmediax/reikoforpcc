@@ -1,4 +1,4 @@
-@use './variables';
+@use './variables' as *;
 
 * {
   box-sizing:border-box;
@@ -9,7 +9,7 @@ a {
 }
 
 body {
-  background: variables.getColor(base);
+  background: getColor(base);
   margin:0;
   font-family:'Poppins', sans-serif;
 }
@@ -20,18 +20,18 @@ body {
 }
 
 section p, section li {
-  color:variables.getColor(normalText);
+  color:getColor(normalText);
 }
 
 #cover {
-  background:variables.getColor(darkBase);
+  background:getColor(darkBase);
   min-height:20vw;
   display:flex;
   justify-content:center;
   align-items: center;
 
   h1 {
-    color:variables.getColor(textHeader);
+    color:getColor(textHeader);
     text-align:center;
     font-size:4vmax;
   }
@@ -44,7 +44,7 @@ nav {
   right:0;
   left:0;
   z-index:10;
-  background:variables.getColor(base);
+  background:getColor(lightBase);
   padding: 5px 0px;
   box-shadow:0px 15px 50px rgba(0, 0, 0, 0.08);
 
@@ -53,7 +53,7 @@ nav {
     align-items:center;
     justify-content:center;
     min-height:50px;
-    // max-width:variables.$page-width;
+    // max-width:$page-width;
     margin:auto;
 
     div {
@@ -71,17 +71,17 @@ nav {
         font-size:3rem;
         text-align:center;
         margin:auto;
-        color:variables.getColor(textHeader);
-        background:variables.getColor(lightBase);
-        @include variables.objectCorner("small");
-        @include variables.enableAnimation;
+        color:getColor(textHeader);
+        background:getColor(lightBase);
+        @include objectCorner("small");
+        @include enableAnimation;
         padding:10px;
-        background:variables.getColor(blue-btnBG);
-        color:variables.$blue;
+        background:getColor(blue-btnBG);
+        color:$blue;
 
         &:hover {
           cursor:pointer;
-          background:variables.$blue;
+          background:$blue;
           color:#FFF;
         }
       }
@@ -110,13 +110,13 @@ nav {
       flex:2;
       
       .nav-item {
-        color:variables.getColor(textOnDark);
+        color:getColor(textOnDark);
         display:inline-block;
         margin:0px 15px;
-        @include variables.enableAnimation;
+        @include enableAnimation;
 
         &:hover {
-          color:variables.$blue;
+          color:$blue;
         }
 
         &:first-child {
@@ -153,14 +153,14 @@ section {
   h1 {
     font-family:'Poppins', sans-serif;
     font-size:3vmax;
-    color:variables.getColor(textHeader);
+    color:getColor(textHeader);
     text-align:center;
   }
 
   h2 {
     font-family:'Poppins', sans-serif;
     font-size:2vmax;
-    color:variables.getColor(textHeader);
+    color:getColor(textHeader);
     text-align:center;
   }
 }
@@ -169,7 +169,7 @@ h3 {
   padding:0px;
   margin:0;
   font-size:2.2vmax;
-  color:variables.getColor(textSubHeader);
+  color:getColor(textSubHeader);
 }
 
 .small-btn {
@@ -181,8 +181,8 @@ h3 {
   font-size:1rem;
   padding:12px 10px;
 
-  @include variables.objectCorner("small");
-  @include variables.enableAnimation;
+  @include objectCorner("small");
+  @include enableAnimation;
 }
 
 .btn {
@@ -193,54 +193,54 @@ h3 {
   font-weight:600;
   font-size:1rem;
   padding:12px 60px;
-  @include variables.objectCorner("small");
-  @include variables.enableAnimation;
+  @include objectCorner("small");
+  @include enableAnimation;
 }
 
 // Button Configurations
 .minimal-btn {
-  background:variables.getColor(lightClean-btnBG);
-  color:variables.getColor(lightClean-btnTXT);
+  background:getColor(lightClean-btnBG);
+  color:getColor(lightClean-btnTXT);
 
   &:hover {
-    background: variables.$lightClean;
-    box-shadow: variables.$shadowView rgba(variables.$lightClean, .2);
+    background: $lightClean;
+    box-shadow: $shadowView rgba($lightClean, .2);
     color:#FFF;
   }
 }
 
 .red-btn {
-  background:variables.getColor(red-btnBG);
-  color:variables.getColor(red-btnTXT);
+  background:getColor(red-btnBG);
+  color:getColor(red-btnTXT);
 
   &:hover {
-    background: variables.$red;
-    // @include variables.buttonGradient(orange-gradient);
+    background: $red;
+    // @include buttonGradient(orange-gradient);
     color:#FFF;
-    box-shadow: variables.$shadowView rgba(variables.$red, .2);
+    box-shadow: $shadowView rgba($red, .2);
   }
 }
 
 .blue-btn {
-  background:variables.getColor(blue-btnBG);
-  color:variables.getColor(blue-btnTXT);
+  background:getColor(blue-btnBG);
+  color:getColor(blue-btnTXT);
 
   &:hover {
-    background: variables.$blue;
-    // @include variables.buttonGradient(blue-gradient);
+    background: $blue;
+    // @include buttonGradient(blue-gradient);
     color:#FFF;
-    box-shadow: variables.$shadowView rgba(variables.$blue, .2);
+    box-shadow: $shadowView rgba($blue, .2);
   }
 }
 
 .blue-btn-solid {
-  background: variables.$blue;
+  background: $blue;
   color:#FFF;
 
   &:hover {
-    // @include variables.buttonGradient(blue-gradient);
+    // @include buttonGradient(blue-gradient);
     cursor:pointer;
-    box-shadow: variables.$shadowView rgba(variables.$blue, .2);
+    box-shadow: $shadowView rgba($blue, .2);
   }
 }
 
@@ -251,53 +251,53 @@ h3 {
   margin:auto;
 
   &:hover {
-    // @include variables.buttonGradient(blue-gradient);
+    // @include buttonGradient(blue-gradient);
     cursor:pointer;
     background:white;
     color:#000;
-    box-shadow: variables.$shadowView rgba(variables.$blue, .2);
+    box-shadow: $shadowView rgba($blue, .2);
   }
 }
 
 .transparent-btn-solid {
   outline:none;
   background: #FFF;
-  color:variables.getColor(red-btnTXT);
+  color:getColor(red-btnTXT);
   border:none;
   margin:auto;
 
   &:hover {
-    // @include variables.buttonGradient(blue-gradient);
+    // @include buttonGradient(blue-gradient);
     cursor:pointer;
-    @include variables.objectShadow(hover);
+    @include objectShadow(hover);
   }
 }
 
 .dark-btn-solid {
   outline:none;
-  background:variables.getColor(darktextHeader);
-  border: 3px solid variables.getColor(darktextHeader);
-  color:variables.getColor(red-btnTXT);
+  background:getColor(darktextHeader);
+  border: 3px solid getColor(darktextHeader);
+  color:getColor(red-btnTXT);
   margin:auto;
 
   &:hover {
-    // @include variables.buttonGradient(blue-gradient);
+    // @include buttonGradient(blue-gradient);
     cursor:pointer;
     color:#FFF;
-    // background:variables.getColor(lightBase);
-    // border-color: variables.getColor(lightBase);
-    @include variables.objectShadow(hover);
+    // background:getColor(lightBase);
+    // border-color: getColor(lightBase);
+    @include objectShadow(hover);
   }
 }
 
 .donate-btn {
-  background:variables.getColor(red-btnBG);
-  color:variables.getColor(red-btnTXT);
+  background:getColor(red-btnBG);
+  color:getColor(red-btnTXT);
 
   &:hover {
-    background: variables.$red;
+    background: $red;
     color:#FFF;
-    box-shadow: variables.$shadowView rgba(variables.$red, .2);
+    box-shadow: $shadowView rgba($red, .2);
   }
 }
 
@@ -309,7 +309,7 @@ h3 {
 .banner-alert {
   color:#EF3A25;
   // background:rgba(#EF3A25, .04);
-  @include variables.objectCorner(small);
+  @include objectCorner(small);
   margin:0px;
   padding:10px 10px;
   font-weight:bold;
@@ -317,7 +317,7 @@ h3 {
 }
 
 footer {
-  background:variables.getColor(Darkbase);
+  background:getColor(Darkbase);
 }
 
 #footer-wrapper {
@@ -353,7 +353,7 @@ footer {
 
       a {
         text-decoration:none;
-        color:variables.getColor(text2);
+        color:getColor(text2);
       }
 
       &:last-child {
@@ -368,7 +368,7 @@ footer {
 
     a {
       margin-right:25px;
-      color:variables.getColor(text2);
+      color:getColor(text2);
 
       &:last-child {
         margin-right:0px !important;

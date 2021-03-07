@@ -9,6 +9,7 @@
     padding-top:4% !important;
     padding-bottom:4% !important;
     @include buttonGradient(orange-gradient);
+    // background:linear-gradient(left, red, blue);
 
     h1 {
         color:getColor(darktextHeader);

@@ -10,7 +10,7 @@ const GetinvolvedModule = () => {
     const [ formData, setFormData ] = useState({})
     const [ message, setMessage ] = useState("")
     const [isVerified, setIsVerified] = useState(false)
-
+    
     const handleInput = e => {
         const copyFormData = { ...formData };
         copyFormData[e.target.name] = e.target.value;

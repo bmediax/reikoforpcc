@@ -5,7 +5,6 @@ const PopupModule = (props) => {
     if (!props.show) {
         return null
     }
-
     return (
         <div id={props.ide} className="popup-modal_wrapper">
             {props.children}

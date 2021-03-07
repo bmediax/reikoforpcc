@@ -4,6 +4,7 @@ import * as React from "react"
 // import '../assets/fonts/poppins/stylesheet.css'
 
 // import { Helmet } from "react-helmet"
+import { motion } from 'framer-motion'
 
 // Data
 import { navObjects } from '../data/navObject';
@@ -35,9 +36,30 @@ const Layout = (props) => {
                 <SEO title={props.title} />
                 <div className="RMW_container">
                     <Nav />
-                    <div className="RMW_wrapper">
-                        {props.children}
-                    </div>
+                    <motion.main
+                        initial={{
+                            opacity: 0,
+                            y: -200
+                        }}
+                        animate={{
+                            opacity: 1,
+                            y: 0
+                        }}
+                        exit={{
+                            opacity: 0,
+                            y: 200
+                        }}
+                        transition={{
+                            type: "spring",
+                            mass: 0.35,
+                            stiffness: 75,
+                            duration: 0.3
+                        }}
+                    >
+                        <div className="RMW_wrapper">
+                            {props.children}
+                        </div>
+                    </motion.main>
                     <Footer logo={Logo} />
                 </div>
             </navContext.Provider>

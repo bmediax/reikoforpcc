@@ -45,7 +45,7 @@ nav {
   left:0;
   z-index:10;
   background:variables.getColor(base);
-  padding: 7px 0 10px 0px;
+  padding: 10px 0px;
   box-shadow:0px 15px 50px rgba(0, 0, 0, 0.08);
 
   .nav-wrapper {
@@ -59,7 +59,6 @@ nav {
     div {
       flex:1;
       text-align:center;
-      margin-bottom:-2px;
     }
 
     .mobile-nav-contain {
@@ -92,6 +91,11 @@ nav {
       flex:1;
       align-self:center;
       // padding:5px 0px;
+
+      a {
+        position:relative !important;
+        top:5px !important;
+      }
 
       // #logo picture {
       //   max-height:65px !important;

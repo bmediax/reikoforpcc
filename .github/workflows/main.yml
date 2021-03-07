@@ -33,4 +33,4 @@ jobs:
 
       # Deploy to the defined URL using the token
       - name: Deploy to surge
-        run: surge ./build reikoforpcc.surge.sh --token ${{ secrets.surge_token }}
+        run: surge ./public reikoforpcc.surge.sh --token ${{ secrets.surge_token }}

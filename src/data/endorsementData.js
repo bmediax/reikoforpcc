@@ -6,7 +6,7 @@ export const endorsementData = [
         id: 1
     },
     {
-        name: "Oregon Future Labs / Color Pac",
+        name: "Oregon Future Labs / Color PAC",
         position: "",
         company:"",
         id: 2
@@ -19,7 +19,7 @@ export const endorsementData = [
     },
     {
         name: "Lew Frederick",
-        position: "State Presentative",
+        position: "State Senator",
         company:"",
         id: 4
     },
@@ -36,7 +36,7 @@ export const endorsementData = [
         id: 6
     },
     {
-        name: "Mohamad Ayjouri",
+        name: "Mohamed Alyajouri",
         position: "PCC Board Chair",
         company:"",
         id: 7
@@ -48,7 +48,7 @@ export const endorsementData = [
         id: 8
     },
     {
-        name: "Alexnader Díaz Rios",
+        name: "Alexander Díaz Rios",
         position: "PCC Board Director Zone 7",
         company:"",
         id: 9
@@ -67,7 +67,7 @@ export const endorsementData = [
     },
     {
         name: "Nafisa Fai",
-        position: "Washington County Commisioner",
+        position: "Washington County Commissioner",
         company:"",
         id:12
     },
@@ -85,43 +85,43 @@ export const endorsementData = [
     },
     {
         name: "Dr. Olga Acuña",
-        position: "Former Hillsboro City Councilor",
+        position: "Former City of Hillsboro Councilor",
         company:"",
         id:15
     },
     {
         name: "Narce Rodriguez",
-        position: "Former Forest Grove School Board Director",
+        position: "Forest Grove School Board Director",
         company:"",
         id:16
     },
     {
-        name: "Ben Bowmen",
+        name: "Ben Bowman",
         position: "Tigard Tualatin School Board Director",
         company:"",
         id:17
     },
     {
         name: "Travis Nelson",
-        position: "Democratic National Committee Member*",
+        position: "Democratic National Committee Member",
         company:"",
         id:18
     },
     {
         name: "Dr. Katie Riley",
-        position: "Washington County Kids President*",
+        position: "Washington County Kids President",
         company:"",
         id:19
     },
     {
         name: "Jaime Rodriguez",
-        position: "American Federation of Teachers - Oregon President*",
+        position: "American Federation of Teachers - Oregon President",
         company:"",
         id:20
     },
     {
         name: "Danielle Garza",
-        position: "LiUNA Local 737 Political and Legislative Assistant*",
+        position: "LiUNA Local 737 Political and Legislative Assistant",
         company:"",
         id:21
     },

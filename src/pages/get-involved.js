@@ -11,14 +11,6 @@ const GetInvolved = () => {
     const [ formData, setFormData ] = useState({})
     const [ message, setMessage ] = useState("")
     const [isVerified, setIsVerified] = useState(false)
-
-    const formObject = document.querySelector('.getinvolved-form');
-
-    if ( formSent === true) {
-        formObject.style.display = "none";
-    } else {
-        // formObject.style.display = "block";
-    }
     
     const handleInput = e => {
         const copyFormData = { ...formData };
@@ -74,7 +66,7 @@ const GetInvolved = () => {
         <PopupModule show={true} ide="getinvo">
             <h3 align="center"> Volunteer Form</h3>
             <p align="center" className="banner-alert" id="banner-alert">{isVerified ? '' : message}</p>
-            <form className="getinvolved-form" required onSubmit={sendData} >
+            <form className="getinvolved-form" style={{display: formSent ? "none" : "block"}} required onSubmit={sendData} >
                 {/* <div id="close-modal" onClick={toggleModal}>x</div> */}
                 <label htmlFor="first">First Name</label>
                 <input name="first" type="text" id="first" placeholder="John" onChange={handleInput} required/>

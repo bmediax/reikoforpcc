@@ -14,8 +14,8 @@ export const navObjects = [
         id:2
     },
     {
-        title: "Events",
-        path: "/#events",
+        title: "Get Involved",
+        path: "/get-involved",
         exact: false,
         active: false,
         id:3

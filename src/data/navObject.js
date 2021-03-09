@@ -12,12 +12,5 @@ export const navObjects = [
         exact: false,
         active: false,
         id:2
-    },
-    {
-        title: "Get Involved",
-        path: "/get-involved",
-        exact: false,
-        active: false,
-        id:3
     }
 ]

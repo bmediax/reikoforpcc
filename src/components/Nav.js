@@ -37,6 +37,7 @@ const Nav = (props) => {
                             <a className="nav-item" href={navs.path} onClick={handleMobileToggle}>{navs.title}</a>
                         </React.Fragment>
                     ))}
+                    <Link className="nav-item" to="/get-involved" onClick={handleMobileToggle}>Get Involved</Link>
                 </div>
                 <div className="donate-contain">
                     <Donatebtn />

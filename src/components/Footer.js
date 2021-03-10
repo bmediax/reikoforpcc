@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 // import ReactTooltip from "react-tooltip";
-
+import { StaticImage } from "gatsby-plugin-image"
 import { MdEmail } from "react-icons/md";
 import { AiFillFacebook } from "react-icons/ai";
 import { navContext } from '../data/context/navContext';
@@ -11,7 +11,8 @@ const Footer = (props) => {
         <footer>
             <div id="footer-wrapper">
                 <div className="footer-logo">
-                    <img src={props.logo} alt="Reiko for PCC Logo" />
+                    <StaticImage src="../images/gfx/logo-icon_white.png" alt="Reiko for PCC Logo" width={100} />
+                    {/* <img src={props.logo} alt="Reiko for PCC Logo" /> */}
                 </div>
                 <ul className="footer-nav">
                 {navItems.map(navs => (

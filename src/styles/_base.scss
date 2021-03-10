@@ -25,7 +25,7 @@ section p, section li {
 
 #cover {
   background:getColor(darkBase);
-  min-height:20vw;
+  height:30vmin;
   display:flex;
   justify-content:center;
   align-items: center;
@@ -33,7 +33,7 @@ section p, section li {
   h1 {
     color:getColor(textHeader);
     text-align:center;
-    font-size:4vmax;
+    font-size:8vmin;
   }
 }
 
@@ -94,7 +94,7 @@ nav {
 
       a {
         position:relative !important;
-        top:5px !important;
+        top:1px !important;
       }
 
       // #logo picture {
@@ -329,15 +329,17 @@ footer {
   .footer-logo {
     flex: 1;
     text-align:center;
+    justify-self: flex-start;
     
     img {
-      max-width:200px;
-      height:100%;
-      width:100%;
-      margin-top:10px;
-      display: block;
-      margin-right: auto;
-      margin-left: auto;
+      padding:20px 0px;
+      // max-width:200px;
+      // height:100%;
+      // width:100%;
+      // margin-top:10px;
+      // display: block;
+      // margin-right: auto;
+      // margin-left: auto;
     }
   }
 

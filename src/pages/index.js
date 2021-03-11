@@ -5,10 +5,6 @@ import '../styles/homepage.scss'
 // Style
 import Layout from '../layout'
 
-// Animation
-// import { motion } from 'framer-motion'
-// import { pageVariants } from '../utils/motionVariants'
-
 // Sections
 import SliderSection from '../components/sections/SliderSection'
 import MeetreikoSection from '../components/sections/MeetreikoSection'

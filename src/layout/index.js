@@ -32,7 +32,6 @@ const Layout = (props) => {
     return (
         <donationContext.Provider value={DonationLink}>
             <navContext.Provider value={navObjects}>
-                {/* <meta http-equiv="origin-trial" content="AmE7JKWYS+Jm3JYE0Znce9RZeHuBUVRFnLhayo4fpKcCiiZpSR8kBt+1Thplw10W4caLlCV37/SNOFZJaoxLXQMAAAB5eyJvcmlnaW4iOiJodHRwczovL3JlaWtvZm9ycGNjLmNvbTo0NDMiLCJmZWF0dXJlIjoiVW5yZXN0cmljdGVkU2hhcmVkQXJyYXlCdWZmZXIiLCJleHBpcnkiOjE2MzM0NzgzOTksImlzU3ViZG9tYWluIjp0cnVlfQ==" /> */}
                 <SEO title={props.title} />
                 <div className="RMW_container">
                     <Nav />

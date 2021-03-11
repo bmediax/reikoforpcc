@@ -2,6 +2,10 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
+import favicon32 from '../images/favicon/favicon-32x32.png'
+import favicon16 from '../images/favicon/favicon-16x16.png'
+import maskIcon from '../images/favicon/safari-pinned-tab.svg'
+import appleTouchIcon from '../images/favicon/apple-touch-icon.png'
 
 function SEO({ description, lang, meta, image: metaImage, title, pathname }) {
   const { site } = useStaticQuery(
@@ -32,10 +36,10 @@ function SEO({ description, lang, meta, image: metaImage, title, pathname }) {
       title={title}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
       link={[
-        { rel: 'apple-touch-icon', sizes: '180x180', href: '../images/favicon/apple-touch-icon.png'},
-        { rel: 'icon', type: 'image/png', sizes: '32x32', href: '../images/favicon/favicon-32x32.png'},
-        { rel: 'icon', type: 'image/png', sizes: '16x16', href: '../images/favicon/favicon-16x16.png'},
-        { rel: 'mask-icon', href: '../images/favicon/safari-pinned-tab.svg', color: '#5bbad5'},
+        { rel: 'apple-touch-icon', sizes: '180x180', href: `${appleTouchIcon}`},
+        { rel: 'icon', type: 'image/png', sizes: '32x32', href: `${favicon32}`},
+        { rel: 'icon', type: 'image/png', sizes: '16x16', href: `${favicon16}`},
+        { rel: 'mask-icon', href: `${maskIcon}`, color: '#5bbad5'},
       ]}
       // <link rel="manifest" href="/site.webmanifest">
       // <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">

@@ -1,4 +1,4 @@
-import * as React from "react"
+import React from "react"
 
 // Poppins Font
 // import '../assets/fonts/poppins/stylesheet.css'
@@ -28,20 +28,6 @@ import SEO from "../components/seo";
 
 const Layout = (props) => {
     const DonationLink = "https://secure.actblue.com/donate/friends-of-reiko-1"
-
-    // const [mode, setMode] = useState<"light" | "dark" | undefined>(
-    //     window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? "dark" :"light"
-    // );
-    
-    // useEffect(() => {
-    //   const modeMe = (e) => {
-    //     setMode(e.matches ? "dark" : "light");
-    //   }  
-    //   window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', modeMe);
-    //   return window.matchMedia('(prefers-color-scheme: dark)').removeListener(modeMe);
-    // }, []);
-
-    // console.log(mode);
 
     return (
         <donationContext.Provider value={DonationLink}>

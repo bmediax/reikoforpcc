@@ -1,8 +1,8 @@
 // Technologies
 import React from "react"
-import '../styles/homepage.scss'
 
 // Style
+import '../styles/homepage.scss'
 import Layout from '../layout'
 
 // Sections
@@ -14,6 +14,8 @@ import EventsSection from '../components/sections/EventsSection'
 import GetinvolvedSection from '../components/sections/GetinvolvedSection'
 
 const IndexPage = () => {
+  // const [ isDark, setIsDark ] = useState()
+
   return (
     <Layout title="Homepage">
       <SliderSection />

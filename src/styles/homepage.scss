@@ -236,7 +236,7 @@
     align-items: center;
 
     &:before {
-        background: rgba(0, 0, 0, 0.4);
+        background: rgba($dark-blue, 0.8);
         content: '';
         position: absolute;
         width: 100%;

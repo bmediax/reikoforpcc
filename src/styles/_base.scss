@@ -44,7 +44,9 @@ nav {
   right:0;
   left:0;
   z-index:10;
-  background:getColor(lightBase);
+  background:getColor(navBase);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   padding: 5px 0px;
   box-shadow:0px 15px 50px rgba(0, 0, 0, 0.08);
 

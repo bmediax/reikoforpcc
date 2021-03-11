@@ -47,6 +47,8 @@ $colors: (
   darkBase: $light-med,
   Darkbase: $atom-blue,
 
+  navBase: rgba(255, 255, 255, 0.9),
+
   // TEXT
   textHeader : $dark-blue,
   darktextHeader: #1E4B5D,
@@ -87,6 +89,8 @@ $colors-dark: (
   // ----- UI START ---------
   lightBase: $dark-high,
   darkBase: $dark-med,
+
+  navBase: rgba(#292F39, 0.9),
 
   // Text
   textHeader: $light-megher,

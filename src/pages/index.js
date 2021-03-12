@@ -17,7 +17,7 @@ const IndexPage = () => {
   // const [ isDark, setIsDark ] = useState()
 
   return (
-    <Layout title="Homepage">
+    <Layout title="Home">
       <SliderSection />
       <MeetreikoSection />
       <PrioritiesSection />

@@ -55,7 +55,7 @@ const Layout = (props) => {
                             duration: 0.3
                         }}
                     >
-                        <div className="RMW_wrapper">
+                        <div className="RMW_wrapper" id={props.ide}>
                             {props.children}
                         </div>
                     </motion.main>

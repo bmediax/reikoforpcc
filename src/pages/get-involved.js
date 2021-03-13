@@ -1,6 +1,5 @@
-import React from "react"
-import Layout from "../layout"
-// import SectionLayout from '../layout/SectionLayout'
+import React from 'react'
+import Layout from '../layout'
 import '../styles/GetinvolvedSection.scss'
 
 // markup

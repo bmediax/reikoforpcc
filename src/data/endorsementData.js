@@ -72,69 +72,75 @@ export const endorsementData = [
         id:12
     },
     {
+        name: "Lacey Beaty",
+        position: "Beaverton Mayor",
+        company:"",
+        id:13
+    },
+    {
+        name: "Nadia Hasan",
+        position: "",
+        company:"",
+        id:14
+    },
+    {
         name: "Carmen Rubio",
         position: "Portland Commissioner",
         company:"",
-        id:13
+        id:15
     },
     {
         name: "Olivia Alcaire",
         position: "City of Hillsboro Councilor",
         company:"",
-        id:14
+        id:16
     },
     {
         name: "Dr. Olga Acuña",
         position: "Former City of Hillsboro Councilor",
         company:"",
-        id:15
+        id:18
+    },
+    {
+        name: "Angeles Godinez",
+        position: "City of Cornelius Councilor",
+        company:"",
+        id:19
+    },
+    {
+        name: "Doris Gonzalez",
+        position: "City of Cornelius Councilor",
+        company:"",
+        id:20
     },
     {
         name: "Narce Rodriguez",
         position: "Forest Grove School Board Director",
         company:"",
-        id:16
+        id:21
     },
     {
         name: "Ben Bowman",
         position: "Tigard Tualatin School Board Director",
         company:"",
-        id:17
+        id:22
     },
     {
         name: "Travis Nelson",
         position: "Democratic National Committee Member",
         company:"",
-        id:18
-    },
-    {
-        name: "Dr. Katie Riley",
-        position: "Washington County Kids President",
-        company:"",
-        id:19
+        id:23
     },
     {
         name: "Jaime Rodriguez",
         position: "American Federation of Teachers - Oregon President",
         company:"",
-        id:20
+        id:24
     },
     {
         name: "Danielle Garza",
         position: "LiUNA Local 737 Political and Legislative Assistant",
         company:"",
-        id:21
-    },
-    {
-        name: "Citlalli Nuñez",
-        position: "Portland Community College Student",
-        company:"",
-        id:22
-    },
-    {
-        name: "Brian Moreno",
-        position: "Portland Community College Student",
-        company:"",
-        id:23
+        id:25
     }
 ]

@@ -36,111 +36,105 @@ export const endorsementData = [
         id: 6
     },
     {
-        name: "Mohamed Alyajouri",
-        position: "PCC Board Chair",
-        company:"",
-        id: 7
-    },
-    {
         name: "Tiffani Penson",
         position:"PCC Board Vice-Chair",
         company:"",
-        id: 8
+        id: 7
     },
     {
         name: "Alexander Díaz Rios",
         position: "PCC Board Director Zone 7",
         company:"",
-        id: 9
+        id: 8
     },
     {
         name: "Dan Saltzman",
         position: "PCC Board Director Zone 5",
         company:"",
-        id:10
+        id:9
     },
     {
         name: "Kali Thorne Ladd",
         position: "Former PCC Board Chair",
         company:"",
-        id:11
+        id:10
     },
     {
         name: "Nafisa Fai",
         position: "Washington County Commissioner",
         company:"",
-        id:12
+        id:11
     },
     {
         name: "Lacey Beaty",
         position: "Beaverton Mayor",
         company:"",
-        id:13
+        id:12
     },
     {
         name: "Nadia Hasan",
-        position: "",
+        position: "Beaverton Councilor",
         company:"",
-        id:14
+        id:13
     },
     {
         name: "Carmen Rubio",
         position: "Portland Commissioner",
         company:"",
-        id:15
+        id:14
     },
     {
         name: "Olivia Alcaire",
         position: "City of Hillsboro Councilor",
         company:"",
-        id:16
+        id:15
     },
     {
         name: "Dr. Olga Acuña",
         position: "Former City of Hillsboro Councilor",
         company:"",
-        id:18
+        id:16
     },
     {
         name: "Angeles Godinez",
         position: "City of Cornelius Councilor",
         company:"",
-        id:19
+        id:17
     },
     {
         name: "Doris Gonzalez",
         position: "City of Cornelius Councilor",
         company:"",
-        id:20
+        id:18
     },
     {
         name: "Narce Rodriguez",
         position: "Forest Grove School Board Director",
         company:"",
-        id:21
+        id:19
     },
     {
         name: "Ben Bowman",
         position: "Tigard Tualatin School Board Director",
         company:"",
-        id:22
+        id:20
     },
     {
         name: "Travis Nelson",
         position: "Democratic National Committee Member",
         company:"",
-        id:23
+        id:21
     },
     {
         name: "Jaime Rodriguez",
         position: "American Federation of Teachers - Oregon President",
         company:"",
-        id:24
+        id:22
     },
     {
         name: "Danielle Garza",
         position: "LiUNA Local 737 Political and Legislative Assistant",
         company:"",
-        id:25
+        id:23
     }
 ]

@@ -14,7 +14,7 @@ const MeetreikoSection = () => {
             <ProfileModule 
                 title="WHY AM I RUNNING?"
                 link="meet-reiko" 
-                linkText="Learn More About Reiko" 
+                linkText="Who is Reiko?" 
                 icon={AboutIcon} />
         </SectionLayout>
     )

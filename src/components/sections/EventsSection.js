@@ -5,17 +5,13 @@ import { BiLinkExternal } from "react-icons/bi";
 // import { SiMicrosoftoutlook } from 'react-icons/si'
 import axios from '../../utils/axios'
 
-require('dotenv').config({
-    path: `.env.${process.env.NODE_ENV}`,
-})
-
 const EventsSection = () => {
     const [caldata, setCaldata] = useState('');
     const [loader, setLoader] = useState(false)
 
     useEffect(() => {
         async function fetchCalData() {
-            const response = await axios.get(process.env.CAL_EVENT_KICKOFF)
+            const response = await axios.get(process.env.GATSBY_CAL_EVENT_KICKOFF)
             setCaldata(response.data)
             setLoader(true)
             return response

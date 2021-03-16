@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import SectionLayout from '../../layout/SectionLayout'
 import { BiLinkExternal } from "react-icons/bi";
-import { IoLogoGoogle } from 'react-icons/io'
-import { SiMicrosoftoutlook } from 'react-icons/si'
+// import { IoLogoGoogle } from 'react-icons/io'
+// import { SiMicrosoftoutlook } from 'react-icons/si'
 import axios from '../../utils/axios'
 
 const EventsSection = () => {
@@ -37,12 +37,12 @@ const EventsSection = () => {
                             <a href={caldata.links.event_page} className="small-btn blue-btn">
                                 View Event Page<BiLinkExternal  className="btn-icon" />
                             </a>
-                            <a href={caldata.links.google} className="small-btn blue-btn">
+                            {/* <a href={caldata.links.google} className="small-btn blue-btn">
                                 Add to Google <IoLogoGoogle  className="btn-icon" />
                             </a>
                             <a href={caldata.links.office365} className="small-btn blue-btn">
                                 Add to Outlook<SiMicrosoftoutlook  className="btn-icon" />
-                            </a>
+                            </a> */}
                         </div>
                     </span>
                     <span className="event-date">

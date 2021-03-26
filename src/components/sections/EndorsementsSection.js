@@ -7,7 +7,7 @@ const EndorsementsSection = () => {
         <SectionLayout topic="endorsements" tag="endorsements">
             <div className="endo_logos">
                 <h1> Endorsements </h1>
-                <EndorsementsModule />
+                <EndorsementsModule limit="6" />
             </div>
             {/* <div className="endo_want" style={{paddingBottom: "6%"}}>
                 <h2> Interested in Endorsing? </h2>

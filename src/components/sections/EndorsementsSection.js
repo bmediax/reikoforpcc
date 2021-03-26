@@ -1,5 +1,4 @@
 import React from 'react'
-// import { AiFillHeart } from 'react-icons/ai'
 import SectionLayout from '../../layout/SectionLayout'
 import EndorsementsModule from '../modules/EndorsementsModule'
 
@@ -12,7 +11,7 @@ const EndorsementsSection = () => {
             </div>
             {/* <div className="endo_want" style={{paddingBottom: "6%"}}>
                 <h2> Interested in Endorsing? </h2>
-                <button className="btn red-btn" style={{cursor: "pointer", display: endorse ? "none" : "inline-block", border: "none"}}>I want to Endorse Reiko! <AiFillHeart className="btn-icon" /></button>
+                <button className="btn red-btn">I want to Endorse Reiko! <AiFillHeart className="btn-icon" /></button>
             </div> */}
         </SectionLayout>
     )

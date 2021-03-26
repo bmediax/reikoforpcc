@@ -1,32 +1,36 @@
+import React from 'react'
+import { StaticImage } from 'gatsby-plugin-image'
+
 export const endorsementData = [
     {
         name: "Washington County Democrats",
+        url: 'https://washcodems.org/',
+        logo: <StaticImage src="../images/endorsements/dwc-logo.png" width={300} alt="Washington County Democrats" />,
         position: "",
         company:"",
         id: 1
     },
     {
-        name: "Oregon Future Labs / Color PAC",
-        position: "",
-        company:"",
+        name: "Oregon Futures Lab/Color PAC",
+        url: "https://www.oregonfutureslab.org/",
         id: 2
     },
     {
         name: "Chuck Riley",
         position: "State Senator",
-        company:"",
+        url: 'https://www.oregonlegislature.gov/riley',
         id: 3
     },
     {
         name: "Lew Frederick",
         position: "State Senator",
-        company:"",
+        url: "https://www.oregonlegislature.gov/frederick",
         id: 4
     },
     {
         name: "Janelle Bynum",
         position: "State Representative",
-        company:"",
+        url: "https://www.oregonlegislature.gov/bynum",
         id: 5
     },
     {
@@ -62,31 +66,31 @@ export const endorsementData = [
     {
         name: "Nafisa Fai",
         position: "Washington County Commissioner",
-        company:"",
+        url: "https://www.nafisaforwashingtoncounty.com/",
         id:11
     },
     {
         name: "Lacey Beaty",
         position: "Beaverton Mayor",
-        company:"",
+        url: "https://beatyforbeaverton.com/",
         id:12
     },
     {
         name: "Nadia Hasan",
         position: "Beaverton Councilor",
-        company:"",
+        url: "https://www.nadiahasan.com/",
         id:13
     },
     {
         name: "Carmen Rubio",
         position: "Portland Commissioner",
-        company:"",
+        url: "https://www.carmenforportland.com/",
         id:14
     },
     {
         name: "Olivia Alcaire",
         position: "City of Hillsboro Councilor",
-        company:"",
+        url: "https://oliviaforhillsboro.com/",
         id:15
     },
     {
@@ -98,13 +102,13 @@ export const endorsementData = [
     {
         name: "Angeles Godinez",
         position: "City of Cornelius Councilor",
-        company:"",
+        url: "https://www.ci.cornelius.or.us/citycouncil/page/councilor-angeles-godinez",
         id:17
     },
     {
         name: "Doris Gonzalez",
         position: "City of Cornelius Councilor",
-        company:"",
+        url: "https://www.ci.cornelius.or.us/citycouncil/page/councilor-doris-gonzalez",
         id:18
     },
     {

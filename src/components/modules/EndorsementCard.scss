@@ -17,6 +17,12 @@
         transition-property: box-shadow;
         transition-duration: .4s;
 
+        a {
+            h2:hover {
+                text-decoration:underline;
+            }
+        }
+
         h2 {
             padding:0px;
             margin:auto;

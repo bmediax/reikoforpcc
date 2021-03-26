@@ -6,7 +6,7 @@ const EndorsementsModule = () => {
     return (
         <div className="endorsementmodule_wrapper">
             {endorsementData.map(endorse => (
-                <EndorsementCard key={endorse.id} name={endorse.name} position={endorse.position} company={endorse.company}/>
+                <EndorsementCard logo={endorse.logo} url={endorse.url} key={endorse.id} name={endorse.name} position={endorse.position} company={endorse.company}/>
             ))}
         </div>
     )

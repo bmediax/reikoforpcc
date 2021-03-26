@@ -6,11 +6,4 @@ export const navObjects = [
         active: false,
         id:1
     },
-    {
-        title: "Endorsements",
-        path: "/#endorsements",
-        exact: false,
-        active: false,
-        id:2
-    }
 ]

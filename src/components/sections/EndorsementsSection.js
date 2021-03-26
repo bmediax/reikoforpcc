@@ -1,19 +1,14 @@
 import React from 'react'
 // import { AiFillHeart } from 'react-icons/ai'
-import EndorsementCard from '../../components/modules/EndorsementCard'
 import SectionLayout from '../../layout/SectionLayout'
-import { endorsementData } from '../../data/endorsementData'
+import EndorsementsModule from '../modules/EndorsementsModule'
 
 const EndorsementsSection = () => {
     return (
         <SectionLayout topic="endorsements" tag="endorsements">
             <div className="endo_logos">
                 <h1> Endorsements </h1>
-                <div className="endorsementmodule_wrapper">
-                    {endorsementData.map(endorse => (
-                        <EndorsementCard key={endorse.id} name={endorse.name} position={endorse.position} company={endorse.company}/>
-                    ))}
-                </div>
+                <EndorsementsModule />
             </div>
             {/* <div className="endo_want" style={{paddingBottom: "6%"}}>
                 <h2> Interested in Endorsing? </h2>

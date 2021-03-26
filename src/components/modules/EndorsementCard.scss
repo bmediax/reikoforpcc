@@ -18,6 +18,10 @@
         transition-duration: .4s;
 
         a {
+            display:flex;
+            justify-content: center;
+            align-items: center;
+
             h2:hover {
                 text-decoration:underline;
             }
@@ -32,6 +36,13 @@
             margin:0px;
             text-align:center;
         }
+
+        // .gatsby-image-wrapper {
+        //     img {
+        //         display:block;
+        //         text-align:center;
+        //     }
+        // }
 
         &:before {
             content:"Thank you";

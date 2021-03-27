@@ -72,17 +72,17 @@
 
 // Endorsements
 .endorsements {
-    .endo_logos {
-        background:getColor(lightBase);
-        padding:5% 5%;
-        @include objectCorner(medium);
-        @include enableAnimation;
-        @include objectShadow(base);
+    // .endo_logos {
+    //     background:getColor(lightBase);
+    //     padding:5% 5%;
+    //     @include objectCorner(medium);
+    //     @include enableAnimation;
+    //     @include objectShadow(base);
 
-        &:hover {
-            @include objectShadow(hover)
-        }
-    }
+    //     &:hover {
+    //         @include objectShadow(hover)
+    //     }
+    // }
 
     .endo_want {
         text-align:center;

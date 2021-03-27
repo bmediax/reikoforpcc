@@ -34,7 +34,7 @@ const EventsSection = () => {
                         <h3>{caldata.data.title}</h3>
                         <p>{caldata.data.description}</p>
                         <div className="event-links">
-                            <a href={caldata.links.event_page} className="small-btn blue-btn">
+                            <a href={caldata.links.event_page} className="btn blue-btn">
                                 View Event Page<BiLinkExternal  className="btn-icon" />
                             </a>
                             {/* <a href={caldata.links.google} className="small-btn blue-btn">

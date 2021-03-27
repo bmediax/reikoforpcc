@@ -2,7 +2,11 @@
 @use './variables' as *;
 
 .priorities {
-    background:getColor(darkBase);
+    background:$blue;
+
+    h1 {
+        color:#FFF;
+    }
 }
 
 .three-column-option_container {
@@ -18,21 +22,23 @@
 
     div {
         padding:20px 30px;
-        background:getColor(darkBase);
+        // border:3px solid lighten($blue, 4);
+        // @include objectShadow(base);
         @include objectCorner(medium);
         // @include enableAnimation;
 
         &:hover {
-            background:getColor(lightBase);
-            @include objectShadow(base);
+            // background:lighten($blue, 4);
+            background:darken($blue, 2);
+            // @include objectShadow(base);
             cursor: pointer;
 
             h2 {
-                color:$blue;
+                color:getColor(lightBase);
             }
 
             p {
-                color:getColor(hiddenTextHover);
+                color:getColor(lightBase);
             }
         }
 
@@ -45,19 +51,19 @@
 
         h2 {
             font-family:"Poppins", sans-serif;
-            font-size:2vmax;
+            font-size:3vmin;
             text-align:center;
             margin:0;
             padding:10px 0 0 0;
-            color:getColor(hiddenText);
+            color:getColor(darkBase);
         }
 
-        p {
-            text-align:center;
-            padding:10px 0 0 0;
-            margin:0px;
-            color:getColor(hiddenText);
-        }
+        // p {
+        //     text-align:center;
+        //     padding:10px 0 0 0;
+        //     margin:0px;
+        //     color:getColor(hiddenText);
+        // }
 
         img {
             border-radius:50%;

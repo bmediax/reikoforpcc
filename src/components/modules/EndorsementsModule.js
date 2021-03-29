@@ -8,7 +8,6 @@ const EndorsementsModule = (props) => {
             {endorsementData.slice(0, props.limit).map(endorse => (
                 <EndorsementCard {...endorse} />
             ))}
-            <EndorsementCard name="Your Logo" url="#getinvolved" />
         </div>
     )
 }

@@ -37,24 +37,6 @@
             text-align:center;
         }
 
-        // .gatsby-image-wrapper {
-        //     img {
-        //         display:block;
-        //         text-align:center;
-        //     }
-        // }
-
-        &:before {
-            content:"Thank you";
-            margin:auto;
-            text-align:center;
-            color:getColor(darkBase);
-            font-weight:800;
-            display:block;
-            transition-property: color;
-            transition-duration: 1s;
-        }
-
         &:hover {
             border-color: transparent;
             @include objectShadow(base);

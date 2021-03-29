@@ -25,7 +25,7 @@ section p, section li {
 
 #cover {
   background:getColor(darkBase);
-  height:30vmin;
+  height:50vmin;
   display:flex;
   justify-content:center;
   align-items: center;
@@ -150,7 +150,7 @@ nav {
 }
 
 section {
-  padding:5% 5%;
+  padding:8% 5%;
 
   h1 {
     font-family:'Poppins', sans-serif;

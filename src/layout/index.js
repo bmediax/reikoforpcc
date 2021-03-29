@@ -26,13 +26,15 @@ import SEO from "../components/seo";
 // Utils
 // import { AnimatePresence } from 'framer-motion'
 
+import bannerImage from '../images/photos/RMW-profile.png'
+
 const Layout = (props) => {
     const DonationLink = "https://secure.actblue.com/donate/friends-of-reiko-1"
 
     return (
         <donationContext.Provider value={DonationLink}>
             <navContext.Provider value={navObjects}>
-                <SEO title={props.title} />
+                <SEO title={props.title} metaImage={bannerImage} />
                 <div className="RMW_container">
                     <Nav />
                     <motion.main

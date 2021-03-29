@@ -1,12 +1,13 @@
-import React, { useContext } from 'react'
+import React from 'react'
+import { Link } from 'gatsby'
 // import ReactTooltip from "react-tooltip";
 import { StaticImage } from "gatsby-plugin-image"
 import { MdEmail } from "react-icons/md";
 import { AiFillFacebook } from "react-icons/ai";
-import { navContext } from '../data/context/navContext';
+// import { navContext } from '../data/context/navContext';
 
 const Footer = (props) => {
-    const navItems = useContext(navContext)
+    // const navItems = useContext(navContext)
     return (
         <footer>
             <div id="footer-wrapper">
@@ -15,11 +16,22 @@ const Footer = (props) => {
                     {/* <img src={props.logo} alt="Reiko for PCC Logo" /> */}
                 </div>
                 <ul className="footer-nav">
-                {navItems.map(navs => (
+                {/* {navItems.map(navs => (
                     <li key={navs.id}>
                         <a href={navs.path}>{navs.title}</a>
+                    </li> */}
+                    <li>
+                        <Link to="/meet-reiko">Meet Reiko</Link>
                     </li>
-                ))}
+                    <li>
+                        <a href="#priorities">Priorities</a>
+                    </li>
+                    <li>
+                        <Link to="/endorsements">Endorsements</Link>
+                    </li>
+                    <li>
+                        <Link to="/get-involved">Get Involved</Link>
+                    </li>
                 </ul>
                 <div className="footer-social">
                     {/* <ReactTooltip

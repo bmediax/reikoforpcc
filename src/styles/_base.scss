@@ -25,15 +25,27 @@ section p, section li {
 
 #cover {
   background:getColor(darkBase);
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
   height:50vmin;
   display:flex;
   justify-content:center;
   align-items: center;
 
+  &:before {
+    content: '';
+    background:linear-gradient(-180deg, transparent, rgba(0, 0, 0, 0.4));
+    height:50vmin;
+    width:100%;
+    position:absolute;
+  }
+
   h1 {
-    color:getColor(textHeader);
+    color:#FFF;
     text-align:center;
     font-size:8vmin;
+    z-index:5;
   }
 }
 

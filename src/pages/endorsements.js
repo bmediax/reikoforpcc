@@ -4,14 +4,16 @@ import SectionLayout from '../layout/SectionLayout'
 import EndorsementsModule from '../components/modules/EndorsementsModule'
 import GetinvolvedSection from '../components/sections/GetinvolvedSection'
 import '../styles/GetinvolvedSection.scss'
+import Cover from '../components/modules/CoverModule'
+import coverDesk from '../images/photos/RMW-DeskWait.jpeg'
 
 // markup
 const Endorsements = () => {
   return (
     <Layout title="Endorsements">
-        <div id="cover">
-            <h1> Endorsements </h1>
-        </div>
+        <Cover coverImage={coverDesk}>
+          Endorsements
+        </Cover>
         <SectionLayout>
             <EndorsementsModule />
         </SectionLayout>

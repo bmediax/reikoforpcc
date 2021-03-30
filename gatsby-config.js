@@ -11,12 +11,21 @@ module.exports = {
     siteUrl: "https://reikoforpcc.com",
   },
   plugins: [
-    "gatsby-plugin-sass",
     "gatsby-plugin-gatsby-cloud",
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     `gatsby-plugin-react-helmet`,
     "gatsby-transformer-sharp",
+    {
+      resolve: "gatsby-plugin-sass",
+      options: {
+        useResolveUrlLoader: {
+          options: {
+            sourceMap: true, //default is false
+          },
+        },
+      },
+    },
     {
       resolve: "gatsby-source-filesystem",
       options: {

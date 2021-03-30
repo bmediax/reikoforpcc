@@ -32,5 +32,8 @@
     "react-icons": "^4.2.0",
     "react-responsive": "^8.2.0",
     "sass": "^1.32.8"
+  },
+  "devDependencies": {
+    "resolve-url-loader": "^3.1.2"
   }
 }

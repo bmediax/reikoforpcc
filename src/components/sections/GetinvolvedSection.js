@@ -13,7 +13,7 @@ const GetinvolvedModule = () => {
     return (
         <SectionLayout topic="get-involved" tag="getinvolved">
             <h1>Get involved</h1>
-            <button onClick={toggleModal} className="btn transparent-btn" style={{ outline: "none" }}> { modal ? "Hide Form" : "I want to help out!"}</button>
+            <button onClick={toggleModal} className="btn blue-btn-solid" style={{ outline: "none", border: "none", margin: "auto" }}> { modal ? "Hide Form" : "I want to help out!"}</button>
             <PopupModule show={modal} ide="getinvo">
                 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSddxXfQaYxUUIoEK1FozE8XClHXvTjhoHfyzshuYtiwJXNdKQ/viewform?embedded=true"            
                     title="Get Involved Form"

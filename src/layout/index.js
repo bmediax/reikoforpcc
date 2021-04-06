@@ -21,7 +21,7 @@ import Footer from "../components/Footer"
 // Style
 import '../styles/_responsive.scss'
 import '../styles/_base.scss'
-import SEO from "../components/seo";
+import Seo from "../components/seo";
 
 // Utils
 // import { AnimatePresence } from 'framer-motion'
@@ -34,7 +34,7 @@ const Layout = (props) => {
     return (
         <donationContext.Provider value={DonationLink}>
             <navContext.Provider value={navObjects}>
-                <SEO title={props.title} metaImage={bannerImage} />
+                <Seo title={props.title} metaImage={bannerImage} />
                 <div className="RMW_container">
                     <Nav />
                     <motion.main

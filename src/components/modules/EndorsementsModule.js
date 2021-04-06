@@ -5,8 +5,8 @@ import { endorsementData } from '../../data/endorsementData'
 const EndorsementsModule = (props) => {
     return (
         <div className="endorsementmodule_wrapper">
-            {endorsementData.slice(0, props.limit).map(endorse => (
-                <EndorsementCard {...endorse} />
+            {endorsementData.slice(0, props.limit).map((endorse, index) => (
+                <EndorsementCard key={index} {...endorse} />
             ))}
         </div>
     )

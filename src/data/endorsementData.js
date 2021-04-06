@@ -12,7 +12,7 @@ export const endorsementData = [
     {
         name: "APANO",
         url: 'https://www.apano.org/',
-        logo: "",
+        logo: <StaticImage src="../images/endorsements/apano.png" placeholder="blurred" height={70} alt="APANO Logo" />,
         position: "",
         company:"",
     },
@@ -33,14 +33,14 @@ export const endorsementData = [
     {
         name: "UFCW Local 555",
         url: 'https://www.ufcw555.org/',
-        logo: "",
+        logo: <StaticImage src="../images/endorsements/UFCW555.png" placeholder="blurred" height={70} alt="UFCW Local 555 Logo" />,
         position: "",
         company:"",
     },
     {
         name: "LiUNA Local 737",
         url: 'https://www.local737.org/',
-        logo: "",
+        logo: <StaticImage src="../images/endorsements/LiUNA.png" placeholder="blurred" height={70} alt="LiUNA Local 737 Logo" />,
         position: "",
         company:"",
     },
@@ -60,7 +60,7 @@ export const endorsementData = [
         url: "https://www.oregonlegislature.gov/frederick",
     },
     {
-        name: "Lew FrederickWlnsvey Campos",
+        name: "Wlnsvey Campos",
         position: "State Representative",
         url: "",
     },

@@ -1,9 +1,9 @@
 import React from 'react'
-import { Link } from 'gatsby'
+// import { Link } from 'gatsby'
 // import ReactTooltip from "react-tooltip";
-import { StaticImage } from "gatsby-plugin-image"
-import { MdEmail } from "react-icons/md";
-import { AiFillFacebook } from "react-icons/ai";
+// import { StaticImage } from "gatsby-plugin-image"
+// import { MdEmail } from "react-icons/md";
+// import { AiFillFacebook } from "react-icons/ai";
 // import { navContext } from '../data/context/navContext';
 
 const Footer = (props) => {

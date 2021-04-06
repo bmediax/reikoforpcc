@@ -207,11 +207,15 @@ h3 {
   font-family:"Poppins", sans-serif;
   font-weight:600;
   font-size:1.1rem;
-  padding:20px 50px;
-  max-width:260px;
+  padding:15px 20px;
+  max-width:220px;
   width:auto;
   @include objectCorner("small");
   @include enableAnimation;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
 }
 
 // Button Configurations
@@ -221,7 +225,7 @@ h3 {
 
   &:hover {
     background: $lightClean;
-    box-shadow: $shadowView rgba($lightClean, .2);
+    box-shadow: $shadowView rgba($lightClean, .35);
     color:#FFF;
   }
 }
@@ -234,7 +238,7 @@ h3 {
     background: $red;
     // @include buttonGradient(orange-gradient);
     color:#FFF;
-    box-shadow: $shadowView rgba($red, .2);
+    box-shadow: $shadowView rgba($red, .35);
   }
 }
 
@@ -246,7 +250,7 @@ h3 {
     background: $blue;
     // @include buttonGradient(blue-gradient);
     color:#FFF;
-    box-shadow: $shadowView rgba($blue, .2);
+    box-shadow: $shadowView rgba($blue, .35);
   }
 }
 

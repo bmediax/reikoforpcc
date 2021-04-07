@@ -185,9 +185,9 @@ section {
     color:getColor(textHeader);
     text-align:center;
 
-    @include responsive('mobile') {
-      font-size:5vmax;
-    }
+    // @include responsive('mobile') {
+    //   font-size:5vmax;
+    // }
   }
 }
 

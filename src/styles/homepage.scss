@@ -124,7 +124,8 @@
             min-height:250px;
             @include objectShadow("base");
             @include objectCorner("medium");
-            @include enableAnimation;
+            transition: box-shadow 250ms linear;
+            // @include enableAnimation;
 
             &:hover {
                 @include objectShadow("hover");

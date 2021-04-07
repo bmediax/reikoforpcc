@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react'
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import SectionLayout from '../../layout/SectionLayout'
 import { BiLinkExternal } from "react-icons/bi";
 // import { IoLogoGoogle } from 'react-icons/io'
@@ -8,6 +10,14 @@ import axios from '../../utils/axios'
 const EventsSection = () => {
     const [caldata, setCaldata] = useState('');
     const [loader, setLoader] = useState(false)
+    const controls = useAnimation();
+    const [ref, inView] = useInView();
+
+    useEffect(() => {
+        if (inView) {
+            controls.start("visible");
+        }
+    }, [controls, inView]);
 
     useEffect(() => {
         async function fetchCalData() {
@@ -30,7 +40,14 @@ const EventsSection = () => {
             {/* Events Module */}
             <div className="events-module">
                 <span className="events-module_section">
-                    <span className="event-des">
+                    <motion.span className="event-des" ref={ref}
+                    animate={controls}
+                    initial="hidden"
+                    transition={{ type: 'spring', damping: 35, stiffness: 100 }}
+                    variants={{
+                        visible: { opacity: 1, y: 0 },
+                        hidden: { opacity: 0, y: 100 }
+                    }}>
                         <h3>{caldata.data.title}</h3>
                         <p>{caldata.data.description}</p>
                         <div className="event-links">
@@ -44,11 +61,18 @@ const EventsSection = () => {
                                 Add to Outlook<SiMicrosoftoutlook  className="btn-icon" />
                             </a> */}
                         </div>
-                    </span>
-                    <span className="event-date">
+                    </motion.span>
+                    <motion.span className="event-date" ref={ref}
+                    animate={controls}
+                    initial="hidden"
+                    transition={{ delay: 0.4 , type: 'spring', damping: 35, stiffness: 100 }}
+                    variants={{
+                        visible: { opacity: 1, y: 0 },
+                        hidden: { opacity: 0, y: 100 }
+                    }}>
                         <span className="event-date_month">February</span>
                         <span className="event-date_day">23</span>
-                    </span>
+                    </motion.span>
                 </span>
                 {/* <span className="event-des">
                     <h3>Campaign Kick - Off</h3>

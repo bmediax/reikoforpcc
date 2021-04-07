@@ -31,7 +31,7 @@ const ProfileModule = (props) => {
                 }}>
                 <StaticImage src="../../images/gfx/reiko-logo_mask.png" 
                     alt="Reiko Mia Williams Headshot" 
-                    placeholder="blurred" height={400} />
+                    placeholder="blurred" height={450} />
             </motion.span>
             <span className="profile-module_textarea">
                 <h3>{props.title}</h3>

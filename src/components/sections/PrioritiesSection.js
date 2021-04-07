@@ -3,8 +3,10 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { StaticImage } from 'gatsby-plugin-image'
 import SectionLayout from '../../layout/SectionLayout'
+import { useMediaQuery } from "react-responsive";
 
 const PrioritiesSection = () => {
+    const isMobile = useMediaQuery({ maxWidth: 550 })
     const controls = useAnimation();
     const [ref, inView] = useInView();
 
@@ -20,8 +22,8 @@ const PrioritiesSection = () => {
 
             <div className="three-column-option_container">
                 <div className="three-column-option">
-                    <motion.div ref={ref}
-                    animate={controls}
+                    <motion.div ref={isMobile ? null : ref}
+                    animate={isMobile ? "visible" : controls }
                     initial="hidden"
                     transition={{ duration: 1.5 , type: 'spring', damping: 10, stiffness: 100 }}
                     variants={{
@@ -33,8 +35,8 @@ const PrioritiesSection = () => {
                         </center>
                         <h2> Inclusive, equitable education for all students.</h2>
                     </motion.div>
-                    <motion.div ref={ref}
-                    animate={controls}
+                    <motion.div ref={isMobile ? null : ref}
+                    animate={isMobile ? "visible" : controls }
                     initial="hidden"
                     transition={{ delay:.2, duration: 1.5 , type: 'spring', damping: 10, stiffness: 100 }}
                     variants={{
@@ -46,8 +48,8 @@ const PrioritiesSection = () => {
                         </center>
                         <h2>Stronger partnerships with K-12 school districts.</h2>
                     </motion.div>
-                    <motion.div ref={ref}
-                    animate={controls}
+                    <motion.div ref={isMobile ? null : ref}
+                    animate={isMobile ? "visible" : controls }
                     initial="hidden"
                     transition={{ delay:.4, duration: 1.5 , type: 'spring', damping: 10, stiffness: 100 }}
                     variants={{

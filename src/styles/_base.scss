@@ -366,6 +366,10 @@ footer {
   justify-content: center;
   align-items: center;
 
+  @include responsive('mobile') {
+    padding:5px !important;
+  }
+
   .footer-logo {
     flex: 1;
     text-align:center;
@@ -409,11 +413,12 @@ footer {
     text-align:center;
 
     a {
-      margin-right:25px;
       color:getColor(text2);
+    }
 
-      &:last-child {
-        margin-right:0px !important;
+    p {
+      @include responsive('mobile') {
+        font-size:.7rem;
       }
     }
   }

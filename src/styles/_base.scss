@@ -50,6 +50,11 @@ section p, section li {
 }
 
 // Navigation
+.navScroll {
+  box-shadow:0px 15px 50px rgba(0, 0, 0, 0.08);
+  border-bottom:none;
+}
+
 nav {
   position:sticky;
   top:0;
@@ -57,10 +62,11 @@ nav {
   left:0;
   z-index:10;
   background:getColor(navBase);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
+  border-bottom:3px solid rgba(0, 0, 0, 0.03);
+  // -webkit-backdrop-filter: blur(10px);
+  // backdrop-filter: blur(10px);
   padding: 5px 0px;
-  box-shadow:0px 15px 50px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 250ms linear;
 
   .nav-wrapper {
     display:flex;

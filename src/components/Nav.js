@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react'
+import React, { useState, useContext, useEffect } from 'react'
 
 // Utils
 import { RiMenu3Fill } from 'react-icons/ri'
@@ -18,10 +18,24 @@ const Nav = (props) => {
     
     const handleMobileToggle = () => {
         setMobileMenu(!mobileMenu)
-    }    
+    }
 
+    
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 0) {
+                document.querySelector(".navBar").className = "navBar navScroll";
+            } else {
+                document.querySelector(".navBar").className = "navBar";
+            }
+        };
+        
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+    
     return (
-        <nav>
+        <nav className='navBar'>
             <div className="nav-wrapper">
                 <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }} className="mobile-nav-contain">
                     <RiMenu3Fill className="menu-icon" onClick={handleMobileToggle} />

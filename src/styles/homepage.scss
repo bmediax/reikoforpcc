@@ -1,6 +1,10 @@
 // Importing Index.scss Functions
 @use './variables' as *;
 
+#meet-reiko {
+    padding:5% 5% !important;
+}
+
 .priorities {
     background:$blue;
 

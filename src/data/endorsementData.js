@@ -5,14 +5,21 @@ export const endorsementData = [
     {
         name: "Washington County Democrats",
         url: 'https://washcodems.org/',
-        logo: <StaticImage src="../images/endorsements/dwc-logo.png" placeholder="blurred" height={70} alt="Washington County Democrats Logo" />,
+        logo: <StaticImage src="../images/endorsements/dwc-logo.png" placeholder="blurred" height={65} alt="Washington County Democrats Logo" />,
         position: "",
         company:"",
     },
     {
         name: "APANO",
         url: 'https://www.apano.org/',
-        logo: <StaticImage src="../images/endorsements/apano.png" placeholder="blurred" height={70} alt="APANO Logo" />,
+        logo: <StaticImage src="../images/endorsements/apano.png" placeholder="blurred" height={65} alt="APANO Logo" />,
+        position: "",
+        company:"",
+    },
+    {
+        name: "Washington County Ignite",
+        url: 'http://box5549.temp.domains/~oregonn9/washcoignite/',
+        logo: <StaticImage src="../images/endorsements/WC_Ignite.png" placeholder="blurred" height={65} alt="Washington County Ignite Logo" />,
         position: "",
         company:"",
     },
@@ -33,21 +40,21 @@ export const endorsementData = [
     {
         name: "UFCW Local 555",
         url: 'https://www.ufcw555.org/',
-        logo: <StaticImage src="../images/endorsements/UFCW555.png" placeholder="blurred" height={70} alt="UFCW Local 555 Logo" />,
+        logo: <StaticImage src="../images/endorsements/UFCW555.png" placeholder="blurred" height={65} alt="UFCW Local 555 Logo" />,
         position: "",
         company:"",
     },
     {
         name: "LiUNA Local 737",
         url: 'https://www.local737.org/',
-        logo: <StaticImage src="../images/endorsements/LiUNA.png" placeholder="blurred" height={70} alt="LiUNA Local 737 Logo" />,
+        logo: <StaticImage src="../images/endorsements/LiUNA.png" placeholder="blurred" height={65} alt="LiUNA Local 737 Logo" />,
         position: "",
         company:"",
     },
     {
         name: "Oregon Futures Lab/Color PAC",
         url: "https://www.oregonfutureslab.org/",
-        logo: <StaticImage src="../images/endorsements/ofl-logo.png" placeholder="blurred" height={70} alt="Oregon Futures Lab Logo" />,
+        logo: <StaticImage src="../images/endorsements/ofl-logo.png" placeholder="blurred" height={65} alt="Oregon Futures Lab Logo" />,
     },
     {
         name: "Chuck Riley",

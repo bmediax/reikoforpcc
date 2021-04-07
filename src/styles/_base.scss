@@ -178,13 +178,17 @@ section {
     font-size:2vmax;
     color:getColor(textHeader);
     text-align:center;
+
+    @include responsive('mobile') {
+      font-size:5vmax;
+    }
   }
 }
 
 h3 {
   padding:0px;
   margin:0;
-  font-size:2.2vmax;
+  font-size:3vmax;
   color:getColor(textSubHeader);
 }
 

@@ -12,7 +12,7 @@ const MeetreikoSection = () => {
             <h1> Meet Reiko Mia Williams </h1>
 
             <ProfileModule 
-                title="WHY AM I RUNNING?"
+                title="Why am I running?"
                 link="meet-reiko" 
                 linkText="Who is Reiko?" 
                 icon={AboutIcon} />

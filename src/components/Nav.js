@@ -15,6 +15,7 @@ import { navContext } from '../data/context/navContext'
 const Nav = (props) => {
     const navItems = useContext(navContext)
     const [mobileMenu, setMobileMenu ] = useState(false);
+    
     const handleMobileToggle = () => {
         setMobileMenu(!mobileMenu)
     }    

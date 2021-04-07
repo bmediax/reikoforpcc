@@ -6,7 +6,7 @@ import '../styles/homepage.scss'
 import Layout from '../layout'
 
 // Sections
-// import SliderSection from '../components/sections/SliderSection'
+import SliderSection from '../components/sections/SliderSection'
 import MeetreikoSection from '../components/sections/MeetreikoSection'
 import PrioritiesSection from '../components/sections/PrioritiesSection'
 import EndorsementsSection from '../components/sections/EndorsementsSection'
@@ -18,7 +18,7 @@ const IndexPage = () => {
 
   return (
     <Layout title="Home">
-      {/* <SliderSection /> */}
+      <SliderSection />
       <MeetreikoSection />
       <PrioritiesSection />
       <EndorsementsSection />

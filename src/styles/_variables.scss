@@ -205,4 +205,10 @@ $colors-dark: (
       @content;
     }
   }
+
+  @else if $size == 'big-desktop' {
+    @media (min-width: 2000px) {
+      @content;
+    }
+  }
 }

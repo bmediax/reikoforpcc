@@ -5,7 +5,7 @@ import EndorsementsModule from '../components/modules/EndorsementsModule'
 import GetinvolvedSection from '../components/sections/GetinvolvedSection'
 import '../styles/GetinvolvedSection.scss'
 import Cover from '../components/modules/CoverModule'
-import coverDesk from '../images/photos/RMW-DeskWait.jpeg'
+import coverDesk from '../images/photos/sabinReiko.jpg'
 
 // markup
 const Endorsements = () => {

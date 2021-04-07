@@ -3,7 +3,7 @@ import Layout from "../layout"
 import SectionLayout from '../layout/SectionLayout'
 import GetinvolvedSection from '../components/sections/GetinvolvedSection'
 import Cover from '../components/modules/CoverModule'
-import coverReiko from '../images/photos/Reiko-Elections.jpeg'
+import coverReiko from '../images/photos/headReiko.jpg'
 
 // markup
 const MeetReiko = () => {

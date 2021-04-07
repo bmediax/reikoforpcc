@@ -245,10 +245,10 @@
 }
 
 #slider {
-    background:url("../images/photos/RMW-DeskWait.jpeg") !important;
+    background:url("../images/photos/brickReiko.jpg") !important;
     background-repeat:no-repeat !important;
     background-size:cover !important;
-    background-position: center !important;
+    background-position: left !important;
     height:80vmin;
     // margin-top:-87px;
     margin-top:0px;
@@ -256,10 +256,19 @@
     justify-content: center;
     align-items: center;
 
+    @include responsive('mobile') {
+        height:70vh;
+        background-position: center center !important;
+
+        &:before {
+            height:70vh !important;
+        }
+    }
+
     &:before {
-        background: -o-linear-gradient(-90deg, transparent, rgba(0, 0, 0, 0.4));
-        background: -moz-linear-gradient(-90deg, transparent, rgba(0, 0, 0, 0.4));
-        background: -webkit-linear-gradient(-90deg, transparent, rgba(0, 0, 0, 0.4));
+        background: -o-linear-gradient(-90deg, transparent, rgba(0, 0, 0, .3));
+        background: -moz-linear-gradient(-90deg, transparent, rgba(0, 0, 0, .3));
+        background: -webkit-linear-gradient(-90deg, transparent, rgba(0, 0, 0, .3));
         content: '';
         position: absolute;
         width: 100%;
@@ -277,13 +286,22 @@
         position:relative;
         padding:0px;
         margin:auto;
-        text-align:center;
+        text-align:left;
         text-shadow:0px 20px 40px rgba(0, 0, 0, 0.5);
+    }
+
+    a {
+        position:relative;
+        margin:2% 0 0 0 !important;
     }
     
     h1 {
         font-size:8vmin;
         color:#FFF;
+
+        @include responsive('desktop') {
+            font-size:7vmin !important;
+        }
     }
     
     p {

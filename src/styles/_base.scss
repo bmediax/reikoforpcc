@@ -28,7 +28,7 @@ section p, section li {
   background-size: cover !important;
   background-position: center center !important;
   background-repeat: no-repeat !important;
-  height:50vmin;
+  height:60vmin;
   display:flex;
   justify-content:center;
   align-items: center;
@@ -36,7 +36,7 @@ section p, section li {
   &:before {
     content: '';
     background:linear-gradient(-180deg, transparent, rgba(0, 0, 0, 0.4));
-    height:50vmin;
+    height:60vmin;
     width:100%;
     position:absolute;
   }
@@ -73,6 +73,10 @@ nav {
     align-items:center;
     justify-content:center;
     min-height:50px;
+
+    @include responsive('big-desktop') {
+      height:100px !important;
+    }
     // max-width:$page-width;
     margin:auto;
 
@@ -217,6 +221,28 @@ h3 {
 }
 
 // Button Configurations
+.white-btn {
+  background:getColor(lightBase);
+  color:getColor(Darkbase);
+
+  &:hover {
+    background: $blue;
+    color:#FFF;
+    // box-shadow: $shadowView rgba($lightClean, .35);
+  }
+}
+
+.whiteBlue-btn {
+  background:$blue;
+  color:#FFF;
+
+  &:hover {
+    background: lighten($blue, 5);
+    color:#FFF;
+    // box-shadow: $shadowView rgba($lightClean, .35);
+  }
+}
+
 .minimal-btn {
   background:getColor(lightClean-btnBG);
   color:getColor(lightClean-btnTXT);

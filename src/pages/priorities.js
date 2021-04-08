@@ -1,5 +1,6 @@
 import React from 'react'
 import Layout from '../layout'
+import GetinvolvedSection from '../components/sections/GetinvolvedSection'
 import SectionLayout from '../layout/SectionLayout'
 import ColumnCard from '../components/modules/ColumnCard'
 import { prioritiesData } from "../data/prioritiesData"
@@ -14,7 +15,7 @@ const Priorities = () => {
         <Cover coverImage={coverReiko}>
           Priorities
         </Cover>
-        <SectionLayout>
+        <SectionLayout topic="prior">
             {prioritiesData.map((priority, index) => (
                 <ColumnCard 
                   priority={priority.priority} 
@@ -23,6 +24,7 @@ const Priorities = () => {
                   key={index} />
             ))}
         </SectionLayout>
+        <GetinvolvedSection />
     </Layout>
   )
 }

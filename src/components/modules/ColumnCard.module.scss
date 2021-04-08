@@ -1,0 +1,50 @@
+@use '../../styles/variables' as *;
+
+.columnCardWrap {
+    display:flex;
+    margin-bottom:3%;
+
+    @include responsive('tablet') {
+        flex-direction: column-reverse !important;
+    }
+
+    &:nth-child(2n) {
+        flex-direction: row-reverse;
+        
+        .card {
+            &:first-child {
+                margin-right:0 !important;
+                margin-left:2% !important;
+            }
+        }
+    }
+
+    &:last-child {
+        margin-bottom:0 !important;
+    }
+    
+    .card {
+        flex:1;
+        background:getColor(lightBase);
+        min-height:150px;
+        padding:3% 3%;
+        width:100%;
+        margin-right:2%;
+        @include objectCorner('small');
+        @include objectShadow('base');
+
+        h4 {
+            font-size:1.8rem;
+            margin:0;
+            color:getColor(textHeader);
+        }
+
+        p {
+            margin:5px 0 0 0;
+        }
+
+        &:last-child {
+            margin-right:0px !important;
+        }
+    }
+}

@@ -13,6 +13,6 @@ export const navObjects = [
     },
     {
         title: "Get Involved",
-        path: "get-involved",
+        path: "/get-involved",
     }
 ]

@@ -64,7 +64,7 @@ const PrioritiesSection = () => {
                     </motion.div>
                 </div>
             </div>
-            <Link to="/priorities" className="btn transparent-btn" style={{ margin: "30px auto 0 auto"}}>View more!</Link>
+            <Link to="/priorities" className="btn transparent-btn" style={{ margin: "30px auto 0 auto"}}>View Priorities!</Link>
         </SectionLayout>
     )
 }

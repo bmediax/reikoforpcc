@@ -46,14 +46,11 @@ const Nav = (props) => {
                     </Link>
                 </div>
                 <div className="nav-contain" style={{display: mobileMenu ? 'block' : 'none'}}>
-                    <Link className="nav-item" to="/meet-reiko" onClick={handleMobileToggle}>Meet Reiko</Link>
-                    {navItems.map(navs => (
-                        <React.Fragment key={navs.id}>
+                    {navItems.map((navs, index) => (
+                        <React.Fragment key={index}>
                             <a className="nav-item" href={navs.path} onClick={handleMobileToggle}>{navs.title}</a>
                         </React.Fragment>
                     ))}
-                    <Link className="nav-item" to="/endorsements" onClick={handleMobileToggle}>Endorsements</Link>
-                    <Link className="nav-item" to="/get-involved" onClick={handleMobileToggle}>Get Involved</Link>
                 </div>
                 <div className="donate-contain">
                     <Donatebtn />

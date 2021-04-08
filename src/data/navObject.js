@@ -1,9 +1,18 @@
 export const navObjects = [
     {
-        title: "Priorities",
-        path: "/#priorities",
-        exact: false,
-        active: false,
-        id:1
+        title: "Meet Reiko",
+        path: "/meet-reiko"
     },
+    {
+        title: "Priorities",
+        path: "/priorities",
+    },
+    {
+        title: "Endorsements",
+        path: "/endorsements",
+    },
+    {
+        title: "Get Involved",
+        path: "get-involved",
+    }
 ]

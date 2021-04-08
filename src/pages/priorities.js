@@ -5,7 +5,7 @@ import ColumnCard from '../components/modules/ColumnCard'
 import { prioritiesData } from "../data/prioritiesData"
 import '../styles/GetinvolvedSection.scss'
 import Cover from '../components/modules/CoverModule'
-import coverReiko from '../images/photos/brickReiko.jpg'
+import coverReiko from '../images/photos/wcc.jpg'
 
 // markup
 const Priorities = () => {

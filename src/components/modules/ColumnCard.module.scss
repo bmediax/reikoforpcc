@@ -6,19 +6,46 @@
 
     @include responsive('tablet') {
         flex-direction: column-reverse !important;
+        margin-bottom:5%;
+
+        .cover {
+            min-height:200px !important;
+        }
     }
 
+    // Even Section Items
     &:nth-child(2n) {
         flex-direction: row-reverse;
-        
-        .card {
-            &:first-child {
-                margin-right:0 !important;
-                margin-left:2%;
 
-                @include responsive('mobile') {
-                    margin-left:0 !important;
-                }
+        // Even Text
+        .info {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            border-top-right-radius: $border-radius-small;
+            border-bottom-right-radius: $border-radius-small;
+        }
+
+        // Even Cover
+        .cover {
+            border-top-right-radius: 0 !important;
+            border-bottom-right-radius: 0 !important;
+            border-top-left-radius: $border-radius-small !important;
+            border-bottom-left-radius: $border-radius-small !important;
+        }
+
+        @include responsive('tablet') {
+            .info {
+                border-top-right-radius: 0;
+                border-top-left-radius: 0;
+                border-bottom-right-radius: $border-radius-small;
+                border-bottom-left-radius: $border-radius-small;
+            }
+
+            .cover {
+                border-top-right-radius: $border-radius-small !important;
+                border-top-left-radius: $border-radius-small;
+                border-bottom-right-radius: 0;
+                border-bottom-left-radius: 0 !important;
             }
         }
     }
@@ -29,22 +56,29 @@
     
     .card {
         flex:1;
-        background:getColor(lightBase);
         min-height:150px;
         padding:3% 3%;
         width:100%;
-        margin-right:2%;
-        @include objectCorner('small');
         @include objectShadow('base');
 
+        @include responsive('tablet') {
+            padding:5% 5%;
+        }
+    }
+
+    .info {
+        background:getColor(lightBase);
+        border-top-left-radius: $border-radius-small;
+        border-bottom-left-radius: $border-radius-small;
+
         h4 {
-            // font-size:1.8rem;
             font-size:2vmax;
             margin:0;
             color:getColor(textHeader);
 
             @include responsive('tablet') {
                 font-size:3vmax;
+                text-align:center;
             }
         }
 
@@ -52,17 +86,21 @@
             margin:5px 0 0 0;
         }
 
-        &:last-child {
-            margin-right:0px !important;
+        @include responsive('tablet') {
+            border-top-left-radius: 0;
+            border-bottom-right-radius: $border-radius-small;
         }
     }
 
-    // .info {
-
-    // }
-
     .cover {
         background-size:cover !important;
-        background-position: center center !important;
+        background-position: center center !important;      
+        border-top-right-radius: $border-radius-small;
+        border-bottom-right-radius: $border-radius-small;
+
+        @include responsive('tablet') {
+            border-top-left-radius: $border-radius-small;
+            border-bottom-right-radius: 0;
+        }
     }
 }

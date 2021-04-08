@@ -14,7 +14,11 @@
         .card {
             &:first-child {
                 margin-right:0 !important;
-                margin-left:2% !important;
+                margin-left:2%;
+
+                @include responsive('mobile') {
+                    margin-left:0 !important;
+                }
             }
         }
     }
@@ -34,9 +38,14 @@
         @include objectShadow('base');
 
         h4 {
-            font-size:1.8rem;
+            // font-size:1.8rem;
+            font-size:2vmax;
             margin:0;
             color:getColor(textHeader);
+
+            @include responsive('tablet') {
+                font-size:3vmax;
+            }
         }
 
         p {
@@ -46,5 +55,14 @@
         &:last-child {
             margin-right:0px !important;
         }
+    }
+
+    // .info {
+
+    // }
+
+    .cover {
+        background-size:cover !important;
+        background-position: center center !important;
     }
 }

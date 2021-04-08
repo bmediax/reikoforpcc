@@ -17,7 +17,7 @@ const PrioritiesSection = () => {
     }, [controls, inView]);
     
     return (
-        <SectionLayout topic="priorities" tag="priorities">
+        <SectionLayout topic="priorities" tag="prioritiesSection">
             <h1> Priorities </h1>
 
             <div className="three-column-option_container">

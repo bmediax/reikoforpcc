@@ -19,12 +19,12 @@ body {
   min-height:75vh;
 }
 
-#priorities {
-    background:getColor(darkBase) !important;
-}
-
 section p, section li {
   color:getColor(normalText);
+}
+
+#priorities {
+  background:getColor(darkBase);
 }
 
 #cover {

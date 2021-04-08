@@ -16,7 +16,11 @@ const Priorities = () => {
         </Cover>
         <SectionLayout>
             {prioritiesData.map((priority, index) => (
-                <ColumnCard priority={priority.priority} desc={priority.desc} key={index} />
+                <ColumnCard 
+                  priority={priority.priority} 
+                  desc={priority.desc} 
+                  cover={priority.cover} 
+                  key={index} />
             ))}
         </SectionLayout>
     </Layout>

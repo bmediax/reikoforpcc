@@ -14,5 +14,15 @@ export const navObjects = [
     {
         title: "Get Involved",
         path: "/get-involved",
+        sub: [
+            {
+                title:"Contact",
+                path: "/get-involved",
+            },
+            {
+                title: "Facebook",
+                link: "https://www.facebook.com/Williams4PCC"
+            }
+        ]
     }
 ]

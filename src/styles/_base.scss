@@ -63,6 +63,74 @@ section p, section li {
   }
 }
 
+/** New Nav Bar **/
+.navigation ul {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  text-align:left;
+  padding-top:20px;
+
+  a {
+    background:#FFF;
+    padding:.5em 1em;
+  }
+}
+
+/* Position submenus relative to parent list item */
+.navigation li {
+  position: relative;
+}
+
+/* Look, Ma! No onclick handler! */
+.navigation li:hover > ul {
+  display: block;
+}
+
+/* Modern Browsers only */
+.navigation li:focus-within > ul {
+  display: block;
+}
+
+/* DEMO STYLES */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:auto;
+
+  a {
+    display: block;
+    padding: .5em 0;
+    white-space: nowrap;
+    color:getColor(textOnDark);
+
+    &:hover {
+      color:$blue;
+    }
+
+    &:focus {
+      outline: 2px dotted currentColor;
+      outline-offset: 2px;
+      // outline:none;
+      // background:$blue;
+      // color:#FFF;
+    }
+  }
+
+  & > li + li { 
+    margin-left: 2em;
+  }
+}
+
+/******************/
+
 // Navigation
 .navScroll {
   box-shadow:0px 15px 50px rgba(0, 0, 0, 0.08);

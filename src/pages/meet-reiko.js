@@ -18,9 +18,9 @@ const MeetReiko = () => {
         <p>My life experiences, educational training, and work background help prepare me to serve on the PCC Board of Directors. As an elected Trustee supportive of fair labor practices, my top priorities will be to promote:</p>
             
         <ul>
-          <li>Inclusive, equitable education for all students</li>
-          <li>Stronger partnerships with K-12 school districts</li>
-          <li>Transparent commitment within the PCC Board to nurture a collaborative culture of Diversity, Equity, and Inclusion among faculty, staff, and administrators throughout Portland Community College and beyond.</li>
+          <li>- Inclusive, equitable education for all students</li>
+          <li>- Stronger partnerships with K-12 school districts</li>
+          <li>- Transparent commitment within the PCC Board to nurture a collaborative culture of Diversity, Equity, and Inclusion among faculty, staff, and administrators throughout Portland Community College and beyond.</li>
         </ul>
       </SectionLayout>
       <GetinvolvedSection />

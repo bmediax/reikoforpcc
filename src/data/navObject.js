@@ -36,12 +36,16 @@ export const navObjects = [
         path: "/get-involved",
         sub: [
             {
-                title:"Contact",
+                title:"Volunteer",
                 path: "/get-involved",
             },
             {
-                title: "Facebook",
+                title: "Like our Facebook",
                 link: "https://www.facebook.com/Williams4PCC"
+            },
+            {
+                title: "Donate",
+                link: "https://secure.actblue.com/donate/friends-of-reiko-1"
             },
         ]
     }

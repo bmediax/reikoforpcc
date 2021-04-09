@@ -46,15 +46,10 @@ const Nav = (props) => {
                     </Link>
                 </div>
                 <div className="nav-contain" style={{display: mobileMenu ? 'block' : 'none'}}>
-                    {/* {navItems.map((navs, index) => (
-                        <React.Fragment key={index}>
-                            <Link className="nav-item" to={navs.path} onClick={handleMobileToggle} activeClassName="active">{navs.title}</Link>
-                        </React.Fragment>
-                    ))} */}
                     <ul className="navigation">
                         {navItems.map((navs, index) => (
-                            <li key={index}>
-                                <Link to={navs.path} onClick={handleMobileToggle} activeClassName="active">{navs.title} {navs.sub && <BsChevronDown style={{ marginBottom: "-2px" }} /> } </Link>
+                            <motion.li key={index}>
+                                <Link to={navs.path} onClick={handleMobileToggle} activeClassName="active">{navs.title} {navs.sub && <BsChevronDown style={{ marginLeft: "2px", marginBottom: "-2px" }} /> } </Link>
                                 {navs.sub &&
                                     <ul>
                                         {navs.sub.map((subs, index) => (
@@ -69,7 +64,7 @@ const Nav = (props) => {
                                         ))}
                                     </ul>
                                 }
-                            </li>
+                            </motion.li>
                         ))}
                     </ul>
                 </div>

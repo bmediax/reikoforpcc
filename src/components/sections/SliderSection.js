@@ -7,7 +7,7 @@ const SliderSection = () => {
             <span className="slider_text">
                 <h1>Experienced. Thoughtful.</h1>
                 <h1>A Leader Focused on Student Success.</h1>
-                <Link to="/get-involved" className="btn whiteBlue-btn"> I'd like to help! </Link>
+                <Link to="/endorsements" className="btn whiteBlue-btn" style={{ maxWidth: 300 }}> View Supporters of Reiko! </Link>
             </span>
         </div>
     )

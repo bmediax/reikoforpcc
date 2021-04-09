@@ -21,7 +21,8 @@ const Priorities = () => {
                   priority={priority.priority} 
                   desc={priority.desc} 
                   cover={priority.cover} 
-                  key={index} />
+                  key={index}
+                  delay={index} />
             ))}
         </SectionLayout>
         <GetinvolvedSection />

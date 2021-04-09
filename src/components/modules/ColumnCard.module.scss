@@ -21,29 +21,29 @@
         .info {
             border-top-left-radius: 0;
             border-bottom-left-radius: 0;
-            border-top-right-radius: $border-radius-small;
-            border-bottom-right-radius: $border-radius-small;
+            border-top-right-radius: $border-radius-medium;
+            border-bottom-right-radius: $border-radius-medium;
         }
 
         // Even Cover
         .cover {
             border-top-right-radius: 0 !important;
             border-bottom-right-radius: 0 !important;
-            border-top-left-radius: $border-radius-small !important;
-            border-bottom-left-radius: $border-radius-small !important;
+            border-top-left-radius: $border-radius-medium !important;
+            border-bottom-left-radius: $border-radius-medium !important;
         }
 
         @include responsive('tablet') {
             .info {
                 border-top-right-radius: 0;
                 border-top-left-radius: 0;
-                border-bottom-right-radius: $border-radius-small;
-                border-bottom-left-radius: $border-radius-small;
+                border-bottom-right-radius: $border-radius-medium;
+                border-bottom-left-radius: $border-radius-medium;
             }
 
             .cover {
-                border-top-right-radius: $border-radius-small !important;
-                border-top-left-radius: $border-radius-small;
+                border-top-right-radius: $border-radius-medium !important;
+                border-top-left-radius: $border-radius-medium;
                 border-bottom-right-radius: 0;
                 border-bottom-left-radius: 0 !important;
             }
@@ -57,7 +57,7 @@
     .card {
         flex:1;
         min-height:150px;
-        padding:3% 3%;
+        padding:5% 4%;
         width:100%;
         @include objectShadow('base');
 
@@ -68,8 +68,8 @@
 
     .info {
         background:getColor(lightBase);
-        border-top-left-radius: $border-radius-small;
-        border-bottom-left-radius: $border-radius-small;
+        border-top-left-radius: $border-radius-medium;
+        border-bottom-left-radius: $border-radius-medium;
 
         h4 {
             font-size:2vmax;
@@ -88,18 +88,18 @@
 
         @include responsive('tablet') {
             border-top-left-radius: 0;
-            border-bottom-right-radius: $border-radius-small;
+            border-bottom-right-radius: $border-radius-medium;
         }
     }
 
     .cover {
         background-size:cover !important;
         background-position: center center !important;      
-        border-top-right-radius: $border-radius-small;
-        border-bottom-right-radius: $border-radius-small;
+        border-top-right-radius: $border-radius-medium;
+        border-bottom-right-radius: $border-radius-medium;
 
         @include responsive('tablet') {
-            border-top-left-radius: $border-radius-small;
+            border-top-left-radius: $border-radius-medium;
             border-bottom-right-radius: 0;
         }
     }

@@ -28,6 +28,42 @@
                 @include variables.objectShadow(base);
             }
         }
+
+        .navigation {
+            display:block !important;
+            margin:0px !important;
+            padding:20px 0px;
+
+            a {
+                padding: 1.5em 0;
+
+                &:hover {
+                    background:variables.getColor(lightBase);
+                    // color:variables.getColor(lightBase) !important;
+                    @include variables.objectShadow(base);
+                }
+            }
+
+            li ul {
+                display:block;
+                position: relative;
+                text-align:center;
+                padding-top:0;
+
+                a {
+                    background:variables.getColor(lightDarkBase);
+                }
+
+                li:last-child a {
+                    border-radius: 0 !important;
+                }
+            }
+
+
+            & > li + li {
+                margin-left:0;
+            }
+        }
     }
 
     .footer-nav {

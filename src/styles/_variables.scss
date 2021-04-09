@@ -5,6 +5,7 @@
 $light-high:#FFF;
 $light-megher: #F8F9FD;
 $light-med: #F8F9FD;
+$light-med-low: darken(#F8F9FD, 2);
 $light-low: #D3DEE9;
 $light-lower: #AFB1CA;
 
@@ -44,6 +45,7 @@ $colors: (
   // ------- UI START ------------
   // BASE:
   lightBase: $light-high,
+  lightDarkBase: $light-med-low,
   darkBase: $light-med,
   Darkbase: $atom-blue,
 
@@ -88,6 +90,7 @@ $colors: (
 $colors-dark: (
   // ----- UI START ---------
   lightBase: $dark-high,
+  lightDarkBase: $dark-low,
   darkBase: $dark-med,
 
   navBase: #292F39,

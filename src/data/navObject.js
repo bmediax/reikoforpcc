@@ -1,7 +1,7 @@
 export const navObjects = [
     {
         title: "Meet Reiko",
-        path: "/meet-reiko"
+        path: "/meet-reiko",
     },
     {
         title: "Priorities",

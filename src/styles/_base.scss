@@ -68,6 +68,10 @@ section p, section li {
   box-shadow:0px 15px 50px rgba(0, 0, 0, 0.08);
 }
 
+.active {
+  color:$blue !important;
+}
+
 nav {
   position:sticky;
   top:0;

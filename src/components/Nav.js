@@ -1,11 +1,12 @@
 import React, { useState, useContext, useEffect } from 'react'
 
 // Utils
-import { RiMenu3Fill } from 'react-icons/ri'
 import { Link } from 'gatsby'
 import { StaticImage } from "gatsby-plugin-image"
 import { motion } from 'framer-motion'
 // import { useMediaQuery } from 'react-responsive';
+import { RiMenu3Fill } from 'react-icons/ri'
+import { BsChevronDown } from 'react-icons/bs'
 
 // Component
 import Donatebtn from '../components/Donatebtn'
@@ -19,7 +20,6 @@ const Nav = (props) => {
     const handleMobileToggle = () => {
         setMobileMenu(!mobileMenu)
     }
-
     
     useEffect(() => {
         const handleScroll = () => {
@@ -54,7 +54,7 @@ const Nav = (props) => {
                     <ul className="navigation">
                         {navItems.map((navs, index) => (
                             <li key={index}>
-                                <Link to={navs.path} onClick={handleMobileToggle} activeClassName="active">{navs.title}</Link>
+                                <Link to={navs.path} onClick={handleMobileToggle} activeClassName="active">{navs.title} {navs.sub && <BsChevronDown style={{ marginBottom: "-2px" }} /> } </Link>
                                 {navs.sub &&
                                     <ul>
                                         {navs.sub.map((subs, index) => (

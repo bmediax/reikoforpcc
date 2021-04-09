@@ -8,6 +8,7 @@
 
 @media screen and (max-width:860px) {
     .nav-contain {
+        overflow-y: scroll;
         display:none;
         background:variables.getColor(darkBase);
         flex:none;
@@ -49,8 +50,11 @@
                 position: relative;
                 text-align:center;
                 padding-top:0;
+                left:unset !important;
+                top:unset !important;
 
                 a {
+                    white-space: pre-wrap;
                     background:variables.getColor(lightDarkBase);
                 }
 

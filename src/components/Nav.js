@@ -49,7 +49,7 @@ const Nav = (props) => {
                     <ul className="navigation">
                         {navItems.map((navs, index) => (
                             <motion.li key={index}>
-                                <Link to={navs.path} onClick={handleMobileToggle} activeClassName="active">{navs.title} {navs.sub && <BsChevronDown style={{ marginLeft: "2px", marginBottom: "-2px" }} /> } </Link>
+                                <Link to={navs.path} onClick={handleMobileToggle} activeClassName="active">{navs.title} {navs.sub && <BsChevronDown style={{ marginLeft: "2px", marginBottom: "-3px" }} /> } </Link>
                                 {navs.sub &&
                                     <ul>
                                         {navs.sub.map((subs, index) => (

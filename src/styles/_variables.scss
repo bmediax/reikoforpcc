@@ -154,6 +154,9 @@ $colors-dark: (
   transition:all 0.2s ease-in-out;
 }
 
+$object-shadow-base: 0px 15px 30px rgba(0, 0, 0, 0.05);
+$object-shadow-hover: 0px 15px 50px rgba(0, 0, 0, 0.09);
+
 @mixin objectShadow($type) {
   @if $type == "base" {
     box-shadow:0px 15px 30px rgba(0, 0, 0, 0.05);

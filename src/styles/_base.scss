@@ -92,6 +92,7 @@ ul {
       top: 100%;
       text-align:left;
       padding-top:20px;
+      @include objectShadow('base');
 
       a {
         background:getColor(lightBase);

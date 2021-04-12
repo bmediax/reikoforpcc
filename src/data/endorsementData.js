@@ -147,6 +147,11 @@ export const endorsementData = [
         url: "",
     },
     {
+        name: "Amy Kohnstamm",
+        position: "PPS Board Member",
+        url: "",
+    },
+    {
         name: "Narce Rodriguez",
         position: "Forest Grove School Board Director",
         company:"",

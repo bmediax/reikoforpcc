@@ -11,13 +11,13 @@ const EventsSection = () => {
             {/* Events Module */}
             <div className="events-module">
                 {eventsData.map((event, index) => (
-                    <span className="events-module_section" key={index}>
+                    <span className={`events-module_section ${event.highlight ? 'highlight' : null }`} key={index}>
                         <span className="event-des">
                             <sub className="event-sub">{event.day}, {event.month} {event.date}, at {event.time} PDT</sub>
                             <h3>{event.title}</h3>
                             <p>{event.descr}</p>
                             <div className="event-links">
-                                <a href={event.link} target="_blank" className="btn blue-btn">
+                                <a href={event.link} target="_blank" rel="noreferrer" className="btn blue-btn">
                                     View Event Page<BiLinkExternal  className="btn-icon" />
                                 </a>
                             </div>

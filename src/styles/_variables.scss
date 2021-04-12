@@ -212,6 +212,12 @@ $object-shadow-hover: 0px 15px 50px rgba(0, 0, 0, 0.09);
     }
   }
 
+  @else if $size == 'desktop-tablet' {
+    @media (min-width:800px) and (max-width:1250px) {
+      @content;
+    }
+  }
+
   @else if $size == 'big-desktop' {
     @media (min-width: 2000px) {
       @content;

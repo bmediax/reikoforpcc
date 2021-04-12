@@ -13,6 +13,49 @@
     // }
 }
 
+.quote {
+    background:url('../images/photos/headReiko.jpg');
+    background-size:cover;
+    background-position: center;
+    position:relative;
+
+    &::before {
+        content: '';
+        height:100%;
+        width:100%;
+        position:absolute;
+        top:0;
+        right:0;
+        left:0;
+        background:rgba(0, 0, 0, 0.4);
+    }
+    
+    blockquote {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        font-size:2rem;
+        color:#FFF;
+        font-weight:bold;
+        position:relative;
+        
+        cite {
+            margin-top:15px;
+            display:block;
+            font-size:1rem;
+            font-weight:500;
+        }
+    }
+
+    @include responsive('tablet') {
+        blockquote {
+            font-size:1.2rem;
+        }
+    }
+}
+
 .three-column-option_container {
     margin:auto;
 }

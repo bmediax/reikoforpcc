@@ -1,9 +1,9 @@
 import React from 'react'
 import Layout from '../layout'
-import GetinvolvedSection from '../components/sections/GetinvolvedSection'
-import SectionLayout from '../layout/SectionLayout'
 import ColumnCard from '../components/modules/ColumnCard'
 import { prioritiesData } from "../data/prioritiesData"
+import GetinvolvedSection from '../components/sections/GetinvolvedSection'
+import SectionLayout from '../layout/SectionLayout'
 import '../styles/GetinvolvedSection.scss'
 import Cover from '../components/modules/CoverModule'
 import coverReiko from '../images/photos/wcc.jpg'

@@ -137,6 +137,13 @@
             padding:3% 4%;
             margin-right:$objectSpace_small;
 
+            .event-sub {
+                color:getColor(normalText);
+                font-weight:500;
+                margin:0;
+                padding:0;
+            }
+
             h3, p {
                 padding:0px;
                 margin:0;
@@ -205,6 +212,16 @@
         }
 
         &:nth-child(2) {
+            flex-direction: row-reverse;
+
+            @include responsive('tablet') {
+                flex-direction: column-reverse !important;
+
+                .event-date {
+                    margin:auto !important;
+                }
+            }
+
             .event-des {
                 flex:2;
                 margin-right:0px;

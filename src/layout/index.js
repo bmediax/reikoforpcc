@@ -8,6 +8,7 @@ import { motion } from 'framer-motion'
 
 // Data
 import { navObjects } from '../data/navObject';
+import TopBarModule from '../components/modules/TopBarModule'
 
 // Context
 import { navContext } from '../data/context/navContext'
@@ -36,6 +37,7 @@ const Layout = (props) => {
             <navContext.Provider value={navObjects}>
                 <Seo title={props.title} metaImage={bannerImage} />
                 <div className="RMW_container">
+                    <TopBarModule />
                     <Nav />
                     <motion.main
                         initial={{

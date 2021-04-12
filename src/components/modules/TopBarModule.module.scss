@@ -1,0 +1,69 @@
+@use '../../styles/variables' as *;
+
+.topbar_wrapper {
+    background:getColor(topBar);
+    padding:1% 2%;
+
+    @include responsive('tablet') {
+        padding:3%;
+
+        .topbar_container {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            span {
+                flex:1;
+            }
+
+            .topbarButton {
+                width:100%;
+
+                a {
+                    margin:auto;
+                    max-width:100% !important;
+                    width:100%;
+                }
+                // display: block;
+            }
+        }
+    }
+    
+    .topbar_container {
+        display:flex;
+        max-width:900px;
+        margin:auto;
+
+        .topbarText {
+            flex:2;
+            align-items: flex-end;
+            h4 {
+                padding:0;
+                margin:0;
+                font-weight:100;
+                color:#FFF;
+                text-align:right;
+                font-size:1rem;
+                line-height:2rem;
+            }
+            margin-right:15px;
+        }
+
+        .topbarButton {
+            flex:1;
+            justify-content: center;
+            align-items: center;
+            a {
+                color:#FFF;
+                background:$blue;
+                text-align:center;
+                display:block;
+                padding:1% 0;
+                max-width:150px;
+                // margin:auto;
+                @include objectCorner('small');
+            }
+        }
+    }
+
+}

@@ -2,6 +2,7 @@ import React, { useState, useContext, useEffect } from 'react'
 
 // Utils
 import { Link } from 'gatsby'
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 import { StaticImage } from "gatsby-plugin-image"
 import { motion } from 'framer-motion'
 // import { useMediaQuery } from 'react-responsive';
@@ -56,7 +57,7 @@ const Nav = (props) => {
                                             <li key={index}>
                                                 {subs.path 
                                                 ? 
-                                                <Link to={subs.path} onClick={handleMobileToggle} activeClassName="active">{subs.title}</Link>
+                                                <AnchorLink to={subs.path} title={subs.title} onClick={handleMobileToggle}>{subs.title}</AnchorLink>
                                                 :
                                                 <a href={subs.link}>{subs.title}</a>
                                                 } 

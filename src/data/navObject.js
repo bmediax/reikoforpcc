@@ -11,19 +11,19 @@ export const navObjects = [
         sub: [
             {
                 title: prioritiesData[0].priority,
-                link: `https://reikoforpcc.com/priorities#${prioritiesData[0].shortPriority}`
+                link: `/priorities#${prioritiesData[0].shortPriority}`
             },
             {
                 title: prioritiesData[1].priority,
-                link: `https://reikoforpcc.com/priorities#${prioritiesData[1].shortPriority}`
+                link: `/priorities#${prioritiesData[1].shortPriority}`
             },
             {
                 title: prioritiesData[2].priority,
-                link: `https://reikoforpcc.com/priorities#${prioritiesData[2].shortPriority}`
+                link: `/priorities#${prioritiesData[2].shortPriority}`
             },
             {
                 title: prioritiesData[3].priority,
-                link: `https://reikoforpcc.com/priorities#${prioritiesData[3].shortPriority}`
+                link: `/priorities#${prioritiesData[3].shortPriority}`
             },
         ]
     },
@@ -36,16 +36,20 @@ export const navObjects = [
         path: "/get-involved",
         sub: [
             {
+                title: 'Events',
+                path: '/#events'
+            },
+            {
+                title: "Donate",
+                link: "https://secure.actblue.com/donate/friends-of-reiko-1"
+            },
+            {
                 title:"Volunteer",
                 path: "/get-involved",
             },
             {
                 title: "Like our Facebook",
                 link: "https://www.facebook.com/Williams4PCC"
-            },
-            {
-                title: "Donate",
-                link: "https://secure.actblue.com/donate/friends-of-reiko-1"
             },
         ]
     }

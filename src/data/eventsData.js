@@ -27,6 +27,6 @@ export const eventsData = [
         day: "Mon",
         time: "5pm",
         link:"https://www.facebook.com/events/272057110938073/",
-        highlight: true,
+        highlight: false,
     },
 ]

@@ -55,7 +55,8 @@
             align-items: center;
             a {
                 color:#FFF;
-                background:$blue;
+                // background:$blue;
+                @include buttonGradient('blue-gradient');
                 text-align:center;
                 display:block;
                 padding:1% 0;

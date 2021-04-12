@@ -7,8 +7,8 @@ import Layout from '../layout'
 
 // Sections
 import SliderSection from '../components/sections/SliderSection'
-import QuoteSection from '../components/Sections/QuoteSection'
 import MeetreikoSection from '../components/sections/MeetreikoSection'
+import QuoteSection from '../components/Sections/QuoteSection'
 import PrioritiesSection from '../components/sections/PrioritiesSection'
 import EndorsementsSection from '../components/sections/EndorsementsSection'
 import EventsSection from '../components/sections/EventsSection'

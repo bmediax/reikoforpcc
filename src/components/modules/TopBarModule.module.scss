@@ -4,6 +4,7 @@
     background:getColor(topBar);
     padding:1% 2%;
 
+    // Responsive
     @include responsive('tablet') {
         padding:3%;
 
@@ -53,18 +54,30 @@
             flex:1;
             justify-content: center;
             align-items: center;
+
             a {
                 color:#FFF;
                 // background:$blue;
-                @include buttonGradient('blue-gradient');
+                @include buttonGradient('blue-gradient_animate');
                 text-align:center;
                 display:block;
                 padding:1% 0;
                 max-width:150px;
                 // margin:auto;
                 @include objectCorner('small');
+                animation: animateGradient 2s infinite linear;
+                background-size: 300% 100%;
             }
         }
     }
 
+}
+
+@keyframes animateGradient {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 100% 0;
+    }
 }

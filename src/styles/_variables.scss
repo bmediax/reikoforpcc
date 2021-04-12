@@ -182,16 +182,13 @@ $object-shadow-hover: 0px 15px 50px rgba(0, 0, 0, 0.09);
 // Gradation 
 @mixin buttonGradient($colour) {
   @if $colour == "orange-gradient" {
-    background:-webkit-linear-gradient(to right, $red, #ec9965);
-    background:-moz-linear-gradient(to right, $red, #ec9965);
-    background:-o-linear-gradient(to right, $red, #ec9965);
-    background:linear-gradient(to right, $red, #ec9965);
+    background-image:linear-gradient(to right, $red, #ec9965);
   }
   @else if $colour == "blue-gradient" {
-    background:-webkit-linear-gradient(to right, $blue, #02b9a4);
-    background:-moz-linear-gradient(to right, $blue, #02b9a4);
-    background:-o-linear-gradient(to right, $blue, #02b9a4);
-    background:linear-gradient(to right, $blue, #02b9a4);
+    background-image:linear-gradient(to right, $blue, #02b9a4);
+  }
+  @else if $colour == 'blue-gradient_animate' {
+    background-image:linear-gradient(to right, $blue, #02b9a4, $blue, #02b9a4);
   }
 }
 
@@ -224,5 +221,14 @@ $object-shadow-hover: 0px 15px 50px rgba(0, 0, 0, 0.09);
     @media (min-width: 2000px) {
       @content;
     }
+  }
+}
+
+@keyframes animateGradient {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
   }
 }

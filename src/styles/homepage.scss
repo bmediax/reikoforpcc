@@ -6,11 +6,11 @@
 }
 
 .priorities {
-    background:$blue !important;
+    background:getColor(darkBase) !important;
 
-    h1 {
-        color:#FFF;
-    }
+    // h1 {
+    //     color:#FFF;
+    // }
 }
 
 .three-column-option_container {

@@ -1,27 +1,40 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { Link } from 'gatsby'
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import { StaticImage } from 'gatsby-plugin-image'
+// import { motion, useAnimation } from "framer-motion";
+// import { useInView } from "react-intersection-observer";
+// import { StaticImage } from 'gatsby-plugin-image'
 import SectionLayout from '../../layout/SectionLayout'
-import { useMediaQuery } from "react-responsive";
+// import { useMediaQuery } from "react-responsive";
+
+import ColumnCard from '../modules/ColumnCard'
+import { prioritiesData } from "../../data/prioritiesData"
 
 const PrioritiesSection = () => {
-    const isMobile = useMediaQuery({ maxWidth: 550 })
-    const controls = useAnimation();
-    const [ref, inView] = useInView();
+    // const isMobile = useMediaQuery({ maxWidth: 550 })
+    // const controls = useAnimation();
+    // const [ref, inView] = useInView();
 
-    useEffect(() => {
-        if (inView) {
-            controls.start("visible");
-        }
-    }, [controls, inView]);
+    // useEffect(() => {
+    //     if (inView) {
+    //         controls.start("visible");
+    //     }
+    // }, [controls, inView]);
     
     return (
         <SectionLayout topic="priorities" tag="prioritiesSection">
-            <h1> Priorities </h1>
+            <h1> Reiko's Priorities </h1>
 
-            <div className="three-column-option_container">
+            {prioritiesData.map((priority, index) => (
+                <ColumnCard 
+                  priority={priority.priority} 
+                  desc={priority.desc} 
+                  cover={priority.cover} 
+                  key={index}
+                  delay={index}
+                  aide={priority.shortPriority} />
+            ))}
+
+            {/* <div className="three-column-option_container">
                 <div className="three-column-option">
                     <motion.div ref={isMobile ? null : ref}
                     animate={isMobile ? "visible" : controls }
@@ -63,8 +76,8 @@ const PrioritiesSection = () => {
                         <h2>Transparent commitment within the PCC Board</h2>
                     </motion.div>
                 </div>
-            </div>
-            <Link to="/priorities" className="btn transparent-btn" style={{ margin: "30px auto 0 auto"}}>View Priorities!</Link>
+            </div> */}
+            <Link to="/priorities" className="btn minimal-btn" style={{ margin: "30px auto 0 auto"}}>View Page</Link>
         </SectionLayout>
     )
 }

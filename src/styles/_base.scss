@@ -110,6 +110,13 @@ ul {
       text-align:left;
       padding-top:20px;
       @include objectShadow('base');
+      border-bottom-right-radius: $border-radius-small !important;
+      border-bottom-left-radius: $border-radius-small !important;
+
+      @include responsive('tablet') {
+        box-shadow: none !important;
+        border-radius:none !important;
+      }
 
       a {
         background:getColor(lightBase);

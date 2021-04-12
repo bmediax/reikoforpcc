@@ -67,6 +67,10 @@
                 @include objectCorner('small');
                 animation: animateGradient 2s infinite linear;
                 background-size: 300% 100%;
+
+                &:hover {
+                    background:$blue;
+                }
             }
         }
     }

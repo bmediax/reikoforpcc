@@ -195,5 +195,20 @@ export const endorsementData = [
         name: "Danielle Garza",
         position: "LiUNA Local 737 Political and Legislative Assistant",
         company:"",
-    }
+    },
+    {
+        name: "Marcus Mundy",
+        position: "Community Leader",
+        company:"",
+    },
+    {
+        name: "Saeed Haji",
+        position: "Community Leader",
+        company:"",
+    },
+    {
+        name: "Sherry Hanacek",
+        position: "Community Leader",
+        company:"",
+    },
 ]

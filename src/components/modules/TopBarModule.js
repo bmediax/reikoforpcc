@@ -7,7 +7,7 @@ const TopBarModule = () => {
         <div className={topBarStyles.topbar_wrapper}>
             <div className={topBarStyles.topbar_container}>
                 <span className={topBarStyles.topbarText}>
-                    <h4>Upcoming Event: {eventsData[1].title}</h4>
+                    <h4><b>TODAY:</b> <a href={eventsData[1].link} style={{ color: "#FFF", textDecoration: "underline" }}>{eventsData[1].title}</a></h4>
                 </span>
                 <span className={topBarStyles.topbarButton}>
                     <a href={eventsData[1].link}>View Event</a>

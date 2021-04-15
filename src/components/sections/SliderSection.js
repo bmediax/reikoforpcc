@@ -8,8 +8,10 @@ const SliderSection = ({ cta }) => {
             {cta.map((slider, index) => (
                 <div id="slider" key={index}>
                     <span className="slider_text">
-                        <h1>{RichText.asText(slider.title.raw)}</h1>
-                        <Link to="/endorsements" className="btn whiteBlue-btn" style={{ maxWidth: 300 }}> {RichText.asText(slider.button_text.raw)} </Link>
+                        {/* <h1>{RichText.asText(slider.title.raw)}</h1> */}
+                        <h1>Tetst</h1>
+                        {/* <Link to="/endorsements" className="btn whiteBlue-btn" style={{ maxWidth: 300 }}> {RichText.asText(slider.button_text.raw)} </Link> */}
+                        <Link to="/endorsements" className="btn whiteBlue-btn" style={{ maxWidth: 300 }}> Test </Link>
                     </span>
                 </div>
             ))}

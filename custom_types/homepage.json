@@ -1,46 +1,37 @@
 {
   "Main" : {
-    "cta_cover" : {
-      "type" : "Group",
+    "cover_image" : {
+      "type" : "Image",
       "config" : {
-        "repeat" : false,
-        "fields" : {
-          "cover_image" : {
-            "type" : "Image",
-            "config" : {
-              "constraint" : {
-                "width" : 2000,
-                "height" : 1125
-              },
-              "thumbnails" : [ ],
-              "label" : "Cover Image"
-            }
-          },
-          "title" : {
-            "type" : "StructuredText",
-            "config" : {
-              "single" : "heading1, strong, em",
-              "label" : "Title",
-              "placeholder" : "Experienced. Thoughtful. A Leader Focused on Student Success."
-            }
-          },
-          "button_text" : {
-            "type" : "StructuredText",
-            "config" : {
-              "single" : "paragraph, strong, em",
-              "label" : "Button Text",
-              "placeholder" : "View More"
-            }
-          },
-          "link" : {
-            "type" : "Link",
-            "config" : {
-              "allowTargetBlank" : true,
-              "label" : "Link"
-            }
-          }
+        "constraint" : {
+          "width" : 2000,
+          "height" : 1125
         },
-        "label" : "CTA Cover"
+        "thumbnails" : [ ],
+        "label" : "Cover Image"
+      }
+    },
+    "title" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading1, strong, em",
+        "label" : "Cover Title",
+        "placeholder" : "Experienced. Thoughtful. A Leader Focused on Student Success."
+      }
+    },
+    "button_text" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "paragraph, strong, em",
+        "label" : "Button Text",
+        "placeholder" : "View More"
+      }
+    },
+    "link" : {
+      "type" : "Link",
+      "config" : {
+        "allowTargetBlank" : true,
+        "label" : "Link"
       }
     },
     "meet_reiko" : {

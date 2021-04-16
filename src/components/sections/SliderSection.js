@@ -1,21 +1,15 @@
 import React from 'react'
-import { RichText } from 'prismic-reactjs'
+// import { RichText } from 'prismic-reactjs'
 import { Link } from "gatsby"
 
-const SliderSection = ({ cta }) => {
+const SliderSection = ({ cover }) => {
     return (
-        <React.Fragment>
-            {cta.map((slider, index) => (
-                <div id="slider" key={index}>
-                    <span className="slider_text">
-                        {/* <h1>{RichText.asText(slider.title.raw)}</h1> */}
-                        <h1>Tetst</h1>
-                        {/* <Link to="/endorsements" className="btn whiteBlue-btn" style={{ maxWidth: 300 }}> {RichText.asText(slider.button_text.raw)} </Link> */}
-                        <Link to="/endorsements" className="btn whiteBlue-btn" style={{ maxWidth: 300 }}> Test </Link>
-                    </span>
-                </div>
-            ))}
-        </React.Fragment>
+        <div id="slider">
+            <span className="slider_text">
+                <h1>{cover.title.raw[0].text}</h1>
+                <Link to="/endorsements" className="btn whiteBlue-btn" style={{ maxWidth: 300 }}> {cover.button_title.text} </Link>
+            </span>
+        </div>
     )
 }
 

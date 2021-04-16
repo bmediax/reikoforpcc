@@ -1,37 +1,39 @@
 {
   "Main" : {
-    "cover_image" : {
-      "type" : "Image",
+    "cover" : {
+      "type" : "Group",
       "config" : {
-        "constraint" : {
-          "width" : 2000,
-          "height" : 1125
+        "repeat" : false,
+        "fields" : {
+          "image" : {
+            "type" : "Image",
+            "config" : {
+              "constraint" : {
+                "width" : 2000,
+                "height" : 1125
+              },
+              "thumbnails" : [ ],
+              "label" : "Image"
+            }
+          },
+          "title" : {
+            "type" : "StructuredText",
+            "config" : {
+              "single" : "heading1, strong, em",
+              "label" : "Title",
+              "placeholder" : "Experienced. Thoughtful. A Leader Focused on Student Success."
+            }
+          },
+          "button_title" : {
+            "type" : "StructuredText",
+            "config" : {
+              "single" : "paragraph, strong, em",
+              "label" : "Button Title",
+              "placeholder" : "View More"
+            }
+          }
         },
-        "thumbnails" : [ ],
-        "label" : "Cover Image"
-      }
-    },
-    "title" : {
-      "type" : "StructuredText",
-      "config" : {
-        "single" : "heading1, strong, em",
-        "label" : "Cover Title",
-        "placeholder" : "Experienced. Thoughtful. A Leader Focused on Student Success."
-      }
-    },
-    "button_text" : {
-      "type" : "StructuredText",
-      "config" : {
-        "single" : "paragraph, strong, em",
-        "label" : "Button Text",
-        "placeholder" : "View More"
-      }
-    },
-    "link" : {
-      "type" : "Link",
-      "config" : {
-        "allowTargetBlank" : true,
-        "label" : "Link"
+        "label" : "Cover"
       }
     },
     "meet_reiko" : {
@@ -39,7 +41,7 @@
       "config" : {
         "repeat" : false,
         "fields" : {
-          "meet_reiko_headshot" : {
+          "headshot" : {
             "type" : "Image",
             "config" : {
               "constraint" : {
@@ -47,7 +49,7 @@
                 "height" : 900
               },
               "thumbnails" : [ ],
-              "label" : "Meet Reiko Headshot"
+              "label" : "Headshot"
             }
           },
           "title" : {
@@ -79,57 +81,9 @@
               "single" : "strong, em",
               "label" : "Button Text"
             }
-          },
-          "link" : {
-            "type" : "Link",
-            "config" : {
-              "allowTargetBlank" : true,
-              "label" : "Link"
-            }
           }
         },
         "label" : "Meet Reiko"
-      }
-    },
-    "reiko_priorities" : {
-      "type" : "StructuredText",
-      "config" : {
-        "single" : "heading1",
-        "label" : "Reiko Priorities",
-        "placeholder" : "Reiko's Priorities"
-      }
-    },
-    "reiko_priority" : {
-      "type" : "Group",
-      "config" : {
-        "fields" : {
-          "priority_image" : {
-            "type" : "Image",
-            "config" : {
-              "constraint" : {
-                "width" : 1920,
-                "height" : 1280
-              },
-              "thumbnails" : [ ],
-              "label" : "Priority Image"
-            }
-          },
-          "header" : {
-            "type" : "StructuredText",
-            "config" : {
-              "single" : "heading4",
-              "label" : "Priority Header"
-            }
-          },
-          "priority_text" : {
-            "type" : "StructuredText",
-            "config" : {
-              "single" : "strong, em",
-              "label" : "Priority Text"
-            }
-          }
-        },
-        "label" : "Reiko Priority"
       }
     },
     "quote" : {
@@ -155,100 +109,15 @@
               "label" : "Quote Text"
             }
           },
-          "cite" : {
+          "quote_cite" : {
             "type" : "StructuredText",
             "config" : {
               "single" : "strong, em, hyperlink",
-              "label" : "Cite"
+              "label" : "Quote Cite"
             }
           }
         },
         "label" : "Quote"
-      }
-    }
-  },
-  "Endorsement" : {
-    "endorsement" : {
-      "type" : "Group",
-      "config" : {
-        "fields" : {
-          "logo" : {
-            "type" : "Image",
-            "config" : {
-              "constraint" : {
-                "width" : 686,
-                "height" : 130
-              },
-              "thumbnails" : [ ],
-              "label" : "Logo"
-            }
-          },
-          "name" : {
-            "type" : "StructuredText",
-            "config" : {
-              "single" : "strong, em",
-              "label" : "Name"
-            }
-          },
-          "position" : {
-            "type" : "StructuredText",
-            "config" : {
-              "single" : "strong, em",
-              "label" : "Position"
-            }
-          },
-          "link" : {
-            "type" : "Link",
-            "config" : {
-              "allowTargetBlank" : true,
-              "label" : "Link"
-            }
-          }
-        },
-        "label" : "endorsement"
-      }
-    }
-  },
-  "Events" : {
-    "event" : {
-      "type" : "Group",
-      "config" : {
-        "fields" : {
-          "title" : {
-            "type" : "StructuredText",
-            "config" : {
-              "single" : "heading3",
-              "label" : "Title"
-            }
-          },
-          "description" : {
-            "type" : "StructuredText",
-            "config" : {
-              "multi" : "heading4, strong, em, list-item, o-list-item",
-              "label" : "Description"
-            }
-          },
-          "when" : {
-            "type" : "Timestamp",
-            "config" : {
-              "label" : "When"
-            }
-          },
-          "link" : {
-            "type" : "Link",
-            "config" : {
-              "label" : "Link"
-            }
-          },
-          "is_highlight" : {
-            "type" : "Boolean",
-            "config" : {
-              "default_value" : false,
-              "label" : "Highlight?"
-            }
-          }
-        },
-        "label" : "Event"
       }
     }
   }

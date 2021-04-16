@@ -33,7 +33,7 @@ module.exports = {
         repositoryName: 'reiko4pcc',
         schemas: {
            homepage: require("./custom_types/homepage.json"),
-           endorsements: require('./custom_types/endorsements.json'),
+          //  endorsements: require('./custom_types/endorsements.json'),
         },
       },
     },

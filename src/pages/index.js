@@ -19,108 +19,72 @@ const IndexPage = ({ data }) => {
   if (!data) return null
   const document = data.allPrismicHomepage.edges[0].node.data
 
-  const pageContent = {
-    cta: document.cta_cover,
-    meetReiko: document.meet_reiko,
-    prioritiesTitle: document.reiko_priorities,
-    reikoPriority: document.reiko_priority,
-    quote: document.quote,
-    event: document.event,
+  const homeContent = {
+    cover: document.cover[0],
+    meetReiko: document.meet_reiko[0],
+    quote: document.quote[0],
   }
+
   return (
     <Layout title="Home">
-      <SliderSection cta={pageContent.cta} />
-      <MeetreikoSection meetReiko={pageContent.meetReiko} />
-      <PrioritiesSection priorityTitle={pageContent.prioritiesTitle} reikoPriority={pageContent.reikoPriority} />
-      <QuoteSection quote={pageContent.quote} />
+      <SliderSection cover={homeContent.cover} />
+      <MeetreikoSection meetReiko={homeContent.meetReiko} />
+      <PrioritiesSection />
+      <QuoteSection quote={homeContent.quote} />
       <EndorsementsSection />
-      <EventsSection event={pageContent.event} />
+      <EventsSection />
       <GetinvolvedSection />
     </Layout>
   )
 }
 
+export default IndexPage
+
 export const query = graphql`
-  query homeQuery {
+  query MyQuery {
     allPrismicHomepage {
       edges {
         node {
           data {
-            cta_cover {
+            cover {
+              image {
+                url
+              }
               title {
                 raw
               }
-              button_text {
-                raw
-              }
-              link {
-                url
-              }
-              cover_image {
-                url
-                alt
+              button_title {
+                text
               }
             }
             meet_reiko {
               title {
-                raw
+                text
               }
               sub_title {
-                raw
+                text
               }
               description {
                 raw
               }
               button_text {
-                raw
+                text
               }
-              link {
-                url
-              }
-              meet_reiko_headshot {
-                url
-                alt
-              }
-            }
-            reiko_priorities {
-              raw
-            }
-            reiko_priority {
-              header {
-                raw
-              }
-              priority_text {
-                raw
-              }
-              priority_image {
+              headshot {
                 alt
                 url
               }
             }
             quote {
               quote_text {
+                text
+              }
+              quote_cite {
                 raw
               }
               quote_background {
                 url
-                alt
               }
-              cite {
-                raw
-              }
-            }
-            event {
-              title {
-                raw
-              }
-              description {
-                raw
-              }
-              when(formatString: "")
-              link {
-                url
-              }
-              is_highlight
             }
           }
         }
@@ -128,5 +92,3 @@ export const query = graphql`
     }
   }
 `
-
-export default IndexPage

@@ -1,5 +1,4 @@
 import React from 'react'
-
 import ProfileModule from '../modules/ProfileModule'
 import SectionLayout from '../../layout/SectionLayout'
 import { FcAbout } from 'react-icons/fc'
@@ -17,7 +16,7 @@ const MeetreikoSection = ({ meetReiko }) => {
                 linkText={meetReiko.button_text.text} 
                 icon={AboutIcon}
                 description={meetReiko.description.raw}
-                headshot={meetReiko.headshot.url}
+                headshot={meetReiko.headshot.localFile}
                 alts={meetReiko.headshot.alt} />
         </SectionLayout>
     )

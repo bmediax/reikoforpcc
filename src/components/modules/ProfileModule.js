@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { Link } from 'gatsby'
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 // import { StaticImage } from "gatsby-plugin-image"
 
 // Styling
@@ -12,6 +13,7 @@ import './ProfileModule.scss'
 const ProfileModule = (props) => {
     const controls = useAnimation();
     const [ref, inView] = useInView();
+    const headshotImg = getImage(props.headshot)
 
     useEffect(() => {
         if (inView) {
@@ -29,8 +31,9 @@ const ProfileModule = (props) => {
                     visible: { opacity: 1, y: 0 },
                     hidden: { opacity: 0, y: 100 }
                 }}>
-                <img src={props.headshot} 
-                    alt={props.alts} height="auto" style={{ maxHeight: "450px" }} />
+                {/* <img src={props.headshot} 
+                    alt={props.alts} height="auto" style={{ maxHeight: "450px" }} /> */}
+                <GatsbyImage image={headshotImg} alt={props.alts} />
             </motion.span>
             {/* placeholder="blurred" height={450} */}
             <span className="profile-module_textarea">

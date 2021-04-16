@@ -48,7 +48,11 @@ export const query = graphql`
           data {
             cover {
               image {
-                url
+                localFile {
+                  childImageSharp {
+                    gatsbyImageData(placeholder: BLURRED)
+                  }
+                }
               }
               title {
                 raw
@@ -72,7 +76,11 @@ export const query = graphql`
               }
               headshot {
                 alt
-                url
+                localFile {
+                  childImageSharp {
+                    gatsbyImageData(placeholder: BLURRED)
+                  }
+                }
               }
             }
             quote {

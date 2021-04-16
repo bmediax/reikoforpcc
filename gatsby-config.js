@@ -31,8 +31,10 @@ module.exports = {
       resolve: 'gatsby-source-prismic',
       options: {
         repositoryName: 'reiko4pcc',
+        shouldDownloadImage: () => true,
         schemas: {
            homepage: require("./custom_types/homepage.json"),
+           'homepage': require("./custom_types/homepage.json"),
           //  endorsements: require('./custom_types/endorsements.json'),
         },
       },

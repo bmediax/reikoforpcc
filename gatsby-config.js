@@ -34,7 +34,7 @@ module.exports = {
         shouldDownloadImage: () => true,
         schemas: {
            homepage: require("./custom_types/homepage.json"),
-           'homepage': require("./custom_types/homepage.json"),
+           priorities: require("./custom_types/priorities.json"),
           //  endorsements: require('./custom_types/endorsements.json'),
         },
       },

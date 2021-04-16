@@ -17,19 +17,22 @@ import GetinvolvedSection from '../components/sections/GetinvolvedSection'
 
 const IndexPage = ({ data }) => {
   if (!data) return null
-  const document = data.allPrismicHomepage.edges[0].node.data
+  const homeDocument = data.allPrismicHomepage.edges[0].node.data
+  const priorityDocument = data.allPrismicPriorities.edges[0].node.data
 
   const homeContent = {
-    cover: document.cover[0],
-    meetReiko: document.meet_reiko[0],
-    quote: document.quote[0],
+    cover: homeDocument.cover[0],
+    meetReiko: homeDocument.meet_reiko[0],
+    quote: homeDocument.quote[0],
   }
+
+  // console.log(priorityDocument)
 
   return (
     <Layout title="Home">
       <SliderSection cover={homeContent.cover} />
       <MeetreikoSection meetReiko={homeContent.meetReiko} />
-      <PrioritiesSection />
+      <PrioritiesSection priorities={priorityDocument} />
       <QuoteSection quote={homeContent.quote} />
       <EndorsementsSection />
       <EventsSection />
@@ -91,6 +94,28 @@ export const query = graphql`
                 raw
               }
               quote_background {
+                url
+              }
+            }
+          }
+        }
+      }
+    },
+    allPrismicPriorities {
+      edges {
+        node {
+          data {
+            priorities {
+              title {
+                text
+              }
+              short_title {
+                text
+              }
+              description {
+                text
+              }
+              image {
                 url
               }
             }

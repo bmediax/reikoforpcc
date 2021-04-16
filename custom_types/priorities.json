@@ -1,0 +1,44 @@
+{
+  "Main" : {
+    "priorities" : {
+      "type" : "Group",
+      "config" : {
+        "fields" : {
+          "image" : {
+            "type" : "Image",
+            "config" : {
+              "constraint" : {
+                "width" : 1296,
+                "height" : 505
+              },
+              "thumbnails" : [ ],
+              "label" : "image"
+            }
+          },
+          "title" : {
+            "type" : "StructuredText",
+            "config" : {
+              "single" : "heading1",
+              "label" : "Title"
+            }
+          },
+          "short_title" : {
+            "type" : "StructuredText",
+            "config" : {
+              "single" : "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+              "label" : "Short Title"
+            }
+          },
+          "description" : {
+            "type" : "StructuredText",
+            "config" : {
+              "multi" : "strong, em",
+              "label" : "Description"
+            }
+          }
+        },
+        "label" : "Priorities"
+      }
+    }
+  }
+}

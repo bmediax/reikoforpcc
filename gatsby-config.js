@@ -35,7 +35,8 @@ module.exports = {
         schemas: {
            homepage: require("./custom_types/homepage.json"),
            priorities: require("./custom_types/priorities.json"),
-          //  endorsements: require('./custom_types/endorsements.json'),
+           events: require('./custom_types/events.json'),
+           endorsements: require('./custom_types/endorsements.json'),
         },
       },
     },

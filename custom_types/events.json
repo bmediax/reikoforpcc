@@ -1,0 +1,46 @@
+{
+  "Main" : {
+    "events" : {
+      "type" : "Group",
+      "config" : {
+        "fields" : {
+          "title" : {
+            "type" : "StructuredText",
+            "config" : {
+              "single" : "strong, em",
+              "label" : "title"
+            }
+          },
+          "description" : {
+            "type" : "StructuredText",
+            "config" : {
+              "single" : "strong, em, hyperlink",
+              "label" : "Description"
+            }
+          },
+          "link" : {
+            "type" : "Link",
+            "config" : {
+              "allowTargetBlank" : true,
+              "label" : "Link"
+            }
+          },
+          "date" : {
+            "type" : "Date",
+            "config" : {
+              "label" : "Date"
+            }
+          },
+          "highlight" : {
+            "type" : "Boolean",
+            "config" : {
+              "default_value" : false,
+              "label" : "Highlight"
+            }
+          }
+        },
+        "label" : "Events"
+      }
+    }
+  }
+}

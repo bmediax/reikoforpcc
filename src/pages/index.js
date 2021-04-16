@@ -19,6 +19,7 @@ const IndexPage = ({ data }) => {
   if (!data) return null
   const homeDocument = data.allPrismicHomepage.edges[0].node.data
   const priorityDocument = data.allPrismicPriorities.edges[0].node.data
+  const eventsDocument = data.allPrismicEvents.edges[0].node.data
 
   const homeContent = {
     cover: homeDocument.cover[0],
@@ -35,7 +36,7 @@ const IndexPage = ({ data }) => {
       <PrioritiesSection priorities={priorityDocument} />
       <QuoteSection quote={homeContent.quote} />
       <EndorsementsSection />
-      <EventsSection />
+      <EventsSection events={eventsDocument.events} />
       <GetinvolvedSection />
     </Layout>
   )
@@ -117,6 +118,27 @@ export const query = graphql`
               }
               image {
                 url
+              }
+            }
+          }
+        }
+      }
+    },
+    allPrismicEvents {
+      edges {
+        node {
+          data {
+            events {
+              date(fromNow: true, formatString: "MMMM, DD, YYYY")
+              title {
+                text
+              }
+              link {
+                url
+              }
+              highlight
+              description {
+                text
               }
             }
           }

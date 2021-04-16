@@ -25,7 +25,6 @@ const EventsSection = ({ events }) => {
                         <span className="event-date">
                             <span className="event-date_month">{event.date.split(',').splice(0, 1)}</span>
                             <span className="event-date_day">{event.date.split(',').splice(1, 1)}</span>
-                            {console.log(event.date.split(',').splice(0, 2))}
                         </span>
                     </span>
                 ))}

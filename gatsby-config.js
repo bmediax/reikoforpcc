@@ -28,6 +28,19 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-source-prismic',
+      options: {
+        repositoryName: 'reiko4pcc',
+        shouldDownloadImage: () => true,
+        schemas: {
+           homepage: require("./custom_types/homepage.json"),
+           priorities: require("./custom_types/priorities.json"),
+           events: require('./custom_types/events.json'),
+           endorsements: require('./custom_types/endorsements.json'),
+        },
+      },
+    },
+    {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "images",

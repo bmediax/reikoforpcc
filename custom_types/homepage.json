@@ -1,0 +1,124 @@
+{
+  "Main" : {
+    "cover" : {
+      "type" : "Group",
+      "config" : {
+        "repeat" : false,
+        "fields" : {
+          "image" : {
+            "type" : "Image",
+            "config" : {
+              "constraint" : {
+                "width" : 2000,
+                "height" : 1125
+              },
+              "thumbnails" : [ ],
+              "label" : "Image"
+            }
+          },
+          "title" : {
+            "type" : "StructuredText",
+            "config" : {
+              "single" : "heading1, strong, em",
+              "label" : "Title",
+              "placeholder" : "Experienced. Thoughtful. A Leader Focused on Student Success."
+            }
+          },
+          "button_title" : {
+            "type" : "StructuredText",
+            "config" : {
+              "single" : "paragraph, strong, em",
+              "label" : "Button Title",
+              "placeholder" : "View More"
+            }
+          }
+        },
+        "label" : "Cover"
+      }
+    },
+    "meet_reiko" : {
+      "type" : "Group",
+      "config" : {
+        "repeat" : false,
+        "fields" : {
+          "headshot" : {
+            "type" : "Image",
+            "config" : {
+              "constraint" : {
+                "width" : 764,
+                "height" : 900
+              },
+              "thumbnails" : [ ],
+              "label" : "Headshot"
+            }
+          },
+          "title" : {
+            "type" : "StructuredText",
+            "config" : {
+              "single" : "heading1",
+              "label" : "Title",
+              "placeholder" : "Meet Reiko Mia Williams"
+            }
+          },
+          "sub_title" : {
+            "type" : "StructuredText",
+            "config" : {
+              "single" : "heading3",
+              "label" : "Sub Title",
+              "placeholder" : "Why am I running?"
+            }
+          },
+          "description" : {
+            "type" : "StructuredText",
+            "config" : {
+              "multi" : "paragraph, strong, em",
+              "label" : "Description"
+            }
+          },
+          "button_text" : {
+            "type" : "StructuredText",
+            "config" : {
+              "single" : "strong, em",
+              "label" : "Button Text"
+            }
+          }
+        },
+        "label" : "Meet Reiko"
+      }
+    },
+    "quote" : {
+      "type" : "Group",
+      "config" : {
+        "repeat" : false,
+        "fields" : {
+          "quote_background" : {
+            "type" : "Image",
+            "config" : {
+              "constraint" : {
+                "width" : 2000,
+                "height" : 1125
+              },
+              "thumbnails" : [ ],
+              "label" : "Quote Background"
+            }
+          },
+          "quote_text" : {
+            "type" : "StructuredText",
+            "config" : {
+              "single" : "strong, em",
+              "label" : "Quote Text"
+            }
+          },
+          "quote_cite" : {
+            "type" : "StructuredText",
+            "config" : {
+              "single" : "strong, em, hyperlink",
+              "label" : "Quote Cite"
+            }
+          }
+        },
+        "label" : "Quote"
+      }
+    }
+  }
+}

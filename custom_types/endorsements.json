@@ -1,0 +1,44 @@
+{
+  "Main" : {
+    "endorsements" : {
+      "type" : "Group",
+      "config" : {
+        "fields" : {
+          "logo" : {
+            "type" : "Image",
+            "config" : {
+              "constraint" : {
+                "width" : 686,
+                "height" : 130
+              },
+              "thumbnails" : [ ],
+              "label" : "Logo"
+            }
+          },
+          "name" : {
+            "type" : "StructuredText",
+            "config" : {
+              "single" : "heading2",
+              "label" : "Name"
+            }
+          },
+          "link" : {
+            "type" : "Link",
+            "config" : {
+              "allowTargetBlank" : true,
+              "label" : "Link"
+            }
+          },
+          "position" : {
+            "type" : "StructuredText",
+            "config" : {
+              "multi" : "strong, em, hyperlink",
+              "label" : "Position"
+            }
+          }
+        },
+        "label" : "Endorsements"
+      }
+    }
+  }
+}

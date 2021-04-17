@@ -20,6 +20,7 @@ const IndexPage = ({ data }) => {
   const homeDocument = data.allPrismicHomepage.edges[0].node.data
   const priorityDocument = data.allPrismicPriorities.edges[0].node.data
   const eventsDocument = data.allPrismicEvents.edges[0].node.data
+  const endorsementsDocument = data.allPrismicEndorsements.edges[0].node.data.endorsements
 
   const homeContent = {
     cover: homeDocument.cover[0],
@@ -35,7 +36,7 @@ const IndexPage = ({ data }) => {
       <MeetreikoSection meetReiko={homeContent.meetReiko} />
       <PrioritiesSection priorities={priorityDocument} />
       <QuoteSection quote={homeContent.quote} />
-      <EndorsementsSection />
+      <EndorsementsSection endorsements={endorsementsDocument} />
       <EventsSection events={eventsDocument.events} />
       <GetinvolvedSection />
     </Layout>
@@ -139,6 +140,32 @@ export const query = graphql`
               highlight
               description {
                 text
+              }
+            }
+          }
+        }
+      }
+    },
+    allPrismicEndorsements {
+      edges {
+        node {
+          data {
+            endorsements {
+              name {
+                text
+              }
+              position {
+                text
+              }
+              link {
+                url
+              }
+              logo {
+                localFile {
+                  childImageSharp {
+                    gatsbyImageData(placeholder: BLURRED, quality: 100)
+                  }
+                }
               }
             }
           }

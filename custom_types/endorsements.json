@@ -8,11 +8,10 @@
             "type" : "Image",
             "config" : {
               "constraint" : {
-                "width" : 686,
-                "height" : 130
+                "height" : 65
               },
               "thumbnails" : [ ],
-              "label" : "Logo"
+              "label" : "logo"
             }
           },
           "name" : {

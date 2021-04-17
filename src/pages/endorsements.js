@@ -12,14 +12,14 @@ import coverDesk from '../images/photos/sabinReiko.jpg'
 const Endorsements = ({ data }) => {
   if (!data) return null
   const endorsementsDocument = data.allPrismicEndorsements.edges[0].node.data.endorsements
-  console.log(endorsementsDocument)
+  // console.log(endorsementsDocument)
   return (
     <Layout title="Endorsements">
         <Cover coverImage={coverDesk}>
           Endorsements
         </Cover>
         <SectionLayout>
-            <EndorsementsModule />
+            <EndorsementsModule endorsements={endorsementsDocument} />
         </SectionLayout>
         <GetinvolvedSection />
     </Layout>
@@ -47,7 +47,7 @@ export const query = graphql`
               logo {
                 localFile {
                   childImageSharp {
-                    gatsbyImageData(placeholder: BLURRED)
+                    gatsbyImageData(placeholder: BLURRED, quality: 100)
                   }
                 }
               }

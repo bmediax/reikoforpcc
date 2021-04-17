@@ -1,34 +1,39 @@
 import React from 'react'
-import './EndorsementCard.scss'
 import { motion } from 'framer-motion'
+import './EndorsementCard.scss'
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
+// import { RiLockUnlockFill } from 'react-icons/ri'
 // import { cardVariants } from '../tools/motionVariants'
 
-const EndorsementCard = (props) => {
+const EndorsementCard = ({ logo, link, name, position }) => {
+    const endorseImg = getImage(logo.localFile)
     const isUrl = (isLink) => {
         if (isLink) {
-            if (props.logo) {
+            if (logo.localFile) {
                 return (
-                    <a href={props.url}>
-                        {props.logo}
+                    <a href={link.url}>
+                        <GatsbyImage image={endorseImg} alt="Endorsement Image" />
                     </a>
                 )
             } 
             
             else {
                 return (
-                    <a href={props.url}>
-                        <h2> {props.name} </h2>
+                    <a href={link.url}>
+                        <h2> {name.text} </h2>
                     </a>
                 )
             }
         } else {
-            if (props.logo) {
-                return (props.logo)
+            if (logo.localFile) {
+                return (
+                    <GatsbyImage image={endorseImg} alt="Endorsement Image" />
+                )
             } 
             
             else {
                 return (
-                    <h2> {props.name} </h2>
+                    <h2> {name.text} </h2>
                 )
             }
         }
@@ -36,8 +41,8 @@ const EndorsementCard = (props) => {
     return (
         <motion.div whileHover={{ scale: 1.05 }} className="endorsement-card">
             {/* If url and if logo */}
-            {isUrl(props.url)}
-            <p> {props.position}{props.company ? ", " + props.company : null}</p>
+            {isUrl(link.url)}
+            <p> {position.text}</p>
         </motion.div>
     )
 }

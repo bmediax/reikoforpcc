@@ -37,7 +37,7 @@ const Layout = (props) => {
             <navContext.Provider value={navObjects}>
                 <Seo title={props.title} metaImage={bannerImage} />
                 <div className="RMW_container">
-                    <TopBarModule />
+                    <TopBarModule/>
                     <Nav />
                     <motion.main
                         initial={{

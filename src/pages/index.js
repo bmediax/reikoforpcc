@@ -46,7 +46,7 @@ const IndexPage = ({ data }) => {
 export default IndexPage
 
 export const query = graphql`
-  query MyQuery {
+  query MyQuery($eventFromNow: Boolean = true) {
     allPrismicHomepage {
       edges {
         node {
@@ -130,7 +130,7 @@ export const query = graphql`
         node {
           data {
             events {
-              date(fromNow: true, formatString: "MMMM, DD, YYYY")
+              date(fromNow: $eventFromNow, formatString: "MMMM, DD, YYYY")
               title {
                 text
               }

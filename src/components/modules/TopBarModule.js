@@ -1,16 +1,48 @@
 import React from 'react'
-import { eventsData } from '../../data/eventsData'
+import { graphql, useStaticQuery } from 'gatsby'
 import * as topBarStyles from './TopBarModule.module.scss'
 
 const TopBarModule = () => {
+    const eventsDatas = useStaticQuery(graphql`
+        query eventBanner {
+            allPrismicEvents {
+                edges {
+                    node {
+                        data {
+                            events {
+                                date(fromNow: true)
+                                title {
+                                    text
+                                    raw
+                                }
+                                link {
+                                    url
+                                }
+                                highlight
+                                description {
+                                    text
+                                }
+                            }
+                            top_module_text {
+                                text
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    `)
+
+    const { events } = eventsDatas.allPrismicEvents.edges[0].node.data
+    const { top_module_text } = eventsDatas.allPrismicEvents.edges[0].node.data
     return (
         <div className={topBarStyles.topbar_wrapper}>
             <div className={topBarStyles.topbar_container}>
                 <span className={topBarStyles.topbarText}>
-                    <h4><b>Upcoming Event:</b> <a href={eventsData[0].link} style={{ color: "#FFF", textDecoration: "underline" }}>{eventsData[0].title}</a></h4>
+                    <h4>{top_module_text.text} <a href={events[0].link.url} style={{ color: "#FFF", textDecoration: "underline" }}>{events[0].title.text}</a></h4>
                 </span>
                 <span className={topBarStyles.topbarButton}>
-                    <a href={eventsData[0].link}>View Event</a>
+                    <a href={events[0].link.url}>View Event</a>
                 </span>
             </div>
         </div>

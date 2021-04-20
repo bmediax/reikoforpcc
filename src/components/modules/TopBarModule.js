@@ -23,8 +23,11 @@ const TopBarModule = () => {
                                     text
                                 }
                             }
-                            top_module_text {
-                                text
+                            top_module {
+                                enable_top_module
+                                text {
+                                    text
+                                }
                             }
                         }
                     }
@@ -34,18 +37,23 @@ const TopBarModule = () => {
     `)
 
     const { events } = eventsDatas.allPrismicEvents.edges[0].node.data
-    const { top_module_text } = eventsDatas.allPrismicEvents.edges[0].node.data
+    const { top_module } = eventsDatas.allPrismicEvents.edges[0].node.data
+    const isTopModule = top_module[0].enable_top_module
     return (
-        <div className={topBarStyles.topbar_wrapper}>
-            <div className={topBarStyles.topbar_container}>
-                <span className={topBarStyles.topbarText}>
-                    <h4>{top_module_text.text} <a href={events[0].link.url} style={{ color: "#FFF", textDecoration: "underline" }}>{events[0].title.text}</a></h4>
-                </span>
-                <span className={topBarStyles.topbarButton}>
-                    <a href={events[0].link.url}>View Event</a>
-                </span>
+        <React.Fragment>
+        {isTopModule && 
+            <div className={topBarStyles.topbar_wrapper}>
+                <div className={topBarStyles.topbar_container}>
+                    <span className={topBarStyles.topbarText}>
+                        <h4>{top_module[0].text.text} <a href={events[0].link.url} style={{ color: "#FFF", textDecoration: "underline" }}>{events[0].title.text}</a></h4>
+                    </span>
+                    <span className={topBarStyles.topbarButton}>
+                        <a href={events[0].link.url}>View Event</a>
+                    </span>
+                </div>
             </div>
-        </div>
+        }
+        </React.Fragment>
     )
 }
 

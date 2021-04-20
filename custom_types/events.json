@@ -1,52 +1,68 @@
 {
-  "Main": {
-    "top_module_text": {
-      "type": "StructuredText",
-      "config": {
-        "multi": "strong, em",
-        "label": "Top Module Text"
-      }
-    },
-    "events": {
-      "type": "Group",
-      "config": {
-        "fields": {
-          "title": {
-            "type": "StructuredText",
-            "config": {
-              "single": "strong, em",
-              "label": "title"
+  "Main" : {
+    "top_module" : {
+      "type" : "Group",
+      "config" : {
+        "repeat":false,
+        "fields" : {
+          "enable_top_module" : {
+            "type" : "Boolean",
+            "config" : {
+              "default_value" : false,
+              "label" : "Enable Top Module"
             }
           },
-          "description": {
-            "type": "StructuredText",
-            "config": {
-              "single": "strong, em, hyperlink",
-              "label": "Description"
-            }
-          },
-          "link": {
-            "type": "Link",
-            "config": {
-              "allowTargetBlank": true,
-              "label": "Link"
-            }
-          },
-          "date": {
-            "type": "Timestamp",
-            "config": {
-              "label": "Date"
-            }
-          },
-          "highlight": {
-            "type": "Boolean",
-            "config": {
-              "default_value": false,
-              "label": "Highlight"
+          "text" : {
+            "type" : "StructuredText",
+            "config" : {
+              "multi" : "strong, em",
+              "label" : "text"
             }
           }
         },
-        "label": "Events"
+        "label" : "Top Module"
+      }
+    },
+    "events" : {
+      "type" : "Group",
+      "config" : {
+        "fields" : {
+          "title" : {
+            "type" : "StructuredText",
+            "config" : {
+              "single" : "strong, em",
+              "label" : "title"
+            }
+          },
+          "description" : {
+            "type" : "StructuredText",
+            "config" : {
+              "single" : "strong, em, hyperlink",
+              "label" : "Description"
+            }
+          },
+          "link" : {
+            "type" : "Link",
+            "config" : {
+              "allowTargetBlank" : true,
+              "label" : "Link"
+            }
+          },
+          "date" : {
+            "type" : "Timestamp",
+            "config" : {
+              "label" : "Date"
+            }
+          },
+          "highlight" : {
+            "type" : "Boolean",
+            "config" : {
+              "default_value" : false,
+              "label" : "Highlight"
+            }
+          }
+        },
+        "label" : "Events"
       }
     }
   }

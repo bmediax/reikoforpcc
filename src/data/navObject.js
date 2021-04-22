@@ -11,19 +11,19 @@ export const navObjects = [
         sub: [
             {
                 title: prioritiesData[0].priority,
-                link: `/priorities#${prioritiesData[0].shortPriority}`
+                path: `/priorities#${prioritiesData[0].shortPriority}`
             },
             {
                 title: prioritiesData[1].priority,
-                link: `/priorities#${prioritiesData[1].shortPriority}`
+                path: `/priorities#${prioritiesData[1].shortPriority}`
             },
             {
                 title: prioritiesData[2].priority,
-                link: `/priorities#${prioritiesData[2].shortPriority}`
+                path: `/priorities#${prioritiesData[2].shortPriority}`
             },
             {
                 title: prioritiesData[3].priority,
-                link: `/priorities#${prioritiesData[3].shortPriority}`
+                path: `/priorities#${prioritiesData[3].shortPriority}`
             },
         ]
     },
@@ -36,16 +36,16 @@ export const navObjects = [
         path: "/get-involved",
         sub: [
             {
-                title: 'Events',
-                path: '/#events'
-            },
-            {
                 title: "Donate",
                 link: "https://secure.actblue.com/donate/friends-of-reiko-1"
             },
             {
                 title:"Volunteer",
-                path: "/get-involved",
+                path: "#events",
+            },
+            {
+                title: 'Join our Events',
+                path: '/#events'
             },
             {
                 title: "Like our Facebook",

@@ -141,6 +141,7 @@ export const query = graphql`
               description {
                 text
               }
+              paste_event_
             }
           }
         }

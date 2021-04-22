@@ -54,11 +54,11 @@
               "label": "Date"
             }
           },
-          "date_frame": {
+          "paste_event_": {
             "type": "Boolean",
             "config": {
               "default_value": false,
-              "label": "Date Frame"
+              "label": "Paste Event?"
             }
           },
           "highlight": {

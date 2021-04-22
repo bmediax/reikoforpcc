@@ -279,7 +279,7 @@
             background-position: center center !important;
         }
 
-        &:nth-child(2) {
+        &:nth-child(2n) {
             flex-direction: row-reverse;
 
             @include responsive('tablet') {

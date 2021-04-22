@@ -1,68 +1,75 @@
 {
-  "Main" : {
-    "top_module" : {
-      "type" : "Group",
-      "config" : {
-        "repeat":false,
-        "fields" : {
-          "enable_top_module" : {
-            "type" : "Boolean",
-            "config" : {
-              "default_value" : false,
-              "label" : "Enable Top Module"
+  "Main": {
+    "top_module": {
+      "type": "Group",
+      "config": {
+        "repeat": false,
+        "fields": {
+          "enable_top_module": {
+            "type": "Boolean",
+            "config": {
+              "default_value": false,
+              "label": "Enable Top Module"
             }
           },
-          "text" : {
-            "type" : "StructuredText",
-            "config" : {
-              "multi" : "strong, em",
-              "label" : "text"
+          "text": {
+            "type": "StructuredText",
+            "config": {
+              "multi": "strong, em",
+              "label": "text"
             }
           }
         },
-        "label" : "Top Module"
+        "label": "Top Module"
       }
     },
-    "events" : {
-      "type" : "Group",
-      "config" : {
-        "fields" : {
-          "title" : {
-            "type" : "StructuredText",
-            "config" : {
-              "single" : "strong, em",
-              "label" : "title"
+    "events": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "title": {
+            "type": "StructuredText",
+            "config": {
+              "single": "strong, em",
+              "label": "title"
             }
           },
-          "description" : {
-            "type" : "StructuredText",
-            "config" : {
-              "single" : "strong, em, hyperlink",
-              "label" : "Description"
+          "description": {
+            "type": "StructuredText",
+            "config": {
+              "single": "strong, em, hyperlink",
+              "label": "Description"
             }
           },
-          "link" : {
-            "type" : "Link",
-            "config" : {
-              "allowTargetBlank" : true,
-              "label" : "Link"
+          "link": {
+            "type": "Link",
+            "config": {
+              "allowTargetBlank": true,
+              "label": "Link"
             }
           },
-          "date" : {
-            "type" : "Timestamp",
-            "config" : {
-              "label" : "Date"
+          "date": {
+            "type": "Timestamp",
+            "config": {
+              "label": "Date"
             }
           },
-          "highlight" : {
-            "type" : "Boolean",
-            "config" : {
-              "default_value" : false,
-              "label" : "Highlight"
+          "date_frame": {
+            "type": "Boolean",
+            "config": {
+              "default_value": false,
+              "label": "Date Frame"
+            }
+          },
+          "highlight": {
+            "type": "Boolean",
+            "config": {
+              "default_value": false,
+              "label": "Highlight"
             }
           }
         },
-        "label" : "Events"
+        "label": "Events"
       }
     }
   }

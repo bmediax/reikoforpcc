@@ -1,4 +1,4 @@
-import { prioritiesData } from './prioritiesData'
+// import { prioritiesData } from './prioritiesData'
 
 export const navObjects = [
     {
@@ -8,24 +8,6 @@ export const navObjects = [
     {
         title: "Priorities",
         path: "/priorities",
-        sub: [
-            {
-                title: prioritiesData[0].priority,
-                path: `/priorities#${prioritiesData[0].shortPriority}`
-            },
-            {
-                title: prioritiesData[1].priority,
-                path: `/priorities#${prioritiesData[1].shortPriority}`
-            },
-            {
-                title: prioritiesData[2].priority,
-                path: `/priorities#${prioritiesData[2].shortPriority}`
-            },
-            {
-                title: prioritiesData[3].priority,
-                path: `/priorities#${prioritiesData[3].shortPriority}`
-            },
-        ]
     },
     {
         title: "Endorsements",
@@ -38,10 +20,6 @@ export const navObjects = [
             {
                 title: "Donate",
                 link: "https://secure.actblue.com/donate/friends-of-reiko-1"
-            },
-            {
-                title:"Volunteer",
-                path: "#events",
             },
             {
                 title: 'Join our Events',

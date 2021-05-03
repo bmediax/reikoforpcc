@@ -37,6 +37,7 @@ module.exports = {
            priorities: require("./custom_types/priorities.json"),
            events: require('./custom_types/events.json'),
            endorsements: require('./custom_types/endorsements.json'),
+           meetreiko: require('./custom_types/meetreiko.json'),
         },
       },
     },
